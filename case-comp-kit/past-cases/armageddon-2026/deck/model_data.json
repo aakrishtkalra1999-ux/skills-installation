@@ -1,0 +1,3149 @@
+{
+ "Cover": {
+  "w_liq": {
+   "A": "1 Liquidity: new money needed beyond rollover + identified sources",
+   "B": "USD m",
+   "C": 0,
+   "D": -10.975519648,
+   "E": "MET",
+   "F": "Mandate is funded without fresh money (momentum needs it)"
+  },
+  "w_cov": {
+   "A": "2 Solvency: exit interest cover, downside case (50% realisation)",
+   "B": "x",
+   "C": 1,
+   "D": 1.112790181,
+   "E": "MET",
+   "F": "Earnings cover interest even if only half the benefits land"
+  },
+  "w_auto": {
+   "A": "3 Auto: run-rate EBITDA vs its share of maintenance capex",
+   "B": "USD m",
+   "C": 20.454545455,
+   "D": 28.68671551,
+   "E": "MET",
+   "F": "Auto funds its own upkeep → no longer a cash drain, so no case for a forced sale"
+  },
+  "w_dig": {
+   "A": "4 Digital: net digital contribution (run-rate)",
+   "B": "USD m",
+   "C": 0,
+   "D": 8.7284939601,
+   "E": "MET",
+   "F": "Digital pays for itself"
+  },
+  "o_eb25": {
+   "A": "EBITDA 2025A",
+   "B": "USD m",
+   "C": 25
+  },
+  "o_ebrr": {
+   "A": "EBITDA — Jun-27 run-rate",
+   "B": "USD m",
+   "C": 48,
+   "D": 68.72849396,
+   "E": 20.72849396,
+   "F": "Base includes the automatic roll-off of 23 of 2025 implementation costs (Ex.6)"
+  },
+  "o_mrr": {
+   "A": "EBITDA margin — Jun-27 run-rate",
+   "B": "%",
+   "C": 0.040336134454,
+   "D": 0.057354698734,
+   "E": 0.01701856428
+  },
+  "o_ltm": {
+   "A": "EBITDA — last twelve months to Jun-27",
+   "B": "USD m",
+   "C": 45,
+   "D": 49.116934513,
+   "E": 4.1169345129,
+   "F": "What lenders test"
+  },
+  "o_fcf": {
+   "A": "Free cash flow — 18 months",
+   "B": "USD m",
+   "C": -141.73395622,
+   "D": -74.024480352,
+   "E": 67.709475871,
+   "F": "Before disposals and financing"
+  },
+  "o_nd": {
+   "A": "Net debt — Jun-27",
+   "B": "USD m",
+   "C": 896.73395622,
+   "D": 829.02448035,
+   "E": -67.709475871,
+   "F": "2025: 755"
+  },
+  "o_llev": {
+   "A": "Net debt / LTM EBITDA — Jun-27",
+   "B": "x",
+   "C": 19.927421249,
+   "D": 16.87858757,
+   "E": -3.0488336793,
+   "F": "2025: 30.2x"
+  },
+  "o_lcov": {
+   "A": "Interest cover — LTM to Jun-27",
+   "B": "x",
+   "C": 0.89571534424,
+   "D": 1.0079719494,
+   "E": 0.11225660519,
+   "F": "2025: 0.6x"
+  },
+  "o_rcov": {
+   "A": "Interest cover — Jun-27 run-rate",
+   "B": "x",
+   "C": 0.80567895837,
+   "D": 1.2751550314,
+   "E": 0.46947607304
+  },
+  "o_new": {
+   "A": "New money to raise (after rollover and identified sources)",
+   "B": "USD m",
+   "C": 56.733956223,
+   "D": -10.975519648,
+   "E": -67.709475871,
+   "F": "Sources & uses on Projection"
+  },
+  "o_be": {
+   "A": "Run-rate EBITDA vs free-cash-flow break-even",
+   "B": "USD m",
+   "C": -91.577080301,
+   "D": -50.169653533,
+   "E": 41.407426768,
+   "F": "Negative: balance-sheet action needed beyond Jun-27"
+  },
+  "o_auto": {
+   "A": "Auto EBITDA margin — Jun-27 run-rate (plan)",
+   "B": "%",
+   "D": 0.050139547767,
+   "F": "2025: 0.9%"
+  },
+  "o_dig": {
+   "A": "Net digital contribution — 2025 vs Jun-27 run-rate (plan)",
+   "B": "USD m",
+   "C": -35,
+   "D": 8.7284939601,
+   "E": 43.72849396,
+   "F": "Column C here = 2025 actual, not base"
+  },
+  "o_stretch": {
+   "A": "Run-rate EBITDA at 100% realisation (stretch) / 50% (downside)",
+   "B": "USD m",
+   "C": 77.479658613,
+   "D": 59.977329307,
+   "F": "C = stretch, D = downside"
+  },
+  "c_bs": {
+   "A": "Balance sheet balances (2022–25)",
+   "C": 0,
+   "D": "OK"
+  },
+  "c_eb": {
+   "A": "Rebuilt EBITDA = case-reported (2022–25)",
+   "C": 0,
+   "D": "OK"
+  },
+  "c_ni": {
+   "A": "Rebuilt net income = case-reported (2022–25)",
+   "C": 0,
+   "D": "OK"
+  },
+  "c_opex": {
+   "A": "Opex breakdown = case total (2022–25)",
+   "C": 0,
+   "D": "OK"
+  },
+  "c_seg": {
+   "A": "Segments reconcile to Group revenue & EBITDA",
+   "C": 0,
+   "D": "OK"
+  },
+  "c_cash": {
+   "A": "Cash-flow closing cash = balance sheet (2023–25)",
+   "C": 0,
+   "D": "OK"
+  },
+  "c_debt": {
+   "A": "Debt raised = change in total debt (2023–25)",
+   "C": 0,
+   "D": "OK"
+  },
+  "c_da": {
+   "A": "D&A split = total D&A (2023–25)",
+   "C": 0,
+   "D": "OK"
+  },
+  "c_wc": {
+   "A": "Working-capital change = cash-flow line (2023–25)",
+   "C": 0,
+   "D": "OK"
+  },
+  "c_ex6": {
+   "A": "Ex.6 cost breakdown = Ex.5 operating cost",
+   "C": 0,
+   "D": "OK"
+  },
+  "c_dig": {
+   "A": "Project + central digital opex = Ex.1 digital opex",
+   "C": 0,
+   "D": "OK"
+  },
+  "c_br": {
+   "A": "EBITDA bridge 2022→25 closes",
+   "C": 0,
+   "D": "OK"
+  },
+  "c_split": {
+   "A": "Initiative segment splits sum to 100%",
+   "C": 0,
+   "D": "OK"
+  },
+  "c_ws": {
+   "A": "Workstream view = initiative total",
+   "C": 0,
+   "D": "OK"
+  },
+  "c_segrr": {
+   "A": "Segment run-rates sum to Group run-rate",
+   "C": 0,
+   "D": "OK"
+  },
+  "c_su": {
+   "A": "Sources = uses (plan)",
+   "C": 0,
+   "D": "OK"
+  },
+  "c_tax": {
+   "A": "Zero cash tax valid: highest projected PBT",
+   "C": -43.767090944,
+   "D": "OK",
+   "F": "Must be negative"
+  },
+  "l1": {
+   "A": "Blue text",
+   "C": "Input typed from the case or an assumption"
+  },
+  "l2": {
+   "A": "Black text",
+   "C": "Formula"
+  },
+  "l3": {
+   "A": "Green text",
+   "C": "Direct link to another sheet"
+  },
+  "l4": {
+   "A": "Yellow fill",
+   "C": "Key driver or headline output"
+  },
+  "g0": {
+   "A": "Case_Financials",
+   "C": "Exhibits 1–4 typed in, subtotals rebuilt and reconciled"
+  },
+  "g1": {
+   "A": "Case_Digital",
+   "C": "Exhibits 5–7: programme economics, cost breakdown, KPIs"
+  },
+  "g2": {
+   "A": "Case_Ops",
+   "C": "Exhibit 8: footprint, energy, labour, digital readiness"
+  },
+  "g3": {
+   "A": "Diagnosis",
+   "C": "Ratios, EBITDA bridge, programme scorecard, Auto digital burden, consistency flag"
+  },
+  "g4": {
+   "A": "Assumptions",
+   "C": "Every judgement call with rationale, benchmark, funding bridge and win-condition targets"
+  },
+  "g5": {
+   "A": "Initiatives",
+   "C": "Run-rate economics, overlap netting, phasing, workstreams, segment split, working capital"
+  },
+  "g6": {
+   "A": "Projection",
+   "C": "Base vs plan EBITDA, cash, net debt, lender (LTM) view, sources & uses"
+  },
+  "g7": {
+   "A": "Segments",
+   "C": "Jun-27 run-rate by business, SMC break-even price, SMC exit case"
+  },
+  "g8": {
+   "A": "Sensitivity",
+   "C": "Realisation scenarios and one-at-a-time shocks"
+  },
+  "g9": {
+   "A": "Sources",
+   "C": "External benchmarks with URLs"
+  }
+ },
+ "Case_Financials": {
+  "rev": {
+   "A": "Revenue",
+   "C": 1150,
+   "D": 1205,
+   "E": 1230,
+   "F": 1190,
+   "G": "Ex.1"
+  },
+  "cogs": {
+   "A": "Cost of sales (excl. D&A)",
+   "C": 860,
+   "D": 910,
+   "E": 945,
+   "F": 930,
+   "G": "Ex.1. Includes energy and direct production labour (Ex.8) and the 2025 digital gross benefits (Ex.5)"
+  },
+  "gp": {
+   "A": "Gross profit",
+   "C": 290,
+   "D": 295,
+   "E": 285,
+   "F": 260
+  },
+  "opex": {
+   "A": "Operating expenses excl. D&A",
+   "C": 168,
+   "D": 187,
+   "E": 215,
+   "F": 235,
+   "G": "Sum of the Ex.1 opex breakdown below"
+  },
+  "ebitda": {
+   "A": "EBITDA",
+   "C": 122,
+   "D": 108,
+   "E": 70,
+   "F": 25
+  },
+  "da": {
+   "A": "Depreciation & amortisation",
+   "C": 58,
+   "D": 66,
+   "E": 78,
+   "F": 90,
+   "G": "Ex.1"
+  },
+  "ebit": {
+   "A": "EBIT",
+   "C": 64,
+   "D": 42,
+   "E": -8,
+   "F": -65
+  },
+  "fin": {
+   "A": "Net finance costs",
+   "C": 24,
+   "D": 27,
+   "E": 33,
+   "F": 40,
+   "G": "Ex.1 — interest on debt, net"
+  },
+  "pbt": {
+   "A": "Profit before tax",
+   "C": 40,
+   "D": 15,
+   "E": -41,
+   "F": -105
+  },
+  "tax": {
+   "A": "Tax",
+   "C": 10,
+   "D": 4,
+   "E": 0,
+   "F": 0,
+   "G": "Ex.1 (2023 rounded to 4 per case footnote)"
+  },
+  "ni": {
+   "A": "Net income",
+   "C": 30,
+   "D": 11,
+   "E": -41,
+   "F": -105
+  },
+  "ebitda_case": {
+   "A": "EBITDA — case-reported",
+   "C": 122,
+   "D": 108,
+   "E": 70,
+   "F": 25,
+   "G": "Ex.1, for reconciliation"
+  },
+  "ni_case": {
+   "A": "Net income — case-reported",
+   "C": 30,
+   "D": 11,
+   "E": -41,
+   "F": -105,
+   "G": "Ex.1, for reconciliation"
+  },
+  "pers": {
+   "A": "Non-digital personnel costs",
+   "C": 90,
+   "D": 95,
+   "E": 101,
+   "F": 108,
+   "G": "Ex.1"
+  },
+  "sell": {
+   "A": "Selling and customer support",
+   "C": 35,
+   "D": 38,
+   "E": 42,
+   "F": 45,
+   "G": "Ex.1"
+  },
+  "dig": {
+   "A": "Digital and AI operating costs",
+   "C": 8,
+   "D": 18,
+   "E": 35,
+   "F": 48,
+   "G": "Ex.1 — expensed digital personnel, software, cloud, support, implementation"
+  },
+  "oth": {
+   "A": "Other overheads",
+   "C": 35,
+   "D": 36,
+   "E": 37,
+   "F": 34,
+   "G": "Ex.1"
+  },
+  "opex_case": {
+   "A": "Total operating expenses — case-reported",
+   "C": 168,
+   "D": 187,
+   "E": 215,
+   "F": 235,
+   "G": "Ex.1, for reconciliation"
+  },
+  "cash": {
+   "A": "Cash & cash equivalents",
+   "C": 90,
+   "D": 75,
+   "E": 55,
+   "F": 30,
+   "G": "Ex.2"
+  },
+  "ar": {
+   "A": "Trade receivables",
+   "C": 150,
+   "D": 158,
+   "E": 168,
+   "F": 172,
+   "G": "Ex.2"
+  },
+  "inv": {
+   "A": "Inventory",
+   "C": 205,
+   "D": 220,
+   "E": 240,
+   "F": 255,
+   "G": "Ex.2"
+  },
+  "oca": {
+   "A": "Other current assets",
+   "C": 38,
+   "D": 40,
+   "E": 43,
+   "F": 45,
+   "G": "Ex.2"
+  },
+  "tca": {
+   "A": "Total current assets",
+   "C": 483,
+   "D": 493,
+   "E": 506,
+   "F": 502
+  },
+  "ppe": {
+   "A": "PPE (net)",
+   "C": 590,
+   "D": 630,
+   "E": 660,
+   "F": 680,
+   "G": "Ex.2"
+  },
+  "diga": {
+   "A": "Capitalised digital & AI assets",
+   "C": 65,
+   "D": 100,
+   "E": 135,
+   "F": 155,
+   "G": "Ex.2 — net carrying value; 65 opening balance = earlier systems"
+  },
+  "othi": {
+   "A": "Other intangible assets",
+   "C": 192,
+   "D": 191,
+   "E": 159,
+   "F": 113,
+   "G": "Ex.2"
+  },
+  "tnca": {
+   "A": "Total non-current assets",
+   "C": 847,
+   "D": 921,
+   "E": 954,
+   "F": 948
+  },
+  "ta": {
+   "A": "TOTAL ASSETS",
+   "C": 1330,
+   "D": 1414,
+   "E": 1460,
+   "F": 1450
+  },
+  "ap": {
+   "A": "Trade payables",
+   "C": 165,
+   "D": 178,
+   "E": 188,
+   "F": 195,
+   "G": "Ex.2"
+  },
+  "std": {
+   "A": "Short-term debt",
+   "C": 90,
+   "D": 115,
+   "E": 145,
+   "F": 180,
+   "G": "Ex.2"
+  },
+  "ocl": {
+   "A": "Other current liabilities",
+   "C": 55,
+   "D": 58,
+   "E": 60,
+   "F": 63,
+   "G": "Ex.2"
+  },
+  "tcl": {
+   "A": "Total current liabilities",
+   "C": 310,
+   "D": 351,
+   "E": 393,
+   "F": 438
+  },
+  "ltd": {
+   "A": "Long-term debt",
+   "C": 470,
+   "D": 510,
+   "E": 555,
+   "F": 605,
+   "G": "Ex.2"
+  },
+  "oltl": {
+   "A": "Other long-term liabilities",
+   "C": 30,
+   "D": 30,
+   "E": 30,
+   "F": 30,
+   "G": "Ex.2"
+  },
+  "tncl": {
+   "A": "Total non-current liabilities",
+   "C": 500,
+   "D": 540,
+   "E": 585,
+   "F": 635
+  },
+  "tl": {
+   "A": "Total liabilities",
+   "C": 810,
+   "D": 891,
+   "E": 978,
+   "F": 1073
+  },
+  "eq": {
+   "A": "Equity",
+   "C": 520,
+   "D": 523,
+   "E": 482,
+   "F": 377,
+   "G": "Ex.2"
+  },
+  "tle": {
+   "A": "TOTAL LIABILITIES & EQUITY",
+   "C": 1330,
+   "D": 1414,
+   "E": 1460,
+   "F": 1450
+  },
+  "bs_chk": {
+   "A": "Check: assets − liabilities & equity (should be 0)",
+   "C": 0,
+   "D": 0,
+   "E": 0,
+   "F": 0
+  },
+  "rev_auto": {
+   "A": "Revenue — Auto Components",
+   "C": 610,
+   "D": 630,
+   "E": 615,
+   "F": 570,
+   "G": "Ex.3"
+  },
+  "rev_iem": {
+   "A": "Revenue — Industrial Equipment & Machinery",
+   "C": 350,
+   "D": 375,
+   "E": 400,
+   "F": 405,
+   "G": "Ex.3"
+  },
+  "rev_smc": {
+   "A": "Revenue — Specialty Materials & Coatings",
+   "C": 190,
+   "D": 200,
+   "E": 215,
+   "F": 215,
+   "G": "Ex.3"
+  },
+  "rev_seg": {
+   "A": "Total segment revenue",
+   "C": 1150,
+   "D": 1205,
+   "E": 1230,
+   "F": 1190
+  },
+  "eb_auto": {
+   "A": "EBITDA — Auto Components",
+   "C": 68,
+   "D": 58,
+   "E": 30,
+   "F": 5,
+   "G": "Ex.3. Direct project costs charged to segments; shared corporate & central digital costs allocated by revenue"
+  },
+  "eb_iem": {
+   "A": "EBITDA — Industrial Equipment & Machinery",
+   "C": 40,
+   "D": 42,
+   "E": 38,
+   "F": 33,
+   "G": "Ex.3"
+  },
+  "eb_smc": {
+   "A": "EBITDA — Specialty Materials & Coatings",
+   "C": 14,
+   "D": 8,
+   "E": 2,
+   "F": -13,
+   "G": "Ex.3"
+  },
+  "eb_seg": {
+   "A": "Total segment EBITDA",
+   "C": 122,
+   "D": 108,
+   "E": 70,
+   "F": 25
+  },
+  "cf_ni": {
+   "A": "Net income",
+   "D": 11,
+   "E": -41,
+   "F": -105
+  },
+  "cf_da": {
+   "A": "Add D&A",
+   "D": 66,
+   "E": 78,
+   "F": 90
+  },
+  "cf_wc": {
+   "A": "Increase in operating working capital",
+   "D": -9,
+   "E": -21,
+   "F": -11,
+   "G": "Ex.4"
+  },
+  "cf_ocf": {
+   "A": "Operating cash flow after interest and tax",
+   "D": 68,
+   "E": 16,
+   "F": -26
+  },
+  "cf_maint": {
+   "A": "Maintenance PPE capex",
+   "D": -45,
+   "E": -45,
+   "F": -45,
+   "G": "Ex.4 — sustains existing operations; case asks to justify any reduction"
+  },
+  "cf_upg": {
+   "A": "Physical upgrade and expansion capex",
+   "D": -35,
+   "E": -30,
+   "F": -25,
+   "G": "Ex.4"
+  },
+  "cf_fof": {
+   "A": "Capitalised Factory of the Future spend",
+   "D": -50,
+   "E": -55,
+   "F": -45,
+   "G": "Ex.4"
+  },
+  "cf_oi": {
+   "A": "Other intangible additions",
+   "D": -10,
+   "E": 0,
+   "F": 0,
+   "G": "Ex.4"
+  },
+  "cf_capex": {
+   "A": "Total capital expenditure",
+   "D": -140,
+   "E": -130,
+   "F": -115
+  },
+  "cf_fcf": {
+   "A": "Free cash flow before disposals",
+   "D": -72,
+   "E": -114,
+   "F": -141
+  },
+  "cf_disp": {
+   "A": "Other intangible disposal proceeds",
+   "D": 0,
+   "E": 19,
+   "F": 31,
+   "G": "Ex.4 — non-core licences sold at carrying value"
+  },
+  "cf_debt": {
+   "A": "Net debt raised",
+   "D": 65,
+   "E": 75,
+   "F": 85,
+   "G": "Ex.4"
+  },
+  "cf_div": {
+   "A": "Dividends paid",
+   "D": -8,
+   "E": 0,
+   "F": 0,
+   "G": "Ex.4"
+  },
+  "cf_chg": {
+   "A": "Net change in cash",
+   "D": -15,
+   "E": -20,
+   "F": -25
+  },
+  "cf_open": {
+   "A": "Opening cash",
+   "D": 90,
+   "E": 75,
+   "F": 55
+  },
+  "cf_close": {
+   "A": "Closing cash",
+   "D": 75,
+   "E": 55,
+   "F": 30
+  },
+  "cf_chk": {
+   "A": "Check: closing cash − balance-sheet cash (should be 0)",
+   "D": 0,
+   "E": 0,
+   "F": 0
+  },
+  "cf_dchk": {
+   "A": "Check: debt raised − change in total debt (should be 0)",
+   "D": 0,
+   "E": 0,
+   "F": 0
+  },
+  "da_ppe": {
+   "A": "D&A — PPE",
+   "D": 40,
+   "E": 45,
+   "F": 50,
+   "G": "Ex.4 asset movement reconciliation"
+  },
+  "da_dig": {
+   "A": "D&A — digital & AI assets",
+   "D": 15,
+   "E": 20,
+   "F": 25,
+   "G": "Ex.4"
+  },
+  "da_oth": {
+   "A": "D&A — other intangibles",
+   "D": 11,
+   "E": 13,
+   "F": 15,
+   "G": "Ex.4"
+  },
+  "da_chk": {
+   "A": "Check: D&A split − total D&A (should be 0)",
+   "D": 0,
+   "E": 0,
+   "F": 0
+  }
+ },
+ "Case_Digital": {
+  "cap": {
+   "A": "Capitalised spend 2023–25",
+   "C": 50,
+   "D": 55,
+   "E": 45,
+   "F": 150,
+   "G": "Ex.5"
+  },
+  "na": {
+   "A": "Net assets at end-2025",
+   "C": 38,
+   "D": 44,
+   "E": 33,
+   "F": 115,
+   "G": "Ex.5"
+  },
+  "opex": {
+   "A": "2025 operating cost (excl. D&A)",
+   "C": 10,
+   "D": 12,
+   "E": 14,
+   "F": 36,
+   "G": "Ex.5"
+  },
+  "ben": {
+   "A": "2025 gross benefit (realised, already in Cost of Sales)",
+   "C": 5,
+   "D": 7,
+   "E": 1,
+   "F": 13,
+   "G": "Ex.5 — NOT an exit run-rate; must not be re-counted as future gain"
+  },
+  "req": {
+   "A": "Requested capex, next 18 months (unapproved)",
+   "C": 8,
+   "D": 12,
+   "E": 10,
+   "F": 30,
+   "G": "Ex.5 — excludes recurring opex and remaining implementation"
+  },
+  "lic": {
+   "A": "Software and platform licences",
+   "C": 0.8,
+   "D": 1,
+   "E": 1.5,
+   "F": 3.3,
+   "G": "Ex.6 — recurring"
+  },
+  "cloud": {
+   "A": "Cloud or edge compute and data storage",
+   "C": 0.7,
+   "D": 1.2,
+   "E": 1.3,
+   "F": 3.2,
+   "G": "Ex.6 — recurring"
+  },
+  "tok": {
+   "A": "Metered language-model inference / tokens",
+   "C": 0,
+   "D": 0,
+   "E": 0.8,
+   "F": 0.8,
+   "G": "Ex.6 — recurring; planning pilot only (agent calls)"
+  },
+  "mon": {
+   "A": "Monitoring, support and model maintenance",
+   "C": 1.5,
+   "D": 1.8,
+   "E": 2.4,
+   "F": 5.7,
+   "G": "Ex.6 — recurring"
+  },
+  "rec": {
+   "A": "Recurring operating costs (subtotal)",
+   "C": 3,
+   "D": 4,
+   "E": 6,
+   "F": 13
+  },
+  "si": {
+   "A": "Systems integration and data engineering",
+   "C": 4,
+   "D": 4,
+   "E": 5,
+   "F": 13,
+   "G": "Ex.6 — temporary"
+  },
+  "dp": {
+   "A": "Data preparation, labelling, initial model validation",
+   "C": 2,
+   "D": 3,
+   "E": 2,
+   "F": 7,
+   "G": "Ex.6 — temporary"
+  },
+  "tr": {
+   "A": "Training and change management",
+   "C": 1,
+   "D": 1,
+   "E": 1,
+   "F": 3,
+   "G": "Ex.6 — temporary"
+  },
+  "temp": {
+   "A": "Temporary implementation costs (subtotal)",
+   "C": 7,
+   "D": 8,
+   "E": 8,
+   "F": 23
+  },
+  "tot": {
+   "A": "Total 2025 project operating cost",
+   "C": 10,
+   "D": 12,
+   "E": 14,
+   "F": 36
+  },
+  "opex_chk": {
+   "A": "Check: Ex.6 total − Ex.5 operating cost (should be 0)",
+   "C": 0,
+   "D": 0,
+   "E": 0,
+   "F": 0
+  },
+  "comm": {
+   "A": "Committed recurring cost payable Jan–Dec 2026",
+   "C": 1,
+   "D": 1.5,
+   "E": 2,
+   "F": 4.5,
+   "G": "Ex.6 — payable even if deployment stops; included in recurring above"
+  },
+  "rem": {
+   "A": "Remaining expensed implementation work in 2026",
+   "C": 1,
+   "D": 2,
+   "E": 3,
+   "F": 6,
+   "G": "Ex.6 — required to continue CURRENT scope; excludes capex requests"
+  },
+  "central": {
+   "A": "Shared central digital cost (annual)",
+   "C": 12,
+   "G": "Ex.6/Ex.8 — includes payroll of 24-person central team; stays in base case"
+  },
+  "team": {
+   "A": "Central digital team (FTE)",
+   "C": 24,
+   "G": "Ex.8"
+  },
+  "kpi": {
+   "A": "KPI",
+   "C": "Unplanned downtime (% sched. hrs)",
+   "D": "Scrap/rework (% covered-line cost)",
+   "E": "Pilot inventory days",
+   "G": "Ex.7"
+  },
+  "scope": {
+   "A": "Deployed scope (machines / lines / plants)",
+   "C": 150,
+   "D": 8,
+   "E": 3,
+   "G": "Ex.7 — PdM 150 machines (2 Auto + 1 IEM plant); Vision 8 lines (2 Auto + 1 SMC plant); SCP 3 plants (2 Auto + 1 IEM)"
+  },
+  "k_base": {
+   "A": "Baseline",
+   "C": 0.12,
+   "D": 0.06,
+   "E": 90,
+   "G": "Ex.7"
+  },
+  "k_tgt": {
+   "A": "Original business-case target",
+   "C": 0.07,
+   "D": 0.035,
+   "E": 75,
+   "G": "Ex.7 — targets, not achieved results"
+  },
+  "k_act": {
+   "A": "2025 outcome",
+   "C": 0.09,
+   "D": 0.048,
+   "E": 94,
+   "G": "Ex.7"
+  },
+  "adopt": {
+   "A": "Adoption metric",
+   "C": 0.6,
+   "D": 0.45,
+   "E": 0.35,
+   "G": "Ex.7 — PdM: actionable alerts closed in window; Vision: flagged rejects needing manual review; SCP: schedules accepted without override"
+  },
+  "otd": {
+   "A": "On-time delivery (SCP pilot): baseline / 2025",
+   "E": 0.86,
+   "G": "Ex.7 — 86% baseline, 86% in 2025 (no change)"
+  },
+  "constraint": {
+   "A": "Reported constraint",
+   "C": "Maint. records, work-order integration, technicians",
+   "D": "Calibration on spec change; selected families only",
+   "E": "Master-data inconsistency; separate planning systems",
+   "G": "Ex.7"
+  }
+ },
+ "Case_Ops": {
+  "plants": {
+   "A": "Plants",
+   "C": 5,
+   "D": 3,
+   "E": 3,
+   "F": 11,
+   "G": "Ex.8 — Auto: India 3, Vietnam 1, CE 1; IEM: India 1, Vietnam 1, CE 1; SMC: India 2, CE 1"
+  },
+  "util": {
+   "A": "Capacity utilisation",
+   "C": 0.72,
+   "D": 0.81,
+   "E": 0.67,
+   "G": "Ex.8 — actual output / practical capacity at 2025 mix"
+  },
+  "energy": {
+   "A": "Energy expenditure (USD m, in Cost of Sales)",
+   "C": 45,
+   "D": 25,
+   "E": 50,
+   "F": 120,
+   "G": "Ex.8"
+  },
+  "labour": {
+   "A": "Direct production labour (USD m, in Cost of Sales)",
+   "C": 95,
+   "D": 60,
+   "E": 25,
+   "F": 180,
+   "G": "Ex.8"
+  },
+  "process": {
+   "A": "Main processes",
+   "C": "Machining, forging, assembly",
+   "D": "Fabrication, machining, assembly",
+   "E": "Mixing, batch processing, coating",
+   "G": "Ex.8"
+  },
+  "custreq": {
+   "A": "Principal customer requirements",
+   "C": "Accuracy, traceability, delivery, price",
+   "D": "Reliability, configurability, lead time, service",
+   "E": "Batch consistency, performance, tech support",
+   "G": "Ex.8"
+  },
+  "erp": {
+   "A": "Plants on shared ERP (of 11)",
+   "C": 8,
+   "G": "Ex.8 — 3 plants on local systems with monthly manual consolidation"
+  },
+  "mdata": {
+   "A": "Production equipment with centrally accessible machine data",
+   "C": 0.4,
+   "G": "Ex.8 — rest on local logs/manual records; data definitions vary across plants"
+  }
+ },
+ "Diagnosis": {
+  "g": {
+   "A": "Revenue growth",
+   "D": 0.047826086957,
+   "E": 0.020746887967,
+   "F": -0.032520325203
+  },
+  "gpm": {
+   "A": "Gross margin",
+   "C": 0.25217391304,
+   "D": 0.24481327801,
+   "E": 0.23170731707,
+   "F": 0.21848739496,
+   "H": "Down ~3.4pp despite 13 of digital benefits inside 2025 COGS"
+  },
+  "ebm": {
+   "A": "EBITDA margin",
+   "C": 0.10608695652,
+   "D": 0.089626556017,
+   "E": 0.056910569106,
+   "F": 0.021008403361
+  },
+  "opexr": {
+   "A": "Opex (excl. D&A) / revenue",
+   "C": 0.14608695652,
+   "D": 0.15518672199,
+   "E": 0.17479674797,
+   "F": 0.1974789916
+  },
+  "digr": {
+   "A": "Digital & AI opex / revenue",
+   "C": 0.0069565217391,
+   "D": 0.014937759336,
+   "E": 0.028455284553,
+   "F": 0.040336134454,
+   "H": "Digital opex 6x since 2022 (8 → 48)"
+  },
+  "debt": {
+   "A": "Total debt (short + long term)",
+   "C": 560,
+   "D": 625,
+   "E": 700,
+   "F": 785
+  },
+  "nd": {
+   "A": "Net debt",
+   "C": 470,
+   "D": 550,
+   "E": 645,
+   "F": 755
+  },
+  "lev": {
+   "A": "Net debt / EBITDA",
+   "C": 3.8524590164,
+   "D": 5.0925925926,
+   "E": 9.2142857143,
+   "F": 30.2,
+   "H": "30x in 2025 — ratings downgrade warning is unsurprising"
+  },
+  "icov": {
+   "A": "Interest cover (EBITDA / net finance costs)",
+   "C": 5.0833333333,
+   "D": 4,
+   "E": 2.1212121212,
+   "F": 0.625,
+   "H": "Below 1.0x: operating earnings no longer cover interest"
+  },
+  "rate": {
+   "A": "Implied interest rate (finance cost / average debt)",
+   "D": 0.045569620253,
+   "E": 0.049811320755,
+   "F": 0.053872053872,
+   "H": "2025 rate used to project interest (Assumptions)"
+  },
+  "stdshare": {
+   "A": "Short-term debt / total debt",
+   "C": 0.16071428571,
+   "D": 0.184,
+   "E": 0.20714285714,
+   "F": 0.22929936306,
+   "H": "Refinancing risk rising: 180 due within 12 months vs 30 cash"
+  },
+  "owc": {
+   "A": "Operating working capital",
+   "C": 173,
+   "D": 182,
+   "E": 203,
+   "F": 214,
+   "H": "Ex.4 definition"
+  },
+  "owc_chk": {
+   "A": "Check: Δ working capital + cash-flow line (should be 0)",
+   "D": 0,
+   "E": 0,
+   "F": 0
+  },
+  "invd": {
+   "A": "Inventory days (inventory / COGS × 365)",
+   "C": 87.005813953,
+   "D": 88.241758242,
+   "E": 92.698412698,
+   "F": 100.08064516,
+   "H": "87 → 100 days: ~33 of cash tied up vs 2022 level"
+  },
+  "dso": {
+   "A": "Receivable days (DSO)",
+   "C": 47.608695652,
+   "D": 47.858921162,
+   "E": 49.853658537,
+   "F": 52.756302521
+  },
+  "dpo": {
+   "A": "Payable days (DPO)",
+   "C": 70.029069767,
+   "D": 71.395604396,
+   "E": 72.613756614,
+   "F": 76.532258065,
+   "H": "Not used as a lever: stretching suppliers during a downgrade is high-risk"
+  },
+  "ccc": {
+   "A": "Cash conversion cycle (days)",
+   "C": 64.585439838,
+   "D": 64.705075008,
+   "E": 69.938314621,
+   "F": 76.304689618
+  },
+  "m_auto": {
+   "A": "Auto Components",
+   "C": 0.11147540984,
+   "D": 0.092063492063,
+   "E": 0.048780487805,
+   "F": 0.0087719298246,
+   "H": "11.1% → 0.9%: in forced-sale territory"
+  },
+  "m_iem": {
+   "A": "Industrial Equipment & Machinery",
+   "C": 0.11428571429,
+   "D": 0.112,
+   "E": 0.095,
+   "F": 0.081481481481,
+   "H": "Growing; the healthiest business"
+  },
+  "m_smc": {
+   "A": "Specialty Materials & Coatings",
+   "C": 0.073684210526,
+   "D": 0.04,
+   "E": 0.0093023255814,
+   "F": -0.060465116279,
+   "H": "Loss-making; energy is 23% of revenue"
+  },
+  "br_start": {
+   "A": "EBITDA 2022",
+   "C": 122
+  },
+  "br_gp": {
+   "A": "Underlying gross-profit erosion (excl. digital benefits)",
+   "C": -43,
+   "D": 0.44329896907,
+   "H": "OEM pricing, input & energy costs, mix — the COO and Auto sales head are both right"
+  },
+  "br_ben": {
+   "A": "Digital gross benefits realised in COGS (2025)",
+   "C": 13,
+   "D": -0.13402061856
+  },
+  "br_dig": {
+   "A": "Increase in digital & AI opex",
+   "C": -40,
+   "D": 0.41237113402,
+   "H": "Single largest controllable driver"
+  },
+  "br_pers": {
+   "A": "Increase in non-digital personnel",
+   "C": -18,
+   "D": 0.18556701031
+  },
+  "br_sell": {
+   "A": "Increase in selling & customer support",
+   "C": -10,
+   "D": 0.10309278351
+  },
+  "br_oth": {
+   "A": "Change in other overheads",
+   "C": 1,
+   "D": -0.010309278351
+  },
+  "br_end": {
+   "A": "EBITDA 2025",
+   "C": 25
+  },
+  "br_chk": {
+   "A": "Check: bridge end − reported 2025 EBITDA (should be 0)",
+   "C": 0
+  },
+  "br_seg_auto": {
+   "A": "Memo: segment EBITDA change — Auto",
+   "C": -63,
+   "D": 0.64948453608,
+   "H": "Auto explains ~2/3 of the Group decline"
+  },
+  "br_seg_iem": {
+   "A": "Memo: segment EBITDA change — IEM",
+   "C": -7,
+   "D": 0.072164948454
+  },
+  "br_seg_smc": {
+   "A": "Memo: segment EBITDA change — SMC",
+   "C": -27,
+   "D": 0.27835051546
+  },
+  "sc_opex": {
+   "A": "2025 operating cost",
+   "C": 10,
+   "D": 12,
+   "E": 14,
+   "F": 36
+  },
+  "sc_rec": {
+   "A": "  of which recurring",
+   "C": 3,
+   "D": 4,
+   "E": 6,
+   "F": 13
+  },
+  "sc_temp": {
+   "A": "  of which temporary implementation",
+   "C": 7,
+   "D": 8,
+   "E": 8,
+   "F": 23
+  },
+  "sc_ben": {
+   "A": "2025 gross benefit",
+   "C": 5,
+   "D": 7,
+   "E": 1,
+   "F": 13
+  },
+  "sc_net": {
+   "A": "Net 2025 P&L effect (benefit − operating cost)",
+   "C": -5,
+   "D": -5,
+   "E": -13,
+   "F": -23
+  },
+  "sc_netrr": {
+   "A": "Net recurring effect (benefit − recurring cost)",
+   "C": 2,
+   "D": 3,
+   "E": -5,
+   "F": 0,
+   "H": "PdM and Vision pay their running costs; SCP does not"
+  },
+  "sc_ratio": {
+   "A": "Benefit per $ of recurring cost",
+   "C": 1.6666666667,
+   "D": 1.75,
+   "E": 0.16666666667,
+   "F": 1
+  },
+  "sc_tgt": {
+   "A": "Share of targeted KPI improvement achieved",
+   "C": 0.6,
+   "D": 0.48,
+   "E": -0.26666666667,
+   "H": "PdM 60%, Vision 48%; SCP negative — inventory days rose 90 → 94"
+  },
+  "sc_cap": {
+   "A": "Capitalised spend 2023–25",
+   "C": 50,
+   "D": 55,
+   "E": 45,
+   "F": 150
+  },
+  "sc_payback": {
+   "A": "Years of net recurring benefit to recover capitalised spend",
+   "C": 25,
+   "D": 18.333333333,
+   "E": "never",
+   "H": "At current scope, even the winners take 18–25 years: scale and adoption are the issue, not the technology"
+  },
+  "dig_tot": {
+   "A": "Total digital & AI opex 2025 (projects + central)",
+   "C": 48,
+   "H": "36 project + 12 shared central"
+  },
+  "dig_chk": {
+   "A": "Check: vs Ex.1 digital opex (should be 0)",
+   "C": 0
+  },
+  "dig_net": {
+   "A": "Net digital P&L 2025 (benefits − all digital opex)",
+   "C": -35,
+   "H": "Digital is currently a −35 drag on a 25 EBITDA business"
+  },
+  "temp25": {
+   "A": "2025 temporary implementation cost",
+   "C": 23
+  },
+  "rem26": {
+   "A": "Remaining implementation work required in 2026 (current scope)",
+   "C": 6
+  },
+  "rolloff": {
+   "A": "Automatic 2026 EBITDA roll-off vs 2025",
+   "C": 17,
+   "H": "Temporary costs do not recur (Ex.6). Base case gets this too — our plan must beat it"
+  },
+  "au_proj": {
+   "A": "Pilot project opex borne by Auto",
+   "C": 24,
+   "H": "Pilots sit in 2 Auto plants of 3 per project → 2/3 share (assumption)"
+  },
+  "au_cent": {
+   "A": "Central digital cost allocated to Auto (by revenue)",
+   "C": 5.7478991597,
+   "H": "Ex.3 allocation rule"
+  },
+  "au_ben": {
+   "A": "Digital benefits accruing to Auto",
+   "C": 8.6666666667
+  },
+  "au_net": {
+   "A": "Net digital drag on Auto EBITDA",
+   "C": -21.081232493
+  },
+  "au_ex": {
+   "A": "Auto EBITDA excluding net digital drag",
+   "C": 26.081232493
+  },
+  "au_exm": {
+   "A": "Auto EBITDA margin excluding net digital drag",
+   "C": 0.045756548233,
+   "H": "Still far below 11.1% in 2022 → the rest is pricing/volume/input cost: digital must reach commercial & procurement"
+  },
+  "vis_cov": {
+   "A": "Implied covered-line production cost (benefit ÷ scrap-point reduction)",
+   "C": 583.33333333,
+   "H": "7.0 ÷ 1.2% ≈ 583"
+  },
+  "vis_share": {
+   "A": "Implied share of Group cost of sales on 8 lines",
+   "C": 0.62724014337,
+   "H": "Implausible for 8 lines → benefit likely includes inspection-labour savings. We do NOT extrapolate this ratio; new lines are haircut 50%"
+  }
+ },
+ "Assumptions": {
+  "a_real": {
+   "A": "Benefit realisation factor (base case)",
+   "C": 0.75,
+   "D": "Pilots achieved 48–60% of targeted KPI gains (Ex.7); benchmark levers are already sized well below published ranges → 75% sits between. 100% = stretch, 50% = downside (Sensitivity). Not applied to F3 (contractual cost removal)"
+  },
+  "a_auto": {
+   "A": "Auto share of pilot project cost & benefit",
+   "C": 0.66666666667,
+   "D": "Each pilot runs in 2 Auto plants out of 3 (Ex.7); allocation by plant count"
+  },
+  "a_costf": {
+   "A": "Incremental recurring cost per unit when scaling, vs pilot per-unit cost",
+   "C": 0.67,
+   "D": "Platform licences, monitoring and team are shared, so scaling costs less than the pilot per unit"
+  },
+  "a_rate": {
+   "A": "Interest rate on debt (before refinancing premium)",
+   "C": 0.053872053872,
+   "D": "2025 implied: 40 ÷ average debt of 742 (Diagnosis). Applied to opening debt each period (avoids circularity)"
+  },
+  "a_prem": {
+   "A": "Refinancing premium on rolled-over short-term debt and all new money",
+   "C": 0.03,
+   "D": "Assumption: +300bp for a borrower on downgrade watch; applied from Jan-26 to the 180 of short-term debt and to every dollar of new borrowing"
+  },
+  "a_mincash": {
+   "A": "Minimum cash balance",
+   "C": 30,
+   "D": "Held at the 2025 closing level; any shortfall is funded by debt"
+  },
+  "a_tax": {
+   "A": "Cash tax",
+   "C": 0,
+   "D": "PBT stays negative through Jun-27 in every case (checked on Projection); no cash tax"
+  },
+  "a_da": {
+   "A": "D&A per year (for PBT check only)",
+   "C": 90,
+   "D": "Held at 2025 level; used only to confirm PBT < 0"
+  },
+  "a_capss": {
+   "A": "Steady-state digital capex per year after the mandate",
+   "C": 10,
+   "D": "Used only for the run-rate cash break-even test"
+  },
+  "a_revflat": {
+   "A": "Revenue and underlying gross margin held at 2025 levels",
+   "C": "Held",
+   "D": "No market recovery and no further erosion assumed. OEM price-down and volume risks shown on Sensitivity"
+  },
+  "b_exp": {
+   "A": "Base: upgrade & expansion capex per year",
+   "C": 25,
+   "D": "2025 level (Ex.4)"
+  },
+  "b_digcap": {
+   "A": "Base: digital capex over 18 months",
+   "C": 30,
+   "D": "All three requests approved (8 + 12 + 10; Ex.5)"
+  },
+  "b_split": {
+   "A": "Base: share of 18-month digital capex spent in 2026",
+   "C": 0.66666666667,
+   "D": "Straight-line over 18 months"
+  },
+  "p_maint": {
+   "A": "Maintenance capex per year (plan and base)",
+   "C": 45,
+   "D": "NOT reduced: already below PPE depreciation of 50 (Ex.4); case requires justification for any cut"
+  },
+  "p_exp": {
+   "A": "Plan: upgrade & expansion capex per year",
+   "C": 10,
+   "D": "Defer expansion: utilisation is 72% Auto, 81% IEM, 67% SMC (Ex.8), so no business is capacity-constrained. Keep 10 for safety/debottlenecking"
+  },
+  "f1_capex": {
+   "A": "F1 Master data & ERP harmonisation: capex",
+   "C": 10,
+   "D": "Redirect the SCP capex request (10) to move the 3 local-system plants onto the shared ERP in waves + master-data tooling"
+  },
+  "f1_oneoff": {
+   "A": "F1: one-off implementation opex",
+   "C": 3,
+   "D": "Uses the SCP remaining-work budget (3.0), repurposed to data cleansing and governance"
+  },
+  "f1_rec": {
+   "A": "F1: recurring cost (data stewards, MDM tool)",
+   "C": 0.5,
+   "D": "Assumption: ~5 data stewards across plants + MDM licence"
+  },
+  "f2_rec": {
+   "A": "F2 Digital Value Office: recurring cost",
+   "C": 1,
+   "D": "Chief Digital Officer reporting to CEO + 4 business product owners + value tracking; central team of 24 reallocated, not added"
+  },
+  "f2_oneoff": {
+   "A": "F2: one-off change management & training",
+   "C": 0.5,
+   "D": "Plant digital-champion network, adoption training"
+  },
+  "f3_lic": {
+   "A": "F3 SCP descope: licences retained",
+   "C": 1,
+   "D": "Keep the core planning tool so planners keep working and data fixes can be tested"
+  },
+  "f3_cloud": {
+   "A": "F3: cloud/compute retained",
+   "C": 0.5,
+   "D": "Smaller footprint once agent layer is off"
+  },
+  "f3_tok": {
+   "A": "F3: language-model tokens retained",
+   "C": 0,
+   "D": "Switch off the agentic layer: 35% acceptance, inventory days worse (Ex.7)"
+  },
+  "f3_mon": {
+   "A": "F3: monitoring & model maintenance retained",
+   "C": 0.4,
+   "D": "Fewer models to maintain"
+  },
+  "f3_trans": {
+   "A": "F3: one-off transition / shutdown cost",
+   "C": 0.5,
+   "D": "Case requires an explicit assumption (Ex.6). 2026 commitments (2.0) are below the retained run-cost (3.1) and lapse without penalty from Jan-27"
+  },
+  "s1_tgt": {
+   "A": "S1 PdM current cohort: target downtime by Jun-27",
+   "C": 0.075,
+   "D": "12% → 7.5% = 37.5% reduction, inside McKinsey's 30–50% range [B1]; short of the 7% business-case target given technician constraints"
+  },
+  "s1_rec": {
+   "A": "S1: recurring cost (technician capacity, work-order integration upkeep)",
+   "C": 0.5,
+   "D": "Close the loop: alerts closed in window 60% → 85% (month-6 gate)"
+  },
+  "s2_assets": {
+   "A": "S2 PdM scale-up: additional connected assets",
+   "C": 150,
+   "D": "Doubles the cohort, IEM-led (81% utilisation, growing); released only after the S1 gate"
+  },
+  "s2_real": {
+   "A": "S2: benefit per asset vs pilot",
+   "C": 0.7,
+   "D": "Haircut for new plants and lower data readiness (40% machine-data coverage, Ex.8)"
+  },
+  "s2_auto": {
+   "A": "S2: share of new assets in Auto",
+   "C": 0.3,
+   "D": "Rest in IEM"
+  },
+  "s2_oneoff": {
+   "A": "S2: one-off implementation opex",
+   "C": 2,
+   "D": "Integration + model tuning for new assets"
+  },
+  "s2_capex": {
+   "A": "S2: capex",
+   "C": 8,
+   "D": "Approve the PdM request (Ex.5), released in tranches after the gate"
+  },
+  "s3_tgt": {
+   "A": "S3 Vision current lines: target scrap/rework by Jun-27",
+   "C": 0.042,
+   "D": "6.0% → 4.2% = 72% of targeted improvement (vs 48% today) via retraining and a calibration workflow for spec changes"
+  },
+  "s3_oneoff": {
+   "A": "S3: one-off retraining / calibration workflow",
+   "C": 0.5,
+   "D": "Remaining 2026 work (2.0) is already in the base case"
+  },
+  "s4_lines": {
+   "A": "S4 Vision + traceability: additional Auto lines (gated, one named OEM programme)",
+   "C": 3,
+   "D": "Only where an OEM programme demands part-level traceability; capex released after month-9 gate. EBITDA-neutral — justified as customer retention, so kept small"
+  },
+  "s4_hair": {
+   "A": "S4: benefit per line vs pilot average",
+   "C": 0.5,
+   "D": "Pilot ratio implies implausible covered cost (Diagnosis §8) → 50% haircut"
+  },
+  "s4_oneoff": {
+   "A": "S4: one-off implementation opex",
+   "C": 0.8,
+   "D": "Stations, calibration for new part families"
+  },
+  "s4_capex": {
+   "A": "S4: capex",
+   "C": 4,
+   "D": "Cut the 12 request to 4: three Auto lines for one OEM programme"
+  },
+  "n1_auto": {
+   "A": "N1 Energy management: saving on Auto energy (forging)",
+   "C": 0.06,
+   "D": "Sub-metering + load scheduling + furnace optimisation. ISO 50001 plants ~4.1% in year 1 [B3]; APC up to 10% energy reduction [B2]"
+  },
+  "n1_iem": {
+   "A": "N1: saving on IEM energy",
+   "C": 0.03,
+   "D": "Less energy-intensive assembly; lower target"
+  },
+  "n1_smc": {
+   "A": "N1: saving on SMC energy",
+   "C": 0.06,
+   "D": "Batch heating/curing: energy is 23% of SMC revenue (Ex.8)"
+  },
+  "n1_rec": {
+   "A": "N1: recurring cost (energy platform, analyst)",
+   "C": 0.8
+  },
+  "n1_oneoff": {
+   "A": "N1: one-off implementation opex",
+   "C": 1
+  },
+  "n1_capex": {
+   "A": "N1: capex (sub-metering, controls)",
+   "C": 3,
+   "D": "Needed: only 40% of equipment has central machine data (Ex.8)"
+  },
+  "n2_yield": {
+   "A": "N2 SMC golden-batch / process control: yield gain on SMC materials & other cost",
+   "C": 0.02,
+   "D": "APC delivers up to 5% yield [B2]. Sized on materials only (energy excluded) → no overlap with N1. Funded only if SMC passes the month-6 gate"
+  },
+  "n2_rec": {
+   "A": "N2: recurring cost",
+   "C": 0.4
+  },
+  "n2_oneoff": {
+   "A": "N2: one-off implementation opex",
+   "C": 0.8
+  },
+  "n2_capex": {
+   "A": "N2: capex (process sensors)",
+   "C": 2
+  },
+  "n3_addr": {
+   "A": "N3 Procurement analytics: addressable share of non-energy, non-labour COGS",
+   "C": 0.7,
+   "D": "COGS 930 − energy 120 − labour 180 = 630; ~70% is bought-in materials & parts (assumption)"
+  },
+  "n3_sav": {
+   "A": "N3: net saving on addressable spend",
+   "C": 0.0125,
+   "D": "Far below the 6–12% McKinsey observes in chemicals procurement [B4]"
+  },
+  "n3_rec": {
+   "A": "N3: recurring cost (spend-cube tool, 2 analysts)",
+   "C": 0.5
+  },
+  "n3_oneoff": {
+   "A": "N3: one-off implementation opex",
+   "C": 1
+  },
+  "n4_auto": {
+   "A": "N4 Commercial: index-linked cost pass-through, Auto",
+   "C": 0.005,
+   "D": "NOT a list-price rise: inserts energy/raw-material index clauses at named OEM contract renewals, recovering inflation Ironbridge absorbed. Pricing programmes add 2–7pp ROS [B5]"
+  },
+  "n4_iem": {
+   "A": "N4: price realisation, IEM (configure-price-quote)",
+   "C": 0.005,
+   "D": "Configuration flexibility is valued (Ex.8); CPQ cuts quote lead time and discount leakage"
+  },
+  "n4_smc": {
+   "A": "N4: price realisation, SMC (cost pass-through, specialty value pricing)",
+   "C": 0.01,
+   "D": "SMC EBITDA fell 15 in 2025 on flat revenue → energy/input inflation not passed on. Specialty coatings carry more pricing power than auto parts"
+  },
+  "n4_rec": {
+   "A": "N4: recurring cost (pricing analysts, CPQ licence)",
+   "C": 0.7,
+   "D": "Covers all three businesses"
+  },
+  "n4_oneoff": {
+   "A": "N4: one-off implementation opex",
+   "C": 1
+  },
+  "n5_rev": {
+   "A": "N5 IEM connected-service pilot: service revenue as % of IEM revenue by Jun-27",
+   "C": 0.01,
+   "D": "Remote monitoring + predictive service on installed pumps/drives, reusing the PdM stack"
+  },
+  "n5_margin": {
+   "A": "N5: EBITDA margin on service revenue",
+   "C": 0.2,
+   "D": "Aftermarket services average 25% EBIT vs 10% for new equipment [B6]; haircut for start-up"
+  },
+  "n5_oneoff": {
+   "A": "N5: one-off (offer design, pilot contracts)",
+   "C": 1
+  },
+  "n5_capex": {
+   "A": "N5: capex (sensor kits for pilot fleet)",
+   "C": 2
+  },
+  "n6_base": {
+   "A": "N6 Back-office & customer-support automation: addressable cost",
+   "C": 153,
+   "D": "Non-digital personnel (108) + selling & customer support (45): up 28 since 2022 while revenue rose 3.5% (Ex.1)"
+  },
+  "n6_sav": {
+   "A": "N6: productivity saving on addressable cost",
+   "C": 0.04,
+   "D": "GenAI in customer care: 30–45% of function cost [B8]; automation of the 3 plants' manual month-end consolidation (Ex.8). Delivered via attrition and hiring freeze"
+  },
+  "n6_rec": {
+   "A": "N6: recurring cost (GenAI licences, tokens, automation upkeep)",
+   "C": 1,
+   "D": "Token spend budgeted explicitly — the SCP lesson (Ex.6)"
+  },
+  "n6_oneoff": {
+   "A": "N6: one-off implementation opex",
+   "C": 1
+  },
+  "o_claw": {
+   "A": "O2: share of Auto procurement savings passed back to OEMs",
+   "C": 0.5,
+   "D": "Index-linked clauses work both ways: cheaper indexed materials flow through to OEM prices. Applied to Auto's revenue share of N3"
+  },
+  "o_give": {
+   "A": "O3: share of Auto productivity savings conceded in OEM annual price-downs",
+   "C": 0.25,
+   "D": "Auto OEMs typically ask for annual productivity give-backs; applied to Auto's share of PdM, vision and energy savings"
+  },
+  "w_inv26": {
+   "A": "Inventory days — Dec-26",
+   "C": 96,
+   "D": "From 100. 2026: slow-mover clean-up and safety-stock reset only (does not need the planning tool)"
+  },
+  "w_inv27": {
+   "A": "Inventory days — Jun-27",
+   "C": 90,
+   "D": "After F1 master data: 2023 level was 88. A 10% cut vs 30% achieved in a McKinsey SC case [B7]"
+  },
+  "w_dso26": {
+   "A": "Receivable days (DSO) — Dec-26",
+   "C": 51,
+   "D": "From 52.8. E-invoicing, collections analytics, dispute resolution"
+  },
+  "w_dso27": {
+   "A": "Receivable days (DSO) — Jun-27",
+   "C": 49,
+   "D": "2023 level was 47.9"
+  },
+  "fs_disp": {
+   "A": "Further non-core licence disposals",
+   "C": 20,
+   "D": "Precedent in the case: non-core licences sold at carrying value — 19 (2024), 31 (2025); 113 of other intangibles remain (Ex.2, Ex.4)"
+  },
+  "fs_slb": {
+   "A": "Sale-and-leaseback of selected plant property",
+   "C": 40,
+   "D": "Assumption: ~6% of 680 net PPE. Creates a lease liability: buys liquidity, not deleveraging"
+  },
+  "fs_scf": {
+   "A": "Supply-chain finance / non-recourse receivables factoring",
+   "C": 25,
+   "D": "Assumption: ~15% of 172 receivables, on OEM-backed programmes"
+  },
+  "sh_cm": {
+   "A": "Auto contribution margin (for volume shocks)",
+   "C": 0.25,
+   "D": "Assumption: materials, energy and ~half of direct labour vary with volume"
+  },
+  "t_liq": {
+   "A": "Liquidity: new money needed beyond rolling the 180 and identified sources — at most",
+   "C": 0,
+   "D": "The company can fund the mandate without asking lenders for fresh money (2025: FCF −141)"
+  },
+  "t_cov": {
+   "A": "Solvency: exit run-rate interest cover in the DOWNSIDE case (50% realisation) — at least",
+   "C": 1,
+   "D": "Earnings cover interest again even if only half the benefits land (2025: 0.6x)"
+  },
+  "t_auto_pl": {
+   "A": "Auto plants' share of maintenance capex (5 of 11 plants)",
+   "C": 20.454545455,
+   "D": "Proxy for the capex Auto needs to stand still; allocation by plant count (assumption)"
+  },
+  "t_dig": {
+   "A": "Digital: net digital contribution at Jun-27 run-rate — above",
+   "C": 0,
+   "D": "Digital pays for itself (2025: −35)"
+  }
+ },
+ "Initiatives": {
+  "a_F1": {
+   "A": "F1 · Master data & ERP harmonisation (3 plants, in waves)",
+   "B": "W1 Foundations",
+   "C": 0,
+   "D": 0.5,
+   "E": 3,
+   "F": 10,
+   "G": 0,
+   "H": 1
+  },
+  "a_F2": {
+   "A": "F2 · Digital Value Office & Chief Digital Officer",
+   "B": "W1 Foundations",
+   "C": 0,
+   "D": 1,
+   "E": 0.5,
+   "F": 0,
+   "G": 0,
+   "H": 1
+  },
+  "a_F3": {
+   "A": "F3 · Switch off SCP agentic layer; keep core planning tool",
+   "B": "W1 Foundations",
+   "C": 2.89,
+   "D": 0,
+   "E": -2.5,
+   "F": 0,
+   "G": 0,
+   "H": 0
+  },
+  "a_S1": {
+   "A": "S1 · PdM: close the loop on current 150 machines",
+   "B": "W2 Maintenance",
+   "C": 2.5,
+   "D": 0.5,
+   "E": 0,
+   "F": 0,
+   "G": 0,
+   "H": 1
+  },
+  "a_S2": {
+   "A": "S2 · PdM: scale to +150 assets (IEM-led, gated)",
+   "B": "W2 Maintenance",
+   "C": 3.5,
+   "D": 2.01,
+   "E": 2,
+   "F": 8,
+   "G": 0,
+   "H": 1
+  },
+  "a_S3": {
+   "A": "S3 · Vision: retrain & calibrate current 8 lines",
+   "B": "W3 Quality",
+   "C": 3.5,
+   "D": 0,
+   "E": 0.5,
+   "F": 0,
+   "G": 0,
+   "H": 1
+  },
+  "a_S4": {
+   "A": "S4 · Vision + traceability: +3 Auto lines (gated)",
+   "B": "W3 Quality",
+   "C": 1.3125,
+   "D": 1.005,
+   "E": 0.8,
+   "F": 4,
+   "G": 0,
+   "H": 1
+  },
+  "a_N1": {
+   "A": "N1 · Energy management & optimisation",
+   "B": "W4 Energy & process",
+   "C": 6.45,
+   "D": 0.8,
+   "E": 1,
+   "F": 3,
+   "G": 0,
+   "H": 1
+  },
+  "a_N2": {
+   "A": "N2 · SMC golden-batch & process control (gated)",
+   "B": "W4 Energy & process",
+   "C": 1.8605042017,
+   "D": 0.4,
+   "E": 0.8,
+   "F": 2,
+   "G": 0,
+   "H": 1
+  },
+  "a_N3": {
+   "A": "N3 · Procurement spend analytics & should-cost",
+   "B": "W5 Procurement",
+   "C": 5.5125,
+   "D": 0.5,
+   "E": 1,
+   "F": 0,
+   "G": 0,
+   "H": 1
+  },
+  "a_N4": {
+   "A": "N4 · Cost pass-through & quoting (index clauses, CPQ)",
+   "B": "W6 Commercial & back-office",
+   "C": 7.025,
+   "D": 0.7,
+   "E": 1,
+   "F": 0,
+   "G": 7.025,
+   "H": 1
+  },
+  "a_N6": {
+   "A": "N6 · Back-office & customer-support automation",
+   "B": "W6 Commercial & back-office",
+   "C": 6.12,
+   "D": 1,
+   "E": 1,
+   "F": 0,
+   "G": 0,
+   "H": 1
+  },
+  "a_N5": {
+   "A": "N5 · IEM connected-service pilot (\"predictive service\")",
+   "B": "W7 Service growth",
+   "C": 0.81,
+   "D": 0,
+   "E": 1,
+   "F": 2,
+   "G": 4.05,
+   "H": 1
+  },
+  "a_O2": {
+   "A": "O2 · Less: procurement savings passed to OEMs",
+   "B": "Overlap netting",
+   "C": -1.3202205882,
+   "D": 0,
+   "E": 0,
+   "F": 0,
+   "G": 0,
+   "H": 1
+  },
+  "a_O3": {
+   "A": "O3 · Less: OEM productivity give-backs",
+   "B": "Overlap netting",
+   "C": -2.265625,
+   "D": 0,
+   "E": 0,
+   "F": 0,
+   "G": 0,
+   "H": 1
+  },
+  "a_tot": {
+   "A": "Total",
+   "C": 37.894658613,
+   "D": 8.415,
+   "E": 10.1,
+   "F": 29,
+   "G": 11.075
+  },
+  "a_totr": {
+   "A": "  of which gross benefit subject to realisation",
+   "C": 35.004658613
+  },
+  "a_totn": {
+   "A": "  of which gross benefit not subject to realisation",
+   "C": 2.89
+  },
+  "b_F1": {
+   "A": "F1 · Master data & ERP harmonisation (3 plants, in waves)",
+   "B": "W1 Foundations",
+   "C": 0,
+   "D": 0.5,
+   "E": -0.5,
+   "F": 0,
+   "G": 0,
+   "H": 0.4,
+   "I": 1,
+   "J": 3,
+   "K": 0.6,
+   "L": 10,
+   "M": 0.6,
+   "N": -2,
+   "O": -1.45,
+   "P": -3.45,
+   "Q": 6,
+   "R": 4,
+   "S": 3,
+   "T": 9,
+   "U": 0.47899159664,
+   "V": 0.34033613445,
+   "W": 0.18067226891,
+   "X": 1
+  },
+  "b_F2": {
+   "A": "F2 · Digital Value Office & Chief Digital Officer",
+   "B": "W1 Foundations",
+   "C": 0,
+   "D": 1,
+   "E": -1,
+   "F": 0,
+   "G": 0,
+   "H": 0.9,
+   "I": 1,
+   "J": 0.5,
+   "K": 0.7,
+   "L": 0,
+   "M": 0,
+   "N": -1.25,
+   "O": -0.65,
+   "P": -1.9,
+   "Q": 0,
+   "R": 0,
+   "S": 5,
+   "T": 1,
+   "U": 0.47899159664,
+   "V": 0.34033613445,
+   "W": 0.18067226891,
+   "X": 1
+  },
+  "b_F3": {
+   "A": "F3 · Switch off SCP agentic layer; keep core planning tool",
+   "B": "W1 Foundations",
+   "C": 2.89,
+   "D": 0,
+   "E": 2.89,
+   "F": 0.75,
+   "G": 1,
+   "H": 0,
+   "I": 0,
+   "J": -2.5,
+   "K": 1,
+   "L": 0,
+   "M": 0,
+   "N": 4.6675,
+   "O": 1.445,
+   "P": 6.1125,
+   "Q": 0,
+   "R": 0,
+   "S": 5,
+   "T": 3,
+   "U": 0.66666666667,
+   "V": 0.33333333333,
+   "W": 0,
+   "X": 1
+  },
+  "b_S1": {
+   "A": "S1 · PdM: close the loop on current 150 machines",
+   "B": "W2 Maintenance",
+   "C": 1.875,
+   "D": 0.5,
+   "E": 1.375,
+   "F": 0.5,
+   "G": 1,
+   "H": 0.75,
+   "I": 1,
+   "J": 0,
+   "K": 1,
+   "L": 0,
+   "M": 0,
+   "N": 0.5625,
+   "O": 0.6875,
+   "P": 1.25,
+   "Q": 0,
+   "R": 0,
+   "S": 4,
+   "T": 4,
+   "U": 0.66666666667,
+   "V": 0.33333333333,
+   "W": 0,
+   "X": 1
+  },
+  "b_S2": {
+   "A": "S2 · PdM: scale to +150 assets (IEM-led, gated)",
+   "B": "W2 Maintenance",
+   "C": 2.625,
+   "D": 2.01,
+   "E": 0.615,
+   "F": 0.2,
+   "G": 0.75,
+   "H": 0.4,
+   "I": 1,
+   "J": 2,
+   "K": 0.6,
+   "L": 8,
+   "M": 0.6,
+   "N": -1.479,
+   "O": -0.820625,
+   "P": -2.299625,
+   "Q": 4.8,
+   "R": 3.2,
+   "S": 3,
+   "T": 9,
+   "U": 0.3,
+   "V": 0.7,
+   "W": 0,
+   "X": 1
+  },
+  "b_S3": {
+   "A": "S3 · Vision: retrain & calibrate current 8 lines",
+   "B": "W3 Quality",
+   "C": 2.625,
+   "D": 0,
+   "E": 2.625,
+   "F": 0.5,
+   "G": 1,
+   "H": 0,
+   "I": 0,
+   "J": 0.5,
+   "K": 1,
+   "L": 0,
+   "M": 0,
+   "N": 0.8125,
+   "O": 1.3125,
+   "P": 2.125,
+   "Q": 0,
+   "R": 0,
+   "S": 4,
+   "T": 4,
+   "U": 0.66666666667,
+   "V": 0,
+   "W": 0.33333333333,
+   "X": 1
+  },
+  "b_S4": {
+   "A": "S4 · Vision + traceability: +3 Auto lines (gated)",
+   "B": "W3 Quality",
+   "C": 0.984375,
+   "D": 1.005,
+   "E": -0.020625,
+   "F": 0,
+   "G": 0.4,
+   "H": 0.1,
+   "I": 0.8,
+   "J": 0.8,
+   "K": 0.3,
+   "L": 4,
+   "M": 0.25,
+   "N": -0.3405,
+   "O": -0.765125,
+   "P": -1.105625,
+   "Q": 1,
+   "R": 3,
+   "S": 3,
+   "T": 12,
+   "U": 1,
+   "V": 0,
+   "W": 0,
+   "X": 1
+  },
+  "b_N1": {
+   "A": "N1 · Energy management & optimisation",
+   "B": "W4 Energy & process",
+   "C": 4.8375,
+   "D": 0.8,
+   "E": 4.0375,
+   "F": 0.4,
+   "G": 0.85,
+   "H": 0.6,
+   "I": 1,
+   "J": 1,
+   "K": 0.7,
+   "L": 3,
+   "M": 0.8,
+   "N": 0.755,
+   "O": 1.3559375,
+   "P": 2.1109375,
+   "Q": 2.4,
+   "R": 0.6,
+   "S": 4,
+   "T": 6,
+   "U": 0.41860465116,
+   "V": 0.11627906977,
+   "W": 0.46511627907,
+   "X": 1
+  },
+  "b_N2": {
+   "A": "N2 · SMC golden-batch & process control (gated)",
+   "B": "W4 Energy & process",
+   "C": 1.3953781513,
+   "D": 0.4,
+   "E": 0.99537815126,
+   "F": 0.1,
+   "G": 0.6,
+   "H": 0.3,
+   "I": 1,
+   "J": 0.8,
+   "K": 0.5,
+   "L": 2,
+   "M": 0.5,
+   "N": -0.38046218487,
+   "O": -0.18138655462,
+   "P": -0.5618487395,
+   "Q": 1,
+   "R": 1,
+   "S": 2,
+   "T": 12,
+   "U": 0,
+   "V": 0,
+   "W": 1,
+   "X": 1
+  },
+  "b_N3": {
+   "A": "N3 · Procurement spend analytics & should-cost",
+   "B": "W5 Procurement",
+   "C": 4.134375,
+   "D": 0.5,
+   "E": 3.634375,
+   "F": 0.5,
+   "G": 0.9,
+   "H": 0.7,
+   "I": 1,
+   "J": 1,
+   "K": 0.8,
+   "L": 0,
+   "M": 0,
+   "N": 0.9171875,
+   "O": 1.41046875,
+   "P": 2.32765625,
+   "Q": 0,
+   "R": 0,
+   "S": 4,
+   "T": 4,
+   "U": 0.47899159664,
+   "V": 0.34033613445,
+   "W": 0.18067226891,
+   "X": 1
+  },
+  "b_N4": {
+   "A": "N4 · Cost pass-through & quoting (index clauses, CPQ)",
+   "B": "W6 Commercial & back-office",
+   "C": 5.26875,
+   "D": 0.7,
+   "E": 4.56875,
+   "F": 0.4,
+   "G": 0.85,
+   "H": 0.7,
+   "I": 1,
+   "J": 1,
+   "K": 0.8,
+   "L": 0,
+   "M": 0,
+   "N": 0.8175,
+   "O": 1.68921875,
+   "P": 2.50671875,
+   "Q": 0,
+   "R": 0,
+   "S": 3,
+   "T": 6,
+   "U": 0.40569395018,
+   "V": 0.28825622776,
+   "W": 0.30604982206,
+   "X": 1
+  },
+  "b_N6": {
+   "A": "N6 · Back-office & customer-support automation",
+   "B": "W6 Commercial & back-office",
+   "C": 4.59,
+   "D": 1,
+   "E": 3.59,
+   "F": 0.25,
+   "G": 0.7,
+   "H": 0.6,
+   "I": 1,
+   "J": 1,
+   "K": 0.7,
+   "L": 0,
+   "M": 0,
+   "N": -0.1525,
+   "O": 0.8065,
+   "P": 0.654,
+   "Q": 0,
+   "R": 0,
+   "S": 4,
+   "T": 6,
+   "U": 0.47899159664,
+   "V": 0.34033613445,
+   "W": 0.18067226891,
+   "X": 1
+  },
+  "b_N5": {
+   "A": "N5 · IEM connected-service pilot (\"predictive service\")",
+   "B": "W7 Service growth",
+   "C": 0.6075,
+   "D": 0,
+   "E": 0.6075,
+   "F": 0.1,
+   "G": 0.5,
+   "H": 0,
+   "I": 0,
+   "J": 1,
+   "K": 0.6,
+   "L": 2,
+   "M": 0.6,
+   "N": -0.53925,
+   "O": -0.248125,
+   "P": -0.787375,
+   "Q": 1.2,
+   "R": 0.8,
+   "S": 2,
+   "T": 12,
+   "U": 0,
+   "V": 1,
+   "W": 0,
+   "X": 1
+  },
+  "b_O2": {
+   "A": "O2 · Less: procurement savings passed to OEMs",
+   "B": "Overlap netting",
+   "C": -0.99016544118,
+   "D": 0,
+   "E": -0.99016544118,
+   "F": 0.5,
+   "G": 0.9,
+   "H": 0,
+   "I": 0,
+   "J": 0,
+   "K": 0,
+   "L": 0,
+   "M": 0,
+   "N": -0.49508272059,
+   "O": -0.44557444853,
+   "P": -0.94065716912,
+   "Q": 0,
+   "R": 0,
+   "U": 1,
+   "V": 0,
+   "W": 0,
+   "X": 1
+  },
+  "b_O3": {
+   "A": "O3 · Less: OEM productivity give-backs",
+   "B": "Overlap netting",
+   "C": -1.69921875,
+   "D": 0,
+   "E": -1.69921875,
+   "F": 0.35,
+   "G": 0.8,
+   "H": 0,
+   "I": 0,
+   "J": 0,
+   "K": 0,
+   "L": 0,
+   "M": 0,
+   "N": -0.5947265625,
+   "O": -0.6796875,
+   "P": -1.2744140625,
+   "Q": 0,
+   "R": 0,
+   "U": 1,
+   "V": 0,
+   "W": 0,
+   "X": 1
+  },
+  "b_tot": {
+   "A": "Total",
+   "C": 29.14349396,
+   "D": 8.415,
+   "E": 20.72849396,
+   "J": 10.1,
+   "L": 29,
+   "N": 1.300666032,
+   "O": 3.4666014968,
+   "P": 4.7672675289,
+   "Q": 16.4,
+   "R": 12.6
+  },
+  "ws_0": {
+   "A": "W1 Foundations",
+   "C": 1.39,
+   "D": 1.4175,
+   "E": -0.655,
+   "F": 0.7625,
+   "G": 1,
+   "H": 10
+  },
+  "ws_1": {
+   "A": "W2 Maintenance",
+   "C": 1.99,
+   "D": -0.9165,
+   "E": -0.133125,
+   "F": -1.049625,
+   "G": 2,
+   "H": 8
+  },
+  "ws_2": {
+   "A": "W3 Quality",
+   "C": 2.604375,
+   "D": 0.472,
+   "E": 0.547375,
+   "F": 1.019375,
+   "G": 1.3,
+   "H": 4
+  },
+  "ws_3": {
+   "A": "W4 Energy & process",
+   "C": 5.0328781513,
+   "D": 0.37453781513,
+   "E": 1.1745509454,
+   "F": 1.5490887605,
+   "G": 1.8,
+   "H": 5
+  },
+  "ws_4": {
+   "A": "W5 Procurement",
+   "C": 3.634375,
+   "D": 0.9171875,
+   "E": 1.41046875,
+   "F": 2.32765625,
+   "G": 1,
+   "H": 0
+  },
+  "ws_5": {
+   "A": "W6 Commercial & back-office",
+   "C": 8.15875,
+   "D": 0.665,
+   "E": 2.49571875,
+   "F": 3.16071875,
+   "G": 2,
+   "H": 0
+  },
+  "ws_6": {
+   "A": "W7 Service growth",
+   "C": 0.6075,
+   "D": -0.53925,
+   "E": -0.248125,
+   "F": -0.787375,
+   "G": 1,
+   "H": 2
+  },
+  "ws_7": {
+   "A": "Overlap netting",
+   "C": -2.6893841912,
+   "D": -1.0898092831,
+   "E": -1.1252619485,
+   "F": -2.2150712316,
+   "G": 0,
+   "H": 0
+  },
+  "ws_tot": {
+   "A": "Total",
+   "C": 20.72849396,
+   "D": 1.300666032,
+   "E": 3.4666014968,
+   "F": 4.7672675289,
+   "G": 10.1,
+   "H": 29
+  },
+  "ws_chk": {
+   "A": "Check: workstream total − initiative total (should be 0)",
+   "C": 0
+  },
+  "w_invd": {
+   "A": "Inventory days",
+   "C": 100.08064516,
+   "D": 96,
+   "E": 90
+  },
+  "w_inv": {
+   "A": "Inventory balance (at 2025 COGS)",
+   "C": 255,
+   "D": 244.60273973,
+   "E": 229.31506849
+  },
+  "w_invr": {
+   "A": "Inventory release in period",
+   "D": 10.397260274,
+   "E": 15.287671233
+  },
+  "w_dso": {
+   "A": "Receivable days",
+   "C": 52.756302521,
+   "D": 51,
+   "E": 49
+  },
+  "w_ar": {
+   "A": "Receivables balance (at 2025 revenue)",
+   "C": 172,
+   "D": 166.2739726,
+   "E": 159.75342466
+  },
+  "w_arr": {
+   "A": "Receivables release in period",
+   "D": 5.7260273973,
+   "E": 6.5205479452
+  },
+  "w_rel": {
+   "A": "Total working-capital release",
+   "D": 16.123287671,
+   "E": 21.808219178
+  }
+ },
+ "Projection": {
+  "eb0": {
+   "A": "EBITDA 2025 (starting point)",
+   "C": 25,
+   "D": 25,
+   "E": 12.5,
+   "F": 37.5,
+   "G": 25,
+   "H": 12.5,
+   "I": 37.5,
+   "J": 25,
+   "K": 25,
+   "L": "Revenue and underlying margin held at 2025 (Assumptions)"
+  },
+  "roll": {
+   "A": "One-off 2025 implementation costs rolling off (Ex.6)",
+   "D": 17,
+   "E": 11.5,
+   "F": 28.5,
+   "G": 17,
+   "H": 11.5,
+   "I": 28.5,
+   "J": 23,
+   "K": 23,
+   "L": "23 of 2025 temporary costs do not recur; 6 of remaining work falls in 2026. Happens in both cases — not claimed"
+  },
+  "init": {
+   "A": "Initiatives, net of costs (at realisation factor)",
+   "D": 0,
+   "E": 0,
+   "F": 0,
+   "G": 1.300666032,
+   "H": 3.4666014968,
+   "I": 4.7672675289,
+   "J": 0,
+   "K": 20.72849396,
+   "L": "Initiatives Part B"
+  },
+  "ebitda": {
+   "A": "EBITDA",
+   "C": 25,
+   "D": 42,
+   "E": 24,
+   "F": 66,
+   "G": 43.300666032,
+   "H": 27.466601497,
+   "I": 70.767267529,
+   "J": 48,
+   "K": 68.72849396
+  },
+  "rev": {
+   "A": "Revenue (run-rate)",
+   "C": 1190,
+   "J": 1190,
+   "K": 1198.30625,
+   "L": "Plan adds price realisation (N4) and service revenue (N5)"
+  },
+  "ebm": {
+   "A": "EBITDA margin (run-rate)",
+   "C": 0.021008403361,
+   "J": 0.040336134454,
+   "K": 0.057354698734
+  },
+  "int_b": {
+   "A": "Interest at 2025 rate on opening debt",
+   "C": -40,
+   "D": -42.28956229,
+   "E": -23.649550499,
+   "F": -65.939112789,
+   "G": -42.28956229,
+   "H": -22.679208312,
+   "I": -64.968770602,
+   "J": -49.925061615,
+   "K": -46.277413083,
+   "L": "Implied 2025 rate × opening debt of each period"
+  },
+  "int_p": {
+   "A": "Refinancing premium (short-term debt rolled + new money)",
+   "C": 0,
+   "D": -2.7,
+   "E": -4.0948434343,
+   "F": -6.7948434343,
+   "G": -2.7,
+   "H": -3.5544841288,
+   "I": -6.2544841288,
+   "J": -9.6520186867,
+   "K": -7.6207344106,
+   "L": "180 matures through 2026 (rolled evenly → half-year of premium in 2026), fully repriced from 2027; new money priced the same"
+  },
+  "int": {
+   "A": "Net finance costs",
+   "C": -40,
+   "D": -44.98956229,
+   "E": -27.744393934,
+   "F": -72.733956223,
+   "G": -44.98956229,
+   "H": -26.233692441,
+   "I": -71.22325473,
+   "J": -59.577080301,
+   "K": -53.898147494
+  },
+  "tax": {
+   "A": "Cash tax",
+   "C": 0,
+   "D": 0,
+   "E": 0,
+   "F": 0,
+   "G": 0,
+   "H": 0,
+   "I": 0,
+   "L": "Losses: PBT check below"
+  },
+  "wc": {
+   "A": "Working-capital release (+) / build (−)",
+   "C": -11,
+   "D": 0,
+   "E": 0,
+   "F": 0,
+   "G": 16.123287671,
+   "H": 21.808219178,
+   "I": 37.931506849,
+   "L": "Base: days held flat. Plan: Initiatives Part D"
+  },
+  "ocf": {
+   "A": "Operating cash flow after interest and tax",
+   "C": -26,
+   "D": -2.9895622896,
+   "E": -3.7443939337,
+   "F": -6.7339562233,
+   "G": 14.434391414,
+   "H": 23.041128234,
+   "I": 37.475519648
+  },
+  "cx_m": {
+   "A": "Maintenance capex",
+   "C": -45,
+   "D": -45,
+   "E": -22.5,
+   "F": -67.5,
+   "G": -45,
+   "H": -22.5,
+   "I": -67.5,
+   "L": "Held at 45/yr in both cases"
+  },
+  "cx_e": {
+   "A": "Upgrade & expansion capex",
+   "C": -25,
+   "D": -25,
+   "E": -12.5,
+   "F": -37.5,
+   "G": -10,
+   "H": -5,
+   "I": -15,
+   "L": "Plan defers expansion: no segment is capacity-constrained"
+  },
+  "cx_d": {
+   "A": "Digital capex",
+   "C": -45,
+   "D": -20,
+   "E": -10,
+   "F": -30,
+   "G": -16.4,
+   "H": -12.6,
+   "I": -29,
+   "L": "Base: 30 requested. Plan: re-prioritised, stage-gated portfolio"
+  },
+  "capex": {
+   "A": "Total capex",
+   "C": -115,
+   "D": -90,
+   "E": -45,
+   "F": -135,
+   "G": -71.4,
+   "H": -40.1,
+   "I": -111.5
+  },
+  "fcf": {
+   "A": "Free cash flow (before disposals and financing)",
+   "C": -141,
+   "D": -92.98956229,
+   "E": -48.744393934,
+   "F": -141.73395622,
+   "G": -56.965608586,
+   "H": -17.058871766,
+   "I": -74.024480352
+  },
+  "raise": {
+   "A": "Debt raised (+) / repaid (−) to hold minimum cash",
+   "D": 92.98956229,
+   "E": 48.744393934,
+   "F": 141.73395622,
+   "G": 56.965608586,
+   "H": 17.058871766,
+   "I": 74.024480352
+  },
+  "cash": {
+   "A": "Closing cash",
+   "C": 30,
+   "D": 30,
+   "E": 30,
+   "F": 30,
+   "G": 30,
+   "H": 30,
+   "I": 30
+  },
+  "debt": {
+   "A": "Closing debt",
+   "C": 785,
+   "D": 877.98956229,
+   "E": 926.73395622,
+   "F": 926.73395622,
+   "G": 841.96560859,
+   "H": 859.02448035,
+   "I": 859.02448035
+  },
+  "nd": {
+   "A": "Net debt",
+   "C": 755,
+   "D": 847.98956229,
+   "E": 896.73395622,
+   "F": 896.73395622,
+   "G": 811.96560859,
+   "H": 829.02448035,
+   "I": 829.02448035,
+   "J": 896.73395622,
+   "K": 829.02448035
+  },
+  "lev": {
+   "A": "Net debt / EBITDA (run-rate at period end)",
+   "C": 30.2,
+   "D": 20.190227674,
+   "E": 18.681957421,
+   "F": 18.681957421,
+   "G": 18.751804141,
+   "H": 12.062311169,
+   "I": 12.062311169,
+   "J": 18.681957421,
+   "K": 12.062311169
+  },
+  "icov": {
+   "A": "Interest cover (EBITDA / finance costs)",
+   "C": 0.625,
+   "D": 0.9335498694,
+   "E": 0.86503962052,
+   "F": 0.90741661016,
+   "G": 0.96246026475,
+   "H": 1.0469971606,
+   "I": 0.99359777641,
+   "J": 0.80567895837,
+   "K": 1.2751550314
+  },
+  "pbt": {
+   "A": "Check: PBT ≈ EBITDA − D&A − interest (must be < 0 for zero tax)",
+   "D": -92.98956229,
+   "E": -48.744393934,
+   "G": -91.688896258,
+   "H": -43.767090944,
+   "J": -101.5770803,
+   "K": -75.169653533
+  },
+  "l_eb": {
+   "A": "LTM EBITDA (≈ half of 2026 + H1-27)",
+   "C": 45,
+   "D": 49.116934513,
+   "E": 4.1169345129,
+   "L": "Conservative for the plan: in a ramp, H2-26 > H1-26"
+  },
+  "l_int": {
+   "A": "LTM net finance costs",
+   "C": 50.239175079,
+   "D": 48.728473586,
+   "E": -1.5107014928
+  },
+  "l_cov": {
+   "A": "LTM interest cover",
+   "C": 0.89571534424,
+   "D": 1.0079719494,
+   "E": 0.11225660519,
+   "L": "What lenders test at the refinancing"
+  },
+  "l_nd": {
+   "A": "Net debt at Jun-27",
+   "C": 896.73395622,
+   "D": 829.02448035,
+   "E": -67.709475871
+  },
+  "l_lev": {
+   "A": "Net debt / LTM EBITDA",
+   "C": 19.927421249,
+   "D": 16.87858757,
+   "E": -3.0488336793
+  },
+  "r_eb": {
+   "A": "Run-rate EBITDA at Jun-27",
+   "C": 48,
+   "D": 68.72849396,
+   "E": 20.72849396
+  },
+  "r_cov": {
+   "A": "Run-rate interest cover",
+   "C": 0.80567895837,
+   "D": 1.2751550314,
+   "E": 0.46947607304
+  },
+  "r_lev": {
+   "A": "Net debt / run-rate EBITDA",
+   "C": 18.681957421,
+   "D": 12.062311169,
+   "E": -6.6196462519
+  },
+  "be_eb": {
+   "A": "EBITDA needed for free-cash-flow break-even at run-rate",
+   "C": 139.5770803,
+   "D": 118.89814749,
+   "E": -20.678932808,
+   "L": "Interest + maintenance + expansion + steady-state digital capex"
+  },
+  "be_gap": {
+   "A": "Run-rate EBITDA minus break-even EBITDA",
+   "C": -91.577080301,
+   "D": -50.169653533,
+   "E": 41.407426768,
+   "L": "Negative = debt still grows after Jun-27 → balance-sheet action is required, digital alone cannot stop it"
+  },
+  "u_fcf": {
+   "A": "Use: free-cash-flow deficit",
+   "C": 141.73395622,
+   "D": 74.024480352,
+   "E": -67.709475871
+  },
+  "u_std": {
+   "A": "Use: short-term debt falling due",
+   "C": 180,
+   "D": 180,
+   "E": 0
+  },
+  "u_tot": {
+   "A": "Total uses",
+   "C": 321.73395622,
+   "D": 254.02448035,
+   "E": -67.709475871
+  },
+  "s_roll": {
+   "A": "Source: roll over short-term debt (at premium)",
+   "C": 180,
+   "D": 180,
+   "E": 0,
+   "L": "Requires lenders to believe the plan: LTM cover above 1.0x"
+  },
+  "s_disp": {
+   "A": "Source: further non-core licence disposals",
+   "C": 20,
+   "D": 20,
+   "E": 0
+  },
+  "s_slb": {
+   "A": "Source: sale-and-leaseback",
+   "C": 40,
+   "D": 40,
+   "E": 0
+  },
+  "s_scf": {
+   "A": "Source: supply-chain finance / factoring",
+   "C": 25,
+   "D": 25,
+   "E": 0
+  },
+  "s_new": {
+   "A": "Source: new term debt / revolving credit (balancing)",
+   "C": 56.733956223,
+   "D": -10.975519648,
+   "E": -67.709475871,
+   "L": "Genuinely new money the CEO must raise"
+  },
+  "s_tot": {
+   "A": "Total sources",
+   "C": 321.73395622,
+   "D": 254.02448035,
+   "E": -67.709475871
+  },
+  "h_eb": {
+   "A": "Run-rate EBITDA uplift at Jun-27 vs base",
+   "C": 20.72849396
+  },
+  "h_fcf": {
+   "A": "18-month free cash flow improvement vs base",
+   "C": 67.709475871
+  },
+  "h_nd": {
+   "A": "Net debt at Jun-27: plan minus base",
+   "C": -67.709475871
+  },
+  "h_build": {
+   "A": "Net-debt build over 18 months: plan as % of base",
+   "C": 0.52227766955
+  },
+  "h_digben": {
+   "A": "Digital & analytics benefits, Jun-27 RR (2025 realised + new, excl. F3)",
+   "C": 39.25349396
+  },
+  "h_digcost": {
+   "A": "Digital & AI opex, Jun-27 RR (recurring + central + new − F3 saving)",
+   "C": 30.525
+  },
+  "h_dignet": {
+   "A": "Net digital contribution, Jun-27 RR (2025: −35)",
+   "C": 8.7284939601
+  }
+ },
+ "Segments": {
+  "rev25": {
+   "A": "Revenue 2025",
+   "C": 570,
+   "D": 405,
+   "E": 215,
+   "F": 1190
+  },
+  "eb25": {
+   "A": "EBITDA 2025",
+   "C": 5,
+   "D": 33,
+   "E": -13,
+   "F": 25
+  },
+  "m25": {
+   "A": "EBITDA margin 2025",
+   "C": 0.0087719298246,
+   "D": 0.081481481481,
+   "E": -0.060465116279,
+   "F": 0.021008403361
+  },
+  "roll": {
+   "A": "One-off implementation costs rolling off",
+   "C": 15.333333333,
+   "D": 5,
+   "E": 2.6666666667,
+   "F": 23,
+   "H": "PdM & SCP third plant is IEM; Vision third plant is SMC (Ex.7)"
+  },
+  "init": {
+   "A": "Initiatives, net run-rate (incl. overlap netting)",
+   "C": 8.3533821771,
+   "D": 6.1943257111,
+   "E": 6.1807860719,
+   "F": 20.72849396,
+   "H": "Net run-rate × segment split (Initiatives Part B)"
+  },
+  "rr": {
+   "A": "EBITDA — Jun-27 run-rate",
+   "C": 28.68671551,
+   "D": 44.194325711,
+   "E": -4.1525472614,
+   "F": 68.72849396
+  },
+  "rr_chk": {
+   "A": "Check: Group vs Projection run-rate (should be 0)",
+   "F": 0
+  },
+  "revrr": {
+   "A": "Revenue — Jun-27 run-rate",
+   "C": 572.1375,
+   "D": 409.55625,
+   "E": 216.6125,
+   "F": 1198.30625
+  },
+  "mrr": {
+   "A": "EBITDA margin — Jun-27 run-rate",
+   "C": 0.050139547767,
+   "D": 0.10790782881,
+   "E": -0.019170395344,
+   "F": 0.057354698734,
+   "H": "Auto profitable again but below its own 11.1% (2022). Supplier benchmarks are mostly EBIT (after D&A): compare like-for-like"
+  },
+  "dm": {
+   "A": "Margin change (pp)",
+   "C": 0.041367617942,
+   "D": 0.026426347324,
+   "E": 0.041294720935,
+   "F": 0.036346295373
+  },
+  "util": {
+   "A": "Capacity utilisation 2025 (context)",
+   "C": 0.72,
+   "D": 0.81,
+   "E": 0.67,
+   "H": "Auto & SMC are demand-constrained: downtime reduction saves cost there, adds throughput only in IEM"
+  },
+  "smc_be": {
+   "A": "SMC price realisation needed for break-even (vs 1.0% assumed)",
+   "E": 0.035752231079,
+   "H": "The month-6 fix-or-exit test"
+  },
+  "x_rr": {
+   "A": "SMC run-rate EBITDA removed",
+   "F": 4.1525472614
+  },
+  "x_str": {
+   "A": "Stranded central digital & foundation costs left with the Group",
+   "F": -2.4390756303,
+   "H": "Excludes undisclosed corporate overhead allocated to SMC → understates the stranded cost"
+  },
+  "x_net": {
+   "A": "Change in Group run-rate EBITDA from exiting SMC",
+   "F": 1.7134716312,
+   "H": "Close to zero: exit is not an EBITDA fix; its value is cash (working capital, capex) and management focus. Loss-making unit → minimal proceeds"
+  }
+ },
+ "Sensitivity": {
+  "f": {
+   "A": "Benefit realisation",
+   "C": 0.5,
+   "D": 0.75,
+   "E": 1,
+   "F": 1.25
+  },
+  "eb": {
+   "A": "Jun-27 run-rate EBITDA",
+   "C": 59.977329307,
+   "D": 68.72849396,
+   "E": 77.479658613,
+   "F": 86.230823267,
+   "H": "Momentum run-rate + benefits × factor − recurring costs"
+  },
+  "m": {
+   "A": "EBITDA margin",
+   "C": 0.050401117064,
+   "D": 0.057755036941,
+   "E": 0.065108956818,
+   "F": 0.072462876695
+  },
+  "lev": {
+   "A": "Net debt / run-rate EBITDA (net debt at base-case plan)",
+   "C": 13.822297357,
+   "D": 12.062311169,
+   "E": 10.699898466,
+   "F": 9.6140156031,
+   "H": "Approximation: holds Jun-27 net debt at the base-case plan value"
+  },
+  "icov": {
+   "A": "Run-rate interest cover",
+   "C": 1.112790181,
+   "D": 1.2751550314,
+   "E": 1.4375198818,
+   "F": 1.5998847322
+  },
+  "f15": {
+   "A": "Realisation needed for run-rate interest cover of 1.5x",
+   "C": 1.0962032701
+  },
+  "f20": {
+   "A": "Realisation needed for run-rate interest cover of 2.0x",
+   "C": 1.8660743334,
+   "H": "Above 100% → 2.0x needs balance-sheet action, not more digital"
+  },
+  "sh_price": {
+   "A": "Auto OEM price-down not recovered",
+   "C": 0.01,
+   "D": -5.7,
+   "E": 63.02849396,
+   "F": 1.1694000052,
+   "H": "Each 1% ≈ 5.7 — why index-linked pass-through (N4) matters"
+  },
+  "sh_vol": {
+   "A": "Auto OEM volume loss",
+   "C": 0.05,
+   "D": -7.125,
+   "E": 61.60349396,
+   "F": 1.1429612487,
+   "H": "At 25% contribution margin; utilisation would fall further below 72%"
+  },
+  "sh_energy": {
+   "A": "Energy price increase",
+   "C": 0.1,
+   "D": -12,
+   "E": 56.72849396,
+   "F": 1.052512871,
+   "H": "Energy is 120 of COGS; N1 metering and N4 index clauses partly hedge"
+  },
+  "sh_scale": {
+   "A": "PdM & vision scale-ups stopped at their gates",
+   "C": 1,
+   "D": -0.594375,
+   "E": 68.13411896,
+   "F": 1.2641272869,
+   "H": "Small: gates cap the downside"
+  },
+  "sh_comm": {
+   "A": "Procurement & pass-through deliver only this share",
+   "C": 0.5,
+   "D": -4.2064797794,
+   "E": 64.522014181,
+   "F": 1.1971100526,
+   "H": "Net of the O2 overlap"
+  },
+  "sh_smc": {
+   "A": "Exit SMC",
+   "C": "exit",
+   "D": 1.7134716312,
+   "E": 70.441965591,
+   "F": 1.3069459502,
+   "H": "From Segments: near-neutral on EBITDA"
+  },
+  "sh_rate": {
+   "A": "Refinancing premium +200bp higher than assumed",
+   "C": 0.02,
+   "F": 1.1653116677,
+   "H": "Interest, not EBITDA: applied to the 180 + new money"
+  }
+ },
+ "Sources": {
+  "src_B1": {
+   "A": "B1",
+   "B": "Predictive maintenance typically reduces machine downtime by 30–50% and increases machine life by 20–40%",
+   "C": "McKinsey & Company, \"Manufacturing: Analytics unleashes productivity and profitability\", 14 Aug 2017",
+   "D": "S1, S2 downtime target",
+   "E": "https://www.mckinsey.com/capabilities/operations/our-insights/manufacturing-analytics-unleashes-productivity-and-profitability",
+   "F": "30-Sep-26"
+  },
+  "src_B2": {
+   "A": "B2",
+   "B": "Optimised advanced process controls: up to 15% more throughput, 5% more yield, 10% less energy",
+   "C": "McKinsey & Company, \"The potential of advanced process controls in energy and materials\", 23 Nov 2020",
+   "D": "N1 energy, N2 yield",
+   "E": "https://www.mckinsey.com/industries/metals-and-mining/our-insights/the-potential-of-advanced-process-controls-in-energy-and-materials",
+   "F": "30-Sep-26"
+  },
+  "src_B3": {
+   "A": "B3",
+   "B": "ISO 50001-certified facilities achieve ~4.1% annual energy-performance improvement in the first year and ~3.4% after twelve years",
+   "C": "Fitzgerald, Therkelsen, Sheaffer, Rao (Lawrence Berkeley National Laboratory), \"Deeper and persistent energy savings and CO2 reductions achieved through ISO 50001 in the manufacturing sector\", 2023",
+   "D": "N1 energy",
+   "E": "https://smartersmallbuildings.lbl.gov/publications/deeper-and-persistent-energy-savings",
+   "F": "30-Sep-26"
+  },
+  "src_B4": {
+   "A": "B4",
+   "B": "Reducing overall spending by 6–12% is a realistic goal in chemicals procurement",
+   "C": "McKinsey & Company, \"Technology-enabled procurement for chemical companies\", 1 Oct 2019",
+   "D": "N3 procurement",
+   "E": "https://www.mckinsey.com/industries/chemicals/our-insights/technology-enabled-procurement-for-chemical-companies",
+   "F": "30-Sep-26"
+  },
+  "src_B5": {
+   "A": "B5",
+   "B": "Across 1,000+ pricing-excellence initiatives, return on sales typically rises 2–7 percentage points",
+   "C": "McKinsey & Company, \"Turning pricing power into profit\", 1 Mar 2015",
+   "D": "N4 commercial",
+   "E": "https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/turning-pricing-power-into-profit",
+   "F": "30-Sep-26"
+  },
+  "src_B6": {
+   "A": "B6",
+   "B": "Average EBIT margin for aftermarket services 25% vs 10% for new equipment (30 industries)",
+   "C": "McKinsey & Company, \"Industrial aftermarket services: Growing the core\", 27 Jul 2017",
+   "D": "N5 service margin",
+   "E": "https://www.mckinsey.com/industries/industrials/our-insights/industrial-aftermarket-services-growing-the-core",
+   "F": "30-Sep-26"
+  },
+  "src_B7": {
+   "A": "B7",
+   "B": "Diagnosed ~20% inventory-reduction opportunity; achieved 30% reduction with OTIF rising to 95%",
+   "C": "McKinsey & Company, \"Supply Chain 4.0: Opportunities to use your supply chain for differentiation\", 24 May 2019",
+   "D": "Inventory days target",
+   "E": "https://www.mckinsey.com/capabilities/operations/our-insights/operations-blog/supply-chain-40-opportunities-to-use-your-supply-chain-for-differentiation",
+   "F": "30-Sep-26"
+  },
+  "src_B8": {
+   "A": "B8",
+   "B": "Generative AI applied to customer care could increase productivity by 30–45% of current function costs",
+   "C": "McKinsey & Company, \"The economic potential of generative AI: The next productivity frontier\", 14 Jun 2023",
+   "D": "N6 back-office & support automation",
+   "E": "https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/the-economic-potential-of-generative-ai-the-next-productivity-frontier",
+   "F": "30-Sep-26"
+  }
+ }
+}

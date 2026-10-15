@@ -1,0 +1,411 @@
+pg. 1
+ARMAGEDDON
+Strategy Case Competition
+2026
+pg. 2
+Case Problem
+Ironbridge Industrial Group
+Established in 1978 and headquartered in Pune, Ironbridge Industrial Group manufactures precision auto
+components, industrial equipment and machinery, and specialty materials and coatings. Its customers include
+vehicle OEMs, capital-goods manufacturers, renewable-energy equipment makers and general engineering
+firms.
+The three businesses serve different customer needs. Auto Components, the largest revenue contributor,
+supplies precision shafts, housings and brackets. Customers require dimensional accuracy, component
+traceability, reliable delivery and competitive pricing. Production combines forging, machining and assembly.
+Industrial Equipment & Machinery supplies industrial pumps, drive modules and custom assemblies. Its
+customers value equipment reliability, configuration flexibility, lead times and service support. Specialty Materials
+& Coatings produces protective coatings and specialty compounds through mixing, batch processing and coating
+operations, with customers emphasising batch consistency, application performance and technical support.
+An international production network
+Ironbridge operates 11 plants: five in Auto Components, three in Industrial Equipment & Machinery and three in
+Specialty Materials & Coatings. Six plants are in India, two in Vietnam and three in Central Europe. Europe is its
+largest export market, followed by North America and Southeast Asia.
+This footprint places different production environments within the same Group. Component lines, equipment
+assembly and batch processing must each meet their customers’ requirements while coordinating production,
+materials and delivery. The new CEO must consider where a Group-wide approach is appropriate and where
+individual businesses require a different approach.
+The digital starting point
+Digital infrastructure is uneven across the network. Eight plants use a shared ERP, while three rely on local
+systems and monthly manual consolidation. Centrally accessible machine-level data are available for 40% of
+production equipment; other equipment relies on local logs or manual records. Data definitions also vary across
+plants.
+A central team of 24 employees covers data engineering, analytics, architecture and programme delivery. Plant
+teams remain involved in day-to-day use of the systems: maintenance staff respond to alerts, quality teams
+review flagged defects and planners approve scheduling recommendations. The existing programme therefore
+sits across central technology capabilities and local operating practices.
+Ironbridge and all company data are fictional. Financial amounts are in USD million unless stated otherwise;
+financial years end on 31 December.
+pg. 3
+Digital transformation and board mandate
+Factory of the Future
+In 2023, Ironbridge launched its debt-funded Factory of the Future programme. Predictive maintenance was
+intended to reduce unplanned downtime, computer-vision inspection to improve quality, and an agentic supply-
+chain platform to improve planning and inventory management. The initiatives were deployed across selected
+machines, lines and plants rather than the full production network.
+The projects are at different stages of deployment. Maintenance alerts are available in production, but work-order
+integration remains incomplete. Vision inspection covers selected product families and still requires manual
+review of some flagged rejects. The planning platform recommends schedules and replenishment actions, with
+planners retaining approval authority.
+The board now wants to understand how the programme fits the needs of the wider business. Its review must
+consider the existing investments alongside opportunities beyond those deployments, including how digital
+capabilities could support Ironbridge’s customer proposition and future growth. The exhibits provide the financial,
+operating and project data for this assessment.
+Management perspectives
+Management has different views on the challenges facing Ironbridge. The COO points to input and energy costs,
+while the Auto Components sales head highlights OEM pricing and changing product demand. Plant managers
+raise uneven adoption of the new tools, and finance draws attention to programme costs. The board has not
+settled on a diagnosis or a preferred transformation approach.
+Board intervention
+Following a ratings-agency downgrade warning and shareholder pressure, the board removed the Chief Digital &
+Technology Officer and appointed a new CEO. The CEO has 18 months to turn the business around or face a
+forced sale of Auto Components. For this case, the planning period is January 2026 to June 2027, using 2025 as
+the baseline.
+Problem statement
+The new CEO has commissioned your team to develop a digital transformation strategy that strengthens
+Ironbridge’s business performance, competitiveness and long-term growth. Your recommendations should
+address:
+1) Identify and prioritise opportunities for digital transformation across Ironbridge’s operations and wider value
+chain.
+2) Recommend how digital capabilities can improve the existing business and create new avenues for growth
+and differentiation.
+3) Develop a phased roadmap for the CEO’s 18-month mandate, outlining the capabilities, resources and
+organisational changes needed for implementation.
+Assess the existing digital programme and explore additional AI and automation use cases in manufacturing and
+the wider value chain. Recommendations are not limited to the three initiatives described; teams should
+determine and justify their preferred scope and priorities.
+pg. 4
+Submission guidelines and evaluation
+1) Submit a PDF of up to seven slides: five main slides, including any cover slide, and two appendix slides.
+References must fit within this limit; external annexures and linked files will not be evaluated.
+2) Present your diagnosis, prioritised recommendations, quantified impact and roadmap. Supporting calculations
+and references may appear in the appendix; there is no mandatory slide template.
+3) Treat case data as authoritative. Where information is missing, use clearly stated assumptions supported by
+relevant external benchmarks from Industry data.
+4) Do not include team-member names, institute names, institute logos or other identifying details.
+5) Follow the deadline and timezone in the official competition platform or organiser communication. Results will
+be announced on 3 October 2026.
+6) Generative AI tools may assist your work, but teams must independently verify all information, calculations
+and sources. Teams remain responsible for accuracy and originality; unverified content may adversely affect
+evaluation.
+Evaluation criteria
+Criterion Weight
+Diagnosis and analytical rigour 25%
+Strategic choices and prioritisation 25%
+Financial feasibility and quantified impact 25%
+Implementation roadmap and risk management 15%
+Clarity of thought and presentation 10%
+Evaluation rewards sound reasoning, credible assumptions and consistency with the exhibits.
+pg. 5
+Exhibit 1 Income statement and operating expenses
+USD million unless otherwise stated
+2022 2023 2024 2025
+Revenue 1,150.0 1,205.0 1,230.0 1,190.0
+Cost of Sales 860.0 910.0 945.0 930.0
+Gross Profit 290.0 295.0 285.0 260.0
+Operating Expenses excluding D&A 168.0 187.0 215.0 235.0
+EBITDA 122.0 108.0 70.0 25.0
+Depreciation & Amortisation 58.0 66.0 78.0 90.0
+EBIT 64.0 42.0 (8.0) (65.0)
+Net Finance Costs 24.0 27.0 33.0 40.0
+Profit Before Tax 40.0 15.0 (41.0) (105.0)
+Tax (25%) 10.0 4.0 0.0 0.0
+Net Income 30.0 11.0 (41.0) (105.0)
+EBITDA Margin % 10.6% 9.0% 5.7% 2.1%
+Net Margin % 2.6% 0.9% (3.3%) (8.8%)
+Operating expense breakdown
+Expense category 2022 2023 2024 2025
+Non-digital personnel costs 90.0 95.0 101.0 108.0
+Selling and customer support 35.0 38.0 42.0 45.0
+Digital and AI operating costs 8.0 18.0 35.0 48.0
+Other overheads 35.0 36.0 37.0 34.0
+Total Operating Expenses 168.0 187.0 215.0 235.0
+Cost of Sales and Operating Expenses exclude D&A. Digital operating costs include expensed digital personnel,
+software, cloud, support and implementation costs, with no overlap with other expense categories or capitalised
+spend. Figures are rounded, including 2023 tax of USD 4m.
+pg. 6
+Exhibit 2 Balance sheet
+USD million
+Assets
+2022 2023 2024 2025
+Cash & Cash Equivalents 90.0 75.0 55.0 30.0
+Trade Receivables 150.0 158.0 168.0 172.0
+Inventory 205.0 220.0 240.0 255.0
+Other Current Assets 38.0 40.0 43.0 45.0
+Total Current Assets 483.0 493.0 506.0 502.0
+PPE (net) 590.0 630.0 660.0 680.0
+Capitalised Digital & AI Assets 65.0 100.0 135.0 155.0
+Other Intangible Assets 192.0 191.0 159.0 113.0
+Total Non-Current Assets 847.0 921.0 954.0 948.0
+TOTAL ASSETS 1,330.0 1,414.0 1,460.0 1,450.0
+Liabilities and equity
+2022 2023 2024 2025
+Trade Payables 165.0 178.0 188.0 195.0
+Short-term Debt 90.0 115.0 145.0 180.0
+Other Current Liabilities 55.0 58.0 60.0 63.0
+Total Current Liabilities 310.0 351.0 393.0 438.0
+Long-term Debt 470.0 510.0 555.0 605.0
+Other Long-term Liabilities 30.0 30.0 30.0 30.0
+Total Non-Current Liabilities 500.0 540.0 585.0 635.0
+Total Liabilities 810.0 891.0 978.0 1,073.0
+Equity 520.0 523.0 482.0 377.0
+TOTAL LIABILITIES & EQUITY 1,330.0 1,414.0 1,460.0 1,450.0
+Digital assets are net carrying values. The USD 65m opening digital balance relates to earlier systems. Equity
+reflects a USD 8m dividend in 2023; no dividends were paid in 2024–2025.
+pg. 7
+Exhibit 3 Segment financials
+Segment revenue and EBITDA reconcile to Group totals.
+Segment revenue
+2022 2023 2024 2025
+Auto Components 610.0 630.0 615.0 570.0
+Industrial Equipment & Machinery 350.0 375.0 400.0 405.0
+Specialty Materials & Coatings 190.0 200.0 215.0 215.0
+Total Segment Revenue 1,150.0 1,205.0 1,230.0 1,190.0
+Segment EBITDA
+2022 2023 2024 2025
+Auto Components 68.0 58.0 30.0 5.0
+Industrial Equipment & Machinery 40.0 42.0 38.0 33.0
+Specialty Materials & Coatings 14.0 8.0 2.0 (13.0)
+Total Segment EBITDA 122.0 108.0 70.0 25.0
+Segment EBITDA margin
+2022 2023 2024 2025
+Auto Components 11.1% 9.2% 4.9% 0.9%
+Industrial Equipment & Machinery 11.4% 11.2% 9.5% 8.1%
+Specialty Materials & Coatings 7.4% 4.0% 0.9% (6.0%)
+Group EBITDA Margin 10.6% 9.0% 5.7% 2.1%
+Revenue and EBITDA are in USD million; margins are percentages. Direct project costs are charged to the
+relevant segments. Shared corporate and central digital costs are allocated by annual segment revenue; no
+corporate costs remain unallocated.
+pg. 8
+Exhibit 4 Cash flow and capital expenditure
+USD million. Outflows and deductions appear in parentheses.
+Cash flow item 2023 2024 2025
+Net income 11.0 (41.0) (105.0)
+Add depreciation and amortisation 66.0 78.0 90.0
+Increase in operating working capital (9.0) (21.0) (11.0)
+Operating cash flow after interest and tax 68.0 16.0 (26.0)
+Maintenance PPE capex (45.0) (45.0) (45.0)
+Physical upgrade and expansion capex (35.0) (30.0) (25.0)
+Capitalised Factory of the Future spend (50.0) (55.0) (45.0)
+Other intangible additions (10.0) 0.0 0.0
+Total capital expenditure (140.0) (130.0) (115.0)
+Free cash flow before asset disposals (72.0) (114.0) (141.0)
+Other intangible asset disposal proceeds 0.0 19.0 31.0
+Net debt raised 65.0 75.0 85.0
+Dividends paid (8.0) 0.0 0.0
+Net change in cash (15.0) (20.0) (25.0)
+Opening cash 90.0 75.0 55.0
+Closing cash 75.0 55.0 30.0
+Free cash flow = operating cash flow after interest and tax less total capex, before disposals and financing.
+Operating working capital = receivables + inventory + other current assets − payables − other current liabilities.
+Interest and tax equal cash payments; there are no other cash-flow adjustments or FX movements.
+Asset movement reconciliation
+Depreciation or amortisation 2023 2024 2025
+PPE 40.0 45.0 50.0
+Digital and AI assets 15.0 20.0 25.0
+Other intangible assets 11.0 13.0 15.0
+Total 66.0 78.0 90.0
+Other intangible disposals were non-core licences sold at carrying value; no PPE or digital assets were disposed
+of. Maintenance capex sustains existing operations. Justify any proposed reduction; other investment categories
+may be reviewed.
+pg. 9
+Exhibit 5 Digital programme economics
+USD million. Project spending covers the Factory of the Future programme launched in 2023.
+Project
+Capitalised
+spend 2023–
+25
+Net assets at
+end 2025
+2025
+operating
+cost
+2025 gross
+benefit
+Predictive maintenance 50.0 38.0 10.0 5.0
+Computer-vision inspection 55.0 44.0 12.0 7.0
+Supply-chain planning 45.0 33.0 14.0 1.0
+Programme total 150.0 115.0 36.0 13.0
+Project operating costs exclude D&A. The following exhibit separates recurring and temporary expenditure;
+shared central costs are stated separately.
+Gross benefits are realised 2025 savings before operating costs, already included in Cost of Sales. They are not
+exit run-rates. Do not count them again as incremental future gains.
+Additional investment requests
+Project
+Requested capex
+over next 18
+months
+Purpose
+Predictive maintenance 8.0 Connect additional assets and integrate work orders
+Computer-vision inspection 12.0
+Add inspection stations and calibrate new part
+families
+Supply-chain planning 10.0 Integrate systems and expand planning coverage
+These capex requests are unapproved estimates, not a funding commitment. They exclude recurring operating
+costs and the remaining expensed implementation work shown below. Teams may prioritise existing or additional
+use cases.
+pg. 10
+Exhibit 6 AI project cost breakdown
+Simulated 2025 expensed costs in USD million. All amounts are included in the operating costs in
+Exhibit 5; none is additional to the reported financials.
+Cost category
+Predictive
+maintenance
+Vision
+inspection
+Supply-chain
+planning
+Recurring operating costs 3.0 4.0 6.0
+Software and platform licences 0.8 1.0 1.5
+Cloud or edge compute and data storage 0.7 1.2 1.3
+Metered language-model inference / tokens 0.0 0.0 0.8
+Monitoring, support and model maintenance 1.5 1.8 2.4
+Temporary implementation costs 7.0 8.0 8.0
+Systems integration and data engineering 4.0 4.0 5.0
+Data preparation, labelling and initial model
+validation
+2.0 3.0 2.0
+Training and change management 1.0 1.0 1.0
+Total 2025 project operating cost 10.0 12.0 14.0
+The recurring and temporary rows are subtotals. Predictive-maintenance and vision inference compute is
+included in cloud/edge costs. The planning pilot uses metered language-model APIs; its token charge is separate
+from hosting compute and includes input/output usage and repeated agent calls. Token pricing is not applicable
+to every AI project.
+Commitments and remaining work
+Cost item
+Predictive
+maintenance
+Vision
+inspection
+Supply-chain
+planning
+Committed portion of annual recurring cost in first
+12 months
+1.0 1.5 2.0
+Remaining expensed implementation work in 2026 1.0 2.0 3.0
+For the case, commitments are payable during January–December 2026 even if deployment stops and are
+included in recurring costs above. Remaining recurring costs are avoidable only when the associated service or
+resource is withdrawn. From January 2027, commitments may be renewed or allowed to expire without penalty.
+Any shutdown or transition costs require explicit assumptions.
+Temporary 2025 implementation expenditure does not automatically recur. Continuing the current scope requires
+the remaining expensed work above; expansion may require more. These estimates exclude the separate capex
+requests. Recurring costs reflect the 2025 scope, not a forecast for wider deployment. Shared central costs of
+USD 12m annually remain in the base case unless teams justify a feasible reduction.
+pg. 11
+Exhibit 7 Digital deployment and operational evidence
+2025 results apply only to the deployed scope. Targets are original business-case targets, not achieved results.
+Project and
+deployment
+Baseline and target
+2025 outcome and
+adoption
+Reported constraint
+Predictive maintenance
+150 machines; two Auto
+Components plants and
+one Equipment plant
+Unplanned downtime:
+12% baseline; 7%
+target, as share of
+scheduled machine
+hours
+9% downtime on the same
+cohort; 60% of actionable
+alerts closed within the
+required window
+Incomplete maintenance
+records and work-order
+integration; technician
+availability
+Vision inspection
+Eight lines; two Auto
+Components plants and
+one Materials plant
+Scrap/rework: 6.0%
+baseline; 3.5% target,
+as share of covered-line
+production cost
+4.8% scrap/rework; 45%
+of flagged rejects required
+manual review
+Calibration when product
+specifications change;
+selected part families only
+Supply-chain planning
+Two Auto Components
+plants and one Equipment
+plant; planners approve
+actions
+Pilot inventory days: 90
+baseline; 75 target. On-
+time delivery: 86%
+baseline
+94 inventory days; 86%
+on-time delivery; 35% of
+schedules accepted
+without override
+Master-data
+inconsistencies and
+separate planning
+systems
+Inventory days = average pilot inventory / annual pilot cost of sales × 365. Planning benefits of USD 1m reflect
+lower expediting costs, not inventory release. Local observations do not establish causality or guarantee results
+elsewhere. Use explicit, benchmark-supported assumptions for extrapolation and new use cases; separate
+inventory cash release from recurring EBITDA gains.
+pg. 12
+Exhibit 8 Operating context
+Simulated 2025 company data. Financial amounts are in USD million.
+Manufacturing footprint and operating costs
+Measure Auto Components
+Equipment &
+Machinery
+Materials & Coatings
+Plants by location
+5: India 3; Vietnam 1;
+Central Europe 1
+3: India 1; Vietnam 1;
+Central Europe 1
+3: India 2; Central
+Europe 1
+Main processes
+Machining, forging and
+assembly
+Fabrication, machining
+and assembly
+Mixing, batch processing
+and coating
+Capacity utilisation 72% 81% 67%
+Energy expenditure 45.0 25.0 50.0
+Direct production labour 95.0 60.0 25.0
+Capacity utilisation is actual output as a share of practical capacity at the 2025 product mix. Energy and direct
+production labour are separate components of the USD 930m Cost of Sales; neither is included in Operating
+Expenses.
+Digital readiness
+Area Current position
+ERP coverage
+8 of 11 plants use a shared ERP; 3 use local systems with monthly manual
+consolidation.
+Machine data
+40% of production equipment has centrally accessible machine-level data. Other
+equipment relies on local logs or manual records; data definitions vary across
+plants.
+Central digital team
+24 employees covering data engineering, analytics, architecture and programme
+delivery. Their payroll is included in the USD 12m shared central digital cost.
+Commercial context
+Segment Representative products Principal customer requirements
+Auto Components
+Precision shafts, housings and
+brackets
+Dimensional accuracy, traceability, reliable
+delivery and competitive pricing
+Equipment & Machinery
+Industrial pumps, drive modules
+and custom assemblies
+Reliability, configuration flexibility, lead
+times and service support
+Materials & Coatings
+Protective coatings and specialty
+compounds
+Consistent batches, application
+performance and technical support
+
