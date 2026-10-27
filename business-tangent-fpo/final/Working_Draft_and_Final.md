@@ -314,3 +314,35 @@ All money in ₹ lakh unless stated. US$1 = ₹95 (Aug to Sep 2026 rate, S13), s
 | S21 | Sahyadri Farms growth | https://agrospectrumindia.com/2024/10/03/sahyadri-farms-achieves-the-turnover-of-rs-15489-mn-in-fy-2023-24.html |
 | S22 | 45% of FPCs over 7 years moribund (secondary; verify) | Cited in JEEViKA/MSC material via search; original MCA source not found |
 | S23 | Walmart Foundation impact review (Sambodhi) | https://www.walmart.org/content/dam/walmart-org/documents/what-we-do/advancing-sustainability/people-in-supply-chains/india-market-access-impact-report-03222023.pdf |
+
+---
+
+## Part F. Verification log (Superpowers: verification-before-completion)
+
+Run on 27 Oct 2026 after a fresh model rebuild: 0 formula errors, 8 of 8 model checks OK, **39 of 39 numbers quoted in this document match the model**, 0 dashes.
+
+**Case requirements, line by line:**
+
+| Requirement (from the case) | Where it is answered | Status |
+|---|---|---|
+| 2 or 3 priority challenges | Slide 2 (3 priorities) | Met |
+| Why they have the greatest impact on business and independent operations | Slide 2 diagnosis and "why it matters most" | Met |
+| Common vs maize vs vegetable priorities | Slide 2 table | Met |
+| Up to 3 interventions, how KAP implements each | Slide 3 | Met (intervention 3 bundles several activities; keep it framed as one) |
+| Where maize and vegetable approaches differ | Slides 3 and 4 | Met |
+| Measurable outcome targets by end of support | Slides 1 and 4 | Met |
+| Assumptions stated | Slide 4, Appendix A4, model `Assumptions` sheet | Met |
+| Phased 3 to 5 year roadmap: activities, milestones, indicators | Slide 5 | Met |
+| How responsibilities shift from KAP to FPOs | Slide 5 "who does what" table | Met |
+| Conditions before external support ends | Slide 5, 7 graduation tests | Met |
+| Annual budget of US$1m across interventions and KAP support | Slide 6 | Met (add a US$ row on the slide) |
+| Justify major spends, explain changes over time | Slide 6 notes | Met |
+| How recurring costs are covered after grants | Slide 6 "who pays" table | Met |
+| Complement government support | Part A2, Slide 3 | Met |
+| Climate risk | Slides 3 and 5, risk table | Met |
+| Women in business activities and decision-making | Slides 1, 3 and 5 | Met |
+| Feasible within funding and period | Model check: each year = ₹950 lakh | Met |
+| Max 6 slides, team details on PDF | Deck not built yet | **Open** |
+| Show calculations | Appendix and model | Met once appendix slides are built |
+
+**Not verified:** benchmark wording on original pages (blocked network). Listed in Part E, point 4.
