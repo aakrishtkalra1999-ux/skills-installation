@@ -1,0 +1,1039 @@
+{
+ "Case_Data": {
+  "n_fpo": {
+   "A": "Number of FPOs",
+   "C": 7,
+   "D": 5,
+   "E": "Case background: 12 FPOs, 7 maize, 5 vegetables"
+  },
+  "members": {
+   "A": "Members per typical FPO",
+   "C": 500,
+   "D": 500,
+   "E": "Case background"
+  },
+  "women_pct": {
+   "A": "Women share of members",
+   "C": 0.2,
+   "D": 0.2,
+   "E": "Case background"
+  },
+  "to_low": {
+   "A": "Annual turnover, low end",
+   "B": "Rs lakh",
+   "C": 20,
+   "D": 20,
+   "E": "Case background: Rs 20 to 35 lakh"
+  },
+  "to_high": {
+   "A": "Annual turnover, high end",
+   "B": "Rs lakh",
+   "C": 35,
+   "D": 35,
+   "E": "Case background"
+  },
+  "to_mid": {
+   "A": "Annual turnover, midpoint",
+   "B": "Rs lakh",
+   "C": 27.5,
+   "D": 27.5
+  },
+  "share_rs": {
+   "A": "Share capital per member",
+   "B": "Rs",
+   "C": 2000,
+   "D": 2000,
+   "E": "Case background"
+  },
+  "share_cap": {
+   "A": "Share capital per FPO",
+   "B": "Rs lakh",
+   "C": 10,
+   "D": 10,
+   "E": "Equals the Rs 10 lakh working capital in the case: the FPO is running on its share capital alone"
+  },
+  "wc_have": {
+   "A": "Working capital available",
+   "B": "Rs lakh",
+   "C": 10,
+   "D": 10,
+   "E": "Key challenges: financial access"
+  },
+  "wc_need": {
+   "A": "Peak-season working capital need",
+   "B": "Rs lakh",
+   "C": 25,
+   "D": 25,
+   "E": "Key challenges: financial access"
+  },
+  "wc_gap": {
+   "A": "Working capital gap per FPO",
+   "B": "Rs lakh",
+   "C": 15,
+   "D": 15
+  },
+  "board": {
+   "A": "Board size / women directors",
+   "C": 9,
+   "D": 1,
+   "E": "Case: nine-member board with one woman director (C = board, D = women)"
+  },
+  "usd": {
+   "A": "Foundation commitment per year",
+   "B": "USD m",
+   "C": 1,
+   "E": "Case background: US$1 million a year for 3 to 5 years"
+  }
+ },
+ "Assumptions": {
+  "fx": {
+   "A": "Exchange rate",
+   "B": "Rs/USD",
+   "C": 95,
+   "E": "[S13] Rupee at 94.8 to 95.95 per USD in Aug to Sep 2026; 95 used"
+  },
+  "years": {
+   "A": "Programme years planned",
+   "C": 5,
+   "E": "Case allows 3 to 5; we plan 5 with a go/no-go checkpoint at end of Year 2"
+  },
+  "new_women": {
+   "A": "New women members added by Year 5",
+   "C": 150,
+   "D": 150,
+   "E": "Enrolled through JEEViKA self-help groups already active in these villages [S10]; about 30 a year"
+  },
+  "active": {
+   "A": "Members who sell produce through the FPO",
+   "C": 0.5,
+   "D": 0.45,
+   "E": "[S9] SRIJAN raised members selling to their FPOs to 39% in 2 years; we allow 5 years plus input credit tied to sales. Vegetables lower because of daily, small lots"
+  },
+  "area": {
+   "A": "Crop area per selling member",
+   "B": "ha",
+   "C": 0.4,
+   "D": 0.2,
+   "E": "[S11] 83% of Bihar holdings are under 1 ha. Maize is the main rabi crop in Kosi; vegetables are grown on small plots"
+  },
+  "yield": {
+   "A": "Yield per hectare per year",
+   "B": "t/ha",
+   "C": 4.5,
+   "D": 22.5,
+   "E": "[S11] Bihar maize about 4 t/ha, rabi higher. Vegetables: 15 t/ha a season x 1.5 seasons (our assumption)"
+  },
+  "mkt": {
+   "A": "Share of output that is sold",
+   "C": 0.9,
+   "D": 0.85,
+   "E": "Maize is a cash crop; vegetables lose some to home use and damage [S12]"
+  },
+  "capture": {
+   "A": "Share of a selling member's output the FPO handles",
+   "C": 0.65,
+   "D": 0.5,
+   "E": "Input credit repaid in produce and assured payment in 7 days pull volume; vegetables lower because of side-selling to local markets"
+  },
+  "price": {
+   "A": "Average farm-gate price",
+   "B": "Rs/t",
+   "C": 22500,
+   "D": 14000,
+   "E": "[S14] Maize MSP Rs 2,400/qtl but Bihar has no state maize procurement; Purnia mandi near Rs 2,100 to 2,300. Vegetables: blended Rs 14/kg (our assumption)"
+  },
+  "inp_users": {
+   "A": "Members buying inputs through the FPO",
+   "C": 0.7,
+   "D": 0.7,
+   "E": "[S9] SRIJAN reached 88% of shareholders buying inputs; 70% used"
+  },
+  "inp_spend": {
+   "A": "Input spend per member per year",
+   "B": "Rs",
+   "C": 12000,
+   "D": 8000,
+   "E": "Seed, fertiliser and crop protection for 0.4 ha maize or 0.2 ha vegetables (our assumption)"
+  },
+  "inp_wallet": {
+   "A": "Share of that spend bought from the FPO",
+   "C": 0.5,
+   "D": 0.5,
+   "E": "Fertiliser licence and bulk buying; half, not all"
+  },
+  "nursery": {
+   "A": "Nursery seedling sales",
+   "B": "Rs lakh",
+   "C": 0,
+   "D": 5,
+   "E": "Vegetable FPOs run a shade-net nursery (also a flood fallback: seedlings can be replanted fast)"
+  },
+  "m_prod": {
+   "A": "Margin on produce sold",
+   "C": 0.03,
+   "D": 0.07,
+   "E": "Maize: about Rs 65/qtl spread on bulk contracts. Vegetables: grading premium and lower loss [S12: 4.9% to 11.6% vegetable loss]"
+  },
+  "hold": {
+   "A": "Share of maize held in storage for later sale",
+   "C": 0.4,
+   "D": 0,
+   "E": "[S15] Small farmers sell in distress at harvest; larger farmers hold 3 to 4 months"
+  },
+  "m_store": {
+   "A": "Net gain on stored maize after rent, interest and shrinkage",
+   "C": 0.04,
+   "D": 0,
+   "E": "Assumes about 9% to 10% price rise in 4 months less about 5% holding cost; e-NWR pledge loan pays for the stock [S7]"
+  },
+  "m_inp": {
+   "A": "Margin on inputs",
+   "C": 0.08,
+   "D": 0.1,
+   "E": "Dealer margin on bulk seed and fertiliser (our assumption)"
+  },
+  "m_nur": {
+   "A": "Margin on nursery sales",
+   "C": 0,
+   "D": 0.3,
+   "E": "Our assumption"
+  },
+  "svc_fee": {
+   "A": "Drying, cleaning and storage fee",
+   "B": "Rs/t",
+   "C": 400,
+   "D": 0,
+   "E": "Rs 40/qtl charged on FPO volume and on traders' maize"
+  },
+  "svc_mult": {
+   "A": "Third-party volume as a multiple of own volume",
+   "C": 0.5,
+   "D": 0,
+   "E": "Dryer and godown rented out to non-members in spare weeks"
+  },
+  "cold_fee": {
+   "A": "Cold room fees from non-members",
+   "B": "Rs lakh",
+   "C": 0,
+   "D": 0.6,
+   "E": "Pay-per-crate service, as in the Ecozen/Oorja model in Muzaffarpur [S8]"
+  },
+  "m_today": {
+   "A": "Blended margin today",
+   "C": 0.05,
+   "D": 0.05,
+   "E": "Small trading and input margins at current scale (our assumption)"
+  },
+  "ceo": {
+   "A": "CEO salary",
+   "B": "Rs lakh",
+   "C": 3.6,
+   "D": 3.6,
+   "E": "Rs 30,000 a month. Govt management cost norm is Rs 18 lakh over 3 years = Rs 6 lakh a year for all costs [S2]"
+  },
+  "staff": {
+   "A": "Store, procurement and accounts assistant",
+   "B": "Rs lakh",
+   "C": 1.44,
+   "D": 1.8,
+   "E": "One full-time assistant; vegetables need extra grading help"
+  },
+  "office": {
+   "A": "Office, travel, AGM and filing",
+   "B": "Rs lakh",
+   "C": 0.9,
+   "D": 0.9
+  },
+  "fedfee": {
+   "A": "Fee to federation for accounts, compliance and market desk",
+   "B": "Rs lakh",
+   "C": 1.2,
+   "D": 1.2,
+   "E": "Shared chartered accountant, audit, ROC filings and sales desk; cheaper than each FPO hiring its own"
+  },
+  "om": {
+   "A": "Upkeep and insurance of FPO assets",
+   "C": 0.03,
+   "D": 0.04,
+   "E": "Share of asset cost per year; solar cold rooms and crates wear faster"
+  },
+  "capex": {
+   "A": "Asset kit per FPO",
+   "B": "Rs lakh",
+   "C": 10,
+   "D": 40,
+   "E": "See Infra sheet. Maize stores in leased PACS godowns, so its kit is small"
+  },
+  "g_fdn": {
+   "A": "Foundation grant share",
+   "C": 0.6,
+   "D": 0.4
+  },
+  "g_gov": {
+   "A": "Government subsidy share",
+   "C": 0,
+   "D": 0.35,
+   "E": "[S6] MIDH pays 35% of cost for post-harvest units in general areas"
+  },
+  "g_own": {
+   "A": "FPO own contribution",
+   "C": 0.1,
+   "D": 0.1,
+   "E": "[S5] AIF requires at least 10% borrower contribution"
+  },
+  "rate": {
+   "A": "Loan interest after AIF subvention",
+   "C": 0.06,
+   "D": 0.06,
+   "E": "[S5] About 9% bank rate less 3% AIF interest subvention"
+  },
+  "tenor": {
+   "A": "Loan tenure",
+   "B": "years",
+   "C": 7,
+   "D": 7,
+   "E": "[S5] AIF subvention runs up to 7 years"
+  },
+  "wc_pct": {
+   "A": "Peak working capital as share of yearly produce sales",
+   "C": 0.45,
+   "D": 0.2,
+   "E": "Maize is one big rabi buying season with 30 to 60 day buyer payment; vegetables turn over within days"
+  },
+  "credit_pct": {
+   "A": "Share of input sales given on credit to members",
+   "C": 0.3,
+   "D": 0.3,
+   "E": "Repaid in produce at harvest"
+  },
+  "match": {
+   "A": "Matching equity grant per member",
+   "B": "Rs",
+   "C": 2000,
+   "D": 2000,
+   "E": "[S2] Govt matches share capital up to Rs 2,000 per member, cap Rs 15 lakh per FPO"
+  },
+  "match_cap": {
+   "A": "Matching equity grant cap per FPO",
+   "B": "Rs lakh",
+   "C": 15,
+   "D": 15
+  },
+  "fund_share": {
+   "A": "Share of the remaining gap met by the federation fund",
+   "C": 0.6,
+   "D": 0.6,
+   "E": "Rest from banks and NBFCs, made willing by the first-loss deposit and govt credit guarantee [S4]"
+  }
+ },
+ "Unit_Econ": {
+  "members": {
+   "A": "Members",
+   "C": 500,
+   "D": 650,
+   "E": 500,
+   "F": 650
+  },
+  "women_pct": {
+   "A": "Women share of members",
+   "C": 0.2,
+   "D": 0.38461538462,
+   "E": 0.2,
+   "F": 0.38461538462
+  },
+  "sellers": {
+   "A": "Members selling through the FPO",
+   "D": 325,
+   "F": 292.5
+  },
+  "vol": {
+   "A": "Produce handled",
+   "B": "t",
+   "D": 342.225,
+   "F": 559.40625,
+   "G": "Sellers x area x yield x share sold x FPO share"
+  },
+  "s_prod": {
+   "A": "Produce sales",
+   "D": 77.000625,
+   "F": 78.316875
+  },
+  "s_inp": {
+   "A": "Input sales",
+   "D": 27.3,
+   "F": 18.2
+  },
+  "s_nur": {
+   "A": "Nursery sales",
+   "D": 0,
+   "F": 5
+  },
+  "turnover": {
+   "A": "Turnover",
+   "C": 27.5,
+   "D": 104.300625,
+   "E": 27.5,
+   "F": 101.516875,
+   "G": "Today = case midpoint"
+  },
+  "gm_prod": {
+   "A": "Margin on produce",
+   "D": 2.31001875,
+   "F": 5.48218125
+  },
+  "gm_store": {
+   "A": "Net gain on stored maize",
+   "D": 1.23201,
+   "F": 0
+  },
+  "gm_inp": {
+   "A": "Margin on inputs",
+   "D": 2.184,
+   "F": 1.82
+  },
+  "gm_nur": {
+   "A": "Margin on nursery",
+   "D": 0,
+   "F": 1.5
+  },
+  "gm_svc": {
+   "A": "Service fees (drying, storage, cold room)",
+   "D": 2.05335,
+   "F": 0.6
+  },
+  "income": {
+   "A": "Income the FPO keeps",
+   "C": 1.375,
+   "D": 7.77937875,
+   "E": 1.375,
+   "F": 9.40218125
+  },
+  "c_ceo": {
+   "A": "CEO",
+   "C": 3.6,
+   "D": 3.6,
+   "E": 3.6,
+   "F": 3.6
+  },
+  "c_staff": {
+   "A": "Assistant",
+   "C": 1.44,
+   "D": 1.44,
+   "E": 1.8,
+   "F": 1.8
+  },
+  "c_off": {
+   "A": "Office, travel, AGM, filing",
+   "C": 0.9,
+   "D": 0.9,
+   "E": 0.9,
+   "F": 0.9
+  },
+  "c_fed": {
+   "A": "Federation fee",
+   "C": 0,
+   "D": 1.2,
+   "E": 0,
+   "F": 1.2
+  },
+  "c_om": {
+   "A": "Asset upkeep and insurance",
+   "C": 0,
+   "D": 0.3,
+   "E": 0,
+   "F": 1.6
+  },
+  "c_debt": {
+   "A": "Loan repayment (principal and interest)",
+   "C": 0,
+   "D": 0.53740505418,
+   "E": 0,
+   "F": 1.0748101084
+  },
+  "cost": {
+   "A": "Full running cost without any grant",
+   "C": 5.94,
+   "D": 7.9774050542,
+   "E": 6.3,
+   "F": 10.174810108
+  },
+  "cover": {
+   "A": "Share of running cost the FPO covers itself",
+   "C": 0.23148148148,
+   "D": 0.97517660156,
+   "E": 0.21825396825,
+   "F": 0.92406454272,
+   "G": "Exit test: at least 100% for two years in a row"
+  },
+  "surplus": {
+   "A": "Surplus (deficit)",
+   "C": -4.565,
+   "D": -0.19802630418,
+   "E": -4.925,
+   "F": -0.77262885835
+  },
+  "be_to": {
+   "A": "Turnover needed to break even at Year 5 margins",
+   "D": 106.95562715,
+   "F": 109.85907402,
+   "G": "Running cost / income per rupee of turnover"
+  },
+  "mult": {
+   "A": "Year 5 turnover as a multiple of today",
+   "D": 3.79275,
+   "F": 3.6915227273
+  }
+ },
+ "Working_Capital": {
+  "w_prod": {
+   "A": "Peak cash tied up in produce buying",
+   "C": 34.65028125,
+   "D": 15.663375,
+   "E": 320.86884375,
+   "F": "Stored maize is financed separately by e-NWR pledge loans [S7]"
+  },
+  "w_cred": {
+   "A": "Input credit to members",
+   "C": 8.19,
+   "D": 5.46,
+   "E": 84.63
+  },
+  "w_need": {
+   "A": "Peak need",
+   "C": 42.84028125,
+   "D": 21.123375,
+   "E": 405.49884375
+  },
+  "w_share": {
+   "A": "Members' share capital",
+   "C": 13,
+   "D": 13,
+   "E": 156
+  },
+  "w_match": {
+   "A": "Govt matching equity grant (claim it)",
+   "C": 13,
+   "D": 13,
+   "E": 156,
+   "F": "[S2] Free money most FPOs leave unclaimed; needs clean share register"
+  },
+  "w_capex": {
+   "A": "Less own share of asset kit",
+   "C": -1,
+   "D": -4,
+   "E": -27
+  },
+  "w_own": {
+   "A": "Own funds for working capital",
+   "C": 25,
+   "D": 22,
+   "E": 285
+  },
+  "w_gap": {
+   "A": "Gap to finance",
+   "C": 17.84028125,
+   "D": 0,
+   "E": 120.49884375
+  },
+  "w_fund": {
+   "A": "From federation revolving fund",
+   "C": 10.70416875,
+   "D": 0,
+   "E": 72.29930625
+  },
+  "w_bank": {
+   "A": "From banks / NBFCs",
+   "C": 7.1361125,
+   "D": 0,
+   "E": 48.1995375
+  },
+  "today_gap": {
+   "A": "For comparison: gap today, all 12",
+   "E": 180
+  }
+ },
+ "Infra": {
+  "k1": {
+   "A": "Drying yard, tarpaulins, moisture meter, scale, sampling kit",
+   "C": 4,
+   "D": 0,
+   "F": "Meets ethanol and feed-mill moisture specs (14% or lower)"
+  },
+  "k2": {
+   "A": "Mobile maize dryer share and cleaner/grader",
+   "C": 5,
+   "D": 0,
+   "F": "One mobile dryer shared by two FPOs"
+  },
+  "k3": {
+   "A": "PACS godown upgrade to WDRA standard (raised stacking, fumigation, fire kit)",
+   "C": 1,
+   "D": 0,
+   "F": "[S16] Lease idle PACS godowns (Bihar built 6,158 with 16.9 lakh t) instead of building new"
+  },
+  "k4": {
+   "A": "Two 5 t solar cold rooms",
+   "C": 0,
+   "D": 18,
+   "F": "[S8] Ecozen-type units; pay-per-crate service model"
+  },
+  "k5": {
+   "A": "Pack shed with grading tables on raised plinth",
+   "C": 0,
+   "D": 8,
+   "F": "Built above the local high-flood level"
+  },
+  "k6": {
+   "A": "Three village collection points and 2,000 crates",
+   "C": 0,
+   "D": 8,
+   "F": "Crates cut handling loss"
+  },
+  "k7": {
+   "A": "Shade-net nursery",
+   "C": 0,
+   "D": 6,
+   "F": "Seedlings for replanting after floods; sold to members"
+  },
+  "kit": {
+   "A": "Total kit",
+   "C": 10,
+   "D": 40
+  },
+  "p_fdn": {
+   "A": "Foundation grant",
+   "C": 6,
+   "D": 16
+  },
+  "p_gov": {
+   "A": "Government subsidy (MIDH)",
+   "C": 0,
+   "D": 14
+  },
+  "p_own": {
+   "A": "FPO own funds",
+   "C": 1,
+   "D": 4
+  },
+  "p_loan": {
+   "A": "AIF bank loan",
+   "C": 3,
+   "D": 6
+  },
+  "emi": {
+   "A": "Yearly loan repayment",
+   "C": 0.53740505418,
+   "D": 1.0748101084,
+   "F": "Annuity at the AIF rate"
+  },
+  "t_fdn": {
+   "A": "Foundation grant, all 12 FPOs",
+   "C": 122
+  },
+  "t_kit": {
+   "A": "Total asset value, all 12 FPOs",
+   "C": 270
+  },
+  "lev": {
+   "A": "Asset value per rupee of Foundation grant",
+   "C": 2.2131147541
+  }
+ },
+ "Federation": {
+  "f_n": {
+   "A": "Member FPOs (cohort 1 + cohort 2)",
+   "C": 36
+  },
+  "f_c2": {
+   "A": "Cohort 2 business as a share of cohort 1 in Year 5",
+   "C": 1.2,
+   "D": "24 FPOs at 60% of a cohort 1 FPO each (they join later: 6 in Y1, 18 in Y3)"
+  },
+  "f_ceo": {
+   "A": "Federation CEO",
+   "C": 9
+  },
+  "f_mkt": {
+   "A": "Market desk (2 sales managers)",
+   "C": 12
+  },
+  "f_fin": {
+   "A": "Accounts and compliance (CA on retainer + 2 accountants)",
+   "C": 9
+  },
+  "f_off": {
+   "A": "Office, software, travel, audit",
+   "C": 5
+  },
+  "f_var": {
+   "A": "Extra servicing cost per FPO beyond 12",
+   "C": 9.6,
+   "D": "Rs 0.4 lakh per extra FPO"
+  },
+  "f_cost": {
+   "A": "Running cost",
+   "C": 44.6
+  },
+  "f_fees": {
+   "A": "Fees from member FPOs",
+   "C": 43.2,
+   "D": "Rs 1.2 lakh per FPO, already inside each FPO's running cost"
+  },
+  "f_share": {
+   "A": "Share of maize sold through federation contracts",
+   "C": 0.7
+  },
+  "f_comm": {
+   "A": "Federation commission on that maize",
+   "C": 0.01,
+   "D": "Earned from better price on 1,000 t+ lots"
+  },
+  "f_trade": {
+   "A": "Maize commission income",
+   "C": 8.300667375
+  },
+  "f_inpm": {
+   "A": "Bulk input buying margin",
+   "C": 0.015,
+   "D": "Federation buys seed and fertiliser in bulk for all FPOs"
+  },
+  "f_inp": {
+   "A": "Input buying income",
+   "C": 9.3093
+  },
+  "f_lent": {
+   "A": "Average amount lent out by the revolving fund",
+   "C": 159.05847375,
+   "D": "Fund share of the working capital gap of both cohorts"
+  },
+  "f_corpus": {
+   "A": "Revolving fund capital (incl. flood window)",
+   "C": 250,
+   "D": "From Budget sheet"
+  },
+  "f_util": {
+   "A": "Share of fund lent out on average",
+   "C": 0.636233895,
+   "D": "Below 100% on purpose: the flood window is kept liquid"
+  },
+  "f_rate": {
+   "A": "Lending rate to FPOs",
+   "C": 0.1,
+   "D": "[S4] Below the 14% to 15% NBFC rate for FPO loans"
+  },
+  "f_loss": {
+   "A": "Loan loss and running cost of the fund",
+   "C": 0.04,
+   "D": "Prudent: 3% loss + 1% admin"
+  },
+  "f_spread": {
+   "A": "Net interest income",
+   "C": 9.543508425
+  },
+  "f_inc": {
+   "A": "Income",
+   "C": 70.3534758
+  },
+  "f_cover": {
+   "A": "Share of running cost covered",
+   "C": 1.5774321928
+  }
+ },
+ "Budget": {
+  "b_mkt": {
+   "A": "Market desk, buyer onboarding, quality testing, certification",
+   "C": 120,
+   "D": 120,
+   "E": 100,
+   "F": 70,
+   "G": 40,
+   "H": 450,
+   "I": "Desk moves onto the federation payroll from Year 4, paid by its commission"
+  },
+  "b_didi": {
+   "A": "Women procurement agents (2 per FPO) start-up stipend",
+   "C": 12,
+   "D": 12,
+   "E": 8,
+   "F": 4,
+   "G": 0,
+   "H": 36,
+   "I": "Paid by FPO commission from Year 3; 24 women earn on volume"
+  },
+  "b_fund": {
+   "A": "Revolving fund capital (owned by the federation)",
+   "C": 100,
+   "D": 50,
+   "E": 50,
+   "F": 0,
+   "G": 0,
+   "H": 200,
+   "I": "Sized to the gap left after the govt matching equity grant; lent and repaid, never spent"
+  },
+  "b_fldg": {
+   "A": "First-loss deposit with partner bank",
+   "C": 50,
+   "D": 0,
+   "E": 0,
+   "F": 0,
+   "G": 0,
+   "H": 50,
+   "I": "Unlocks bank lines; returns to the federation if unused"
+  },
+  "b_cont": {
+   "A": "Flood contingency window in the fund",
+   "C": 0,
+   "D": 50,
+   "E": 0,
+   "F": 0,
+   "G": 0,
+   "H": 50,
+   "I": "Emergency loans after a flood; kept liquid"
+  },
+  "b_infra": {
+   "A": "Asset kits co-funded with AIF and MIDH",
+   "C": 73.2,
+   "D": 48.8,
+   "E": 0,
+   "F": 0,
+   "G": 0,
+   "H": 122,
+   "I": "From Infra sheet: 60% in Year 1, 40% in Year 2"
+  },
+  "b_mgmt": {
+   "A": "CEO and assistant salary support (tapering)",
+   "C": 51.84,
+   "D": 38.88,
+   "E": 25.92,
+   "F": 12.96,
+   "G": 0,
+   "H": 129.6,
+   "I": "80%, 60%, 40%, 20%, 0% of salary; FPO margin takes over"
+  },
+  "b_sys": {
+   "A": "Accounting software, compliance clean-up, board training",
+   "C": 30,
+   "D": 25,
+   "E": 15,
+   "F": 10,
+   "G": 5,
+   "H": 85,
+   "I": "Front-loaded: one-time clean-up of share registers and filings"
+  },
+  "b_women": {
+   "A": "Women membership drive, leadership fellowship, creche at centres",
+   "C": 50,
+   "D": 50,
+   "E": 45,
+   "F": 40,
+   "G": 30,
+   "H": 215,
+   "I": "150 new women members per FPO via SHGs; fellows stand for board seats"
+  },
+  "b_clim": {
+   "A": "Climate: flood alerts, resilient seed trials, BRFSY claims help",
+   "C": 40,
+   "D": 40,
+   "E": 35,
+   "F": 30,
+   "G": 25,
+   "H": 170,
+   "I": "Bihar left PMFBY; farmers must be helped to claim state aid [S17]"
+  },
+  "b_kap": {
+   "A": "KAP field team (business, finance, gender, climate leads)",
+   "C": 150,
+   "D": 160,
+   "E": 130,
+   "F": 90,
+   "G": 50,
+   "H": 580,
+   "I": "Peaks while KAP still has the govt CBBO fee, then shrinks as the federation takes over"
+  },
+  "b_fed": {
+   "A": "Federation set-up and staff (tapering)",
+   "C": 25,
+   "D": 40,
+   "E": 35,
+   "F": 20,
+   "G": 0,
+   "H": 120,
+   "I": "Foundation pays most of the running cost in Years 2 and 3; federation pays itself by Year 5"
+  },
+  "b_eval": {
+   "A": "Independent evaluation and audit",
+   "C": 20,
+   "D": 15,
+   "E": 25,
+   "F": 15,
+   "G": 25,
+   "H": 100,
+   "I": "Baseline, mid-term at the Year 2 checkpoint, endline"
+  },
+  "b_coh2": {
+   "A": "Playbook, kits, salary taper, fund access for cohort 2",
+   "C": 227.96,
+   "D": 300.32,
+   "E": 481.08,
+   "F": 658.04,
+   "G": 775,
+   "H": 2442.4,
+   "I": "What is left after cohort 1 is fully funded; see cost per FPO-year below"
+  },
+  "b_tot": {
+   "A": "Total",
+   "C": 950,
+   "D": 950,
+   "E": 950,
+   "F": 950,
+   "G": 950,
+   "H": 4750
+  },
+  "b_usd": {
+   "A": "Total in USD m",
+   "C": 1,
+   "D": 1,
+   "E": 1,
+   "F": 1,
+   "G": 1,
+   "H": 5
+  },
+  "sh_mkt": {
+   "A": "Sell together",
+   "H": 0.10231578947
+  },
+  "sh_fin": {
+   "A": "Fund the season (capital that stays)",
+   "H": 0.063157894737
+  },
+  "sh_inf": {
+   "A": "Store and grade",
+   "H": 0.025684210526
+  },
+  "sh_cap": {
+   "A": "People, women, climate",
+   "H": 0.12623157895
+  },
+  "sh_kap": {
+   "A": "KAP, federation, evaluation",
+   "H": 0.16842105263
+  },
+  "sh_coh": {
+   "A": "Second cohort",
+   "H": 0.51418947368
+  },
+  "c1_cost": {
+   "A": "Cohort 1 cost per FPO per year",
+   "H": 38.46,
+   "I": "Includes capital that stays (fund, assets)"
+  },
+  "c2_fy": {
+   "A": "Cohort 2 FPO-years supported",
+   "H": 84
+  },
+  "c2_cost": {
+   "A": "Cohort 2 cost per FPO per year",
+   "H": 29.076190476,
+   "I": "About 75% of cohort 1: desk, fund and federation already exist. Govt pays a CBBO Rs 5 lakh per FPO a year [S2]"
+  },
+  "farmers": {
+   "A": "Farmer members reached in Year 5 (both cohorts)",
+   "H": 23400
+  },
+  "per_farmer": {
+   "A": "Cost per farmer member over 5 years",
+   "B": "Rs",
+   "H": 20299.145299
+  }
+ },
+ "Targets": {
+  "t_sell": {
+   "A": "Members selling through FPO (maize / veg avg)",
+   "C": 0.15,
+   "D": 0.47916666667,
+   "E": 0.39,
+   "F": "[S9] SRIJAN: 39% after 2 years. Today: our estimate (case: weak engagement)"
+  },
+  "t_to": {
+   "A": "Average turnover per FPO",
+   "B": "Rs lakh",
+   "C": 27.5,
+   "D": 103.14072917,
+   "E": 100,
+   "F": "[S3] 1,135 of 8,961 scheme FPOs (12.7%) crossed Rs 1 crore in FY25"
+  },
+  "t_cov": {
+   "A": "FPOs covering 100% of running cost",
+   "C": 0,
+   "D": 6,
+   "E": 4,
+   "F": "[S1] About one third of FPOs viable (ICAR-NIAP), i.e. 4 of 12. Target 6 of 12, and all 12 above 85%"
+  },
+  "t_women": {
+   "A": "Women share of members",
+   "C": 0.2,
+   "D": 0.38461538462
+  },
+  "t_wdir": {
+   "A": "Women directors per board",
+   "C": 1,
+   "D": 3,
+   "F": "[S10] FPOs with female or mixed leadership survive past support 4 to 13 points more often"
+  },
+  "t_bank": {
+   "A": "FPOs with a bank or NBFC credit line",
+   "C": 0,
+   "D": 12,
+   "E": 0.3,
+   "F": "[S4] Only 30% of FPOs got bank loans; those with credit: 61% profitable without support vs 43%"
+  },
+  "t_fed": {
+   "A": "Federation covers its own running cost",
+   "C": 0,
+   "D": 1,
+   "F": "1 = yes"
+  }
+ },
+ "Checks": {
+  "c1": {
+   "A": "Budget each year equals Rs 950 lakh (USD 1m at Rs 95)",
+   "C": 0,
+   "D": "OK"
+  },
+  "c2": {
+   "A": "Budget shares add to 100%",
+   "C": 0,
+   "D": "OK"
+  },
+  "c3": {
+   "A": "Infra funding stack adds to kit cost",
+   "C": 0,
+   "D": "OK"
+  },
+  "c4": {
+   "A": "Infra in budget equals Infra sheet",
+   "C": 0,
+   "D": "OK"
+  },
+  "c5": {
+   "A": "Case: share capital equals working capital available",
+   "C": 0,
+   "D": "OK"
+  },
+  "c6": {
+   "A": "Working capital sources add to gap",
+   "C": 0,
+   "D": "OK"
+  },
+  "c7": {
+   "A": "Fund capital covers what is lent out (0 if yes)",
+   "C": 0,
+   "D": "OK"
+  },
+  "c8": {
+   "A": "Federation covers its running cost (0 if yes)",
+   "C": 0,
+   "D": "OK"
+  }
+ }
+}

@@ -21,3 +21,13 @@ Every figure below was read on the original page (30 September 2026) before use.
 
 ## How to verify a McKinsey page
 Plain web fetching times out on mckinsey.com. Open the page in the built-in browser and pull the sentences with JavaScript (search the page text for the keyword), then record the publication date.
+
+## Seen in searches for Business Tangent 2026 (FPO case), NOT verified on the original page
+- FY2024-25 audited accounts of 10,000-scheme FPOs: 6,964 up to ₹50 lakh, 862 at ₹50 lakh to ₹1 crore, 1,135 above ₹1 crore (Ministry of Agriculture via IANS, Jul 2025).
+- ICAR-NIAP: about one third of ~33,000 registered FPOs financially viable (Business Standard, Aug 2025).
+- NAFPO State of the Sector 2026: 49% of 420 FPOs profitable without support, 45% only with support; 30% got bank loans; 61% vs 43% profitable with vs without credit (Tribune).
+- 10,000 FPO scheme: CBBO ₹25 lakh per FPO over 5 years; management cost ₹18 lakh over 3 years; matching equity ₹2,000 per member, cap ₹15 lakh; support to 2027-28.
+- TCI Cornell 2026: female or mixed-led FPOs survive past support 4 to 13 points more often.
+- SRIJAN (Walmart Foundation), 12 FPCs, 2022 to 2024: turnover +190%, members selling to FPO 39%, buying inputs 88% (self-reported).
+- Bihar PACS godowns: 6,158 built, 16.91 lakh t; 500 t costs ₹34.59 lakh (Jun 2025).
+- NABCONS 2022: vegetable post-harvest loss 4.87% to 11.61%.
