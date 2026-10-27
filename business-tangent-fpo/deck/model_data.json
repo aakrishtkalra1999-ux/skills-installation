@@ -1030,10 +1030,47 @@
    "C": 0,
    "D": "OK"
   },
+  "c9": {
+   "A": "Sensitivity base equals Unit_Econ cover",
+   "C": 0,
+   "D": "OK"
+  },
   "c8": {
    "A": "Federation covers its running cost (0 if yes)",
    "C": 0,
    "D": "OK"
+  }
+ },
+ "Sensitivity": {
+  "base": {
+   "A": "Base case",
+   "C": 0.97517660156,
+   "D": 0.92406454272,
+   "E": "Model as built"
+  },
+  "sell39": {
+   "A": "Only 39% of members sell (SRIJAN level)",
+   "C": 0.82086786123,
+   "D": 0.85222462706,
+   "E": "[S9]"
+  },
+  "price": {
+   "A": "Prices 10% lower",
+   "C": 0.90503626505,
+   "D": 0.87018460597,
+   "E": "Produce margins fall in proportion"
+  },
+  "yield": {
+   "A": "Maize yield 4.0 t/ha",
+   "C": 0.89724289432,
+   "D": 0.92406454272,
+   "E": "[S11] state average"
+  },
+  "flood": {
+   "A": "Flood year: vegetables lose 1 of 1.5 seasons",
+   "C": 0.97517660156,
+   "D": 0.74446475358,
+   "E": "Kharif vegetable season lost"
   }
  }
 }

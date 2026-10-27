@@ -243,6 +243,20 @@ tgt.row('t_wdir', 'Women directors per board', [1, 3, null], { fmt: 'num0', note
 tgt.row('t_bank', 'FPOs with a bank or NBFC credit line', [0, 12, 0.3], { fmt: 'num0', note: '[S4] Only 30% of FPOs got bank loans; those with credit: 61% profitable without support vs 43%' });
 tgt.row('t_fed', 'Federation covers its own running cost', [0, 1, null], { fmt: 'num0', note: '1 = yes' });
 
+
+// ---------------- Sensitivity ----------------
+const sen = book.sheet("Sensitivity", { noteCol: "E", widths: { A: 52, B: 9, C: 12, D: 12, E: 60 } });
+sen.title("Year 5 cost cover under stress (produce-linked income scales with the driver)");
+sen.header(["Scenario", "", "Maize", "Vegetable", "What changes"]);
+const pl = { m: `(${X(ue, "gm_prod", "D")}+${X(ue, "gm_store", "D")}+${X(ue, "gm_svc", "D")})`, v: X(ue, "gm_prod", "F") };
+const ot = { m: X(ue, "gm_inp", "D"), v: `(${X(ue, "gm_inp", "F")}+${X(ue, "gm_nur", "F")}+${X(ue, "gm_svc", "F")})` };
+const sc = (key, label, fm, fv, note) => sen.row(key, label, [`=(${pl.m}*${fm}+${ot.m})/${X(ue, "cost", "D")}`, `=(${pl.v}*${fv}+${ot.v})/${X(ue, "cost", "F")}`], { fmt: "pct", note });
+sc("base", "Base case", 1, 1, "Model as built");
+sc("sell39", "Only 39% of members sell (SRIJAN level)", `0.39/${C("active", M)}`, `0.39/${C("active", V)}`, "[S9]");
+sc("price", "Prices 10% lower", 0.9, 0.9, "Produce margins fall in proportion");
+sc("yield", "Maize yield 4.0 t/ha", `4/${C("yield", M)}`, 1, "[S11] state average");
+sc("flood", "Flood year: vegetables lose 1 of 1.5 seasons", 1, `1/1.5`, "Kharif vegetable season lost");
+
 // ---------------- Checks ----------------
 chk.title('Integrity checks (all should read OK)');
 check(chk, 'c1', 'Budget each year equals Rs 950 lakh (USD 1m at Rs 95)', `=${['C', 'D', 'E', 'F', 'G'].map(c => `ABS(${X(bud, 'b_tot', c)}-950)`).join('+')}`);
@@ -252,6 +266,7 @@ check(chk, 'c4', 'Infra in budget equals Infra sheet', `=${X(bud, 'b_infra', 'H'
 check(chk, 'c5', 'Case: share capital equals working capital available', `=${X(cd, 'share_cap', 'C')}-${X(cd, 'wc_have', 'C')}`);
 check(chk, 'c6', 'Working capital sources add to gap', `=${X(wc, 'w_fund', 'E')}+${X(wc, 'w_bank', 'E')}-${X(wc, 'w_gap', 'E')}`);
 check(chk, 'c7', 'Fund capital covers what is lent out (0 if yes)', `=MAX(0,${X(fed, 'f_lent', 'C')}-${X(fed, 'f_corpus', 'C')})`);
+check(chk, 'c9', 'Sensitivity base equals Unit_Econ cover', `=ABS(${X(sen, 'base', 'C')}-${X(ue, 'cover', 'D')})+ABS(${X(sen, 'base', 'D')}-${X(ue, 'cover', 'F')})`);
 check(chk, 'c8', 'Federation covers its running cost (0 if yes)', `=MAX(0,1-${X(fed, 'f_cover', 'C')})`);
 
 book.render({ xlsx: path.join(__dirname, 'KAP_FPO_Model.xlsx'), json: path.join(__dirname, '..', 'deck', 'model_data.json') })

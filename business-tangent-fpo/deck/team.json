@@ -1,0 +1,9 @@
+{
+  "teamName": "[Team name]",
+  "college": "[College name]",
+  "members": [
+    { "name": "[Participant 1]", "email": "[email 1]" },
+    { "name": "[Participant 2]", "email": "[email 2]" },
+    { "name": "[Participant 3]", "email": "[email 3]" }
+  ]
+}

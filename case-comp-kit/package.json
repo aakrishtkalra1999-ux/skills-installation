@@ -15,6 +15,7 @@
   "type": "commonjs",
   "dependencies": {
     "exceljs": "^4.4.0",
-    "hyperformula": "^3.5.0"
+    "hyperformula": "^3.5.0",
+    "pptxgenjs": "^4.0.1"
   }
 }
