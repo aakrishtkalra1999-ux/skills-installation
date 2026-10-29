@@ -1,0 +1,21 @@
+{
+  "v": 4,
+  "createdOnFiles": {"v": 1, "at": "2026-10-29T13:00:00Z"},
+  "lists": "css",
+  "title": "PULL UP. — PM Final Project",
+  "cover": "cover",
+  "order": ["cover", "problem", "evidence", "gap", "target", "research", "landscape", "positioning", "howitworks", "prototype", "mvp", "experiment", "gtm", "metrics", "business", "risks", "close"],
+  "sections": {
+    "s1": {"description": "The problem: the gap between wanting company and an actual plan", "start": "cover"},
+    "s2": {"description": "Who we serve first and how we will validate the problem", "start": "target"},
+    "s3": {"description": "Where PULL UP. sits against real alternatives", "start": "landscape"},
+    "s4": {"description": "The product, the prototype and what we cut", "start": "howitworks"},
+    "s5": {"description": "How we prove it, launch it and measure it", "start": "experiment"},
+    "s6": {"description": "Business model, risks and the recommendation", "start": "business"}
+  },
+  "faces": {
+    "bricolage-grotesque": {"family": "Bricolage Grotesque", "href": "https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400..800&display=swap"},
+    "dm-sans": {"family": "DM Sans", "href": "https://fonts.googleapis.com/css2?family=DM+Sans:wght@400..700&display=swap"}
+  },
+  "designSystems": []
+}
