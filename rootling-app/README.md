@@ -39,6 +39,7 @@ The Stripe functions in `api/` run on Vercel. To try them locally, install the V
 | `STRIPE_SECRET_KEY` | Vercel (server only) | `sk_test_…` / `sk_live_…` |
 | `STRIPE_PRICE_ID` | Vercel (server only) | The $19/month Sprout price, `price_…` |
 | `STRIPE_WEBHOOK_SECRET` | Vercel (server only) | `whsec_…` from the webhook endpoint |
+| `STRIPE_AUTOMATIC_TAX` | Vercel (server only, optional) | `true` turns on Stripe Tax in Checkout. Set it only after Stripe Tax is set up in the Dashboard |
 | `SUPABASE_SERVICE_ROLE_KEY` | Vercel (server only) | For the webhook and account deletion. Never in browser code |
 
 ## Where things are

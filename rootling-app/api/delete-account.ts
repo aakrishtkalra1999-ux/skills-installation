@@ -1,5 +1,5 @@
 // POST /api/delete-account: deletes the parent's account and everything stored about the family.
-import { admin, handle, json, requireParent, stripe } from './_lib.js';
+import { admin, handle, isMissingResource, json, requireParent, stripe } from './_lib.js';
 
 export const POST = handle(async (request) => {
   const db = admin();
@@ -9,7 +9,12 @@ export const POST = handle(async (request) => {
   const { data: sub } = await db.from('subscriptions').select('stripe_customer_id').eq('parent_id', parent.id).maybeSingle();
   if (sub?.stripe_customer_id && process.env.STRIPE_SECRET_KEY) {
     // Deleting the Stripe customer also cancels their subscriptions immediately.
-    await stripe().customers.del(sub.stripe_customer_id);
+    try {
+      await stripe().customers.del(sub.stripe_customer_id);
+    } catch (e) {
+      // Already deleted in Stripe (for example from the Dashboard): nothing left to cancel.
+      if (!isMissingResource(e)) throw e;
+    }
   }
   if (parent.email) {
     // Escape LIKE wildcards so only this exact address (in any letter case) matches.

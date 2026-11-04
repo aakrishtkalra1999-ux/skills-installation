@@ -82,5 +82,25 @@ export function subscriptionColumns(sub: Stripe.Subscription) {
   };
 }
 
+/**
+ * Stripe Tax settings for Checkout. Turned on with STRIPE_AUTOMATIC_TAX=true, but only after
+ * Stripe Tax is set up in the Dashboard (head office address, a default tax behaviour or a
+ * tax_behavior on the price, and registrations for the places you collect in). Turning it on
+ * before that makes Checkout fail.
+ */
+export function checkoutTaxOptions(enabled = process.env.STRIPE_AUTOMATIC_TAX === 'true') {
+  if (!enabled) return {};
+  return {
+    automatic_tax: { enabled: true },
+    // Tax depends on where the family lives, so save the address they enter onto the customer.
+    customer_update: { address: 'auto', name: 'auto' },
+  } as const;
+}
+
+/** True when Stripe says the object no longer exists, for example a customer deleted in the Dashboard. */
+export function isMissingResource(e: unknown): boolean {
+  return typeof e === 'object' && e !== null && (e as { code?: string }).code === 'resource_missing';
+}
+
 /** The free month is offered once per family, so cancelling and re-joining doesn't restart it. */
 export const TRIAL_DAYS = 30;

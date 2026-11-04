@@ -1,5 +1,5 @@
 // POST /api/create-checkout-session: starts Stripe Checkout for the Sprout plan.
-import { admin, env, handle, json, origin, requireParent, stripe, TRIAL_DAYS } from './_lib.js';
+import { admin, checkoutTaxOptions, env, handle, json, origin, requireParent, stripe, TRIAL_DAYS } from './_lib.js';
 
 export const POST = handle(async (request) => {
   const db = admin();
@@ -18,7 +18,12 @@ export const POST = handle(async (request) => {
 
   let customerId = existing?.stripe_customer_id as string | undefined;
   if (!customerId) {
-    const customer = await s.customers.create({ email: parent.email, metadata: { parent_id: parent.id } });
+    // The idempotency key stops a double click (or a retry after a failed save below) from
+    // creating a second Stripe customer for the same family.
+    const customer = await s.customers.create(
+      { email: parent.email, metadata: { parent_id: parent.id } },
+      { idempotencyKey: `rootling-customer-${parent.id}` },
+    );
     customerId = customer.id;
     const { error: saveError } = await db
       .from('subscriptions')
@@ -39,6 +44,7 @@ export const POST = handle(async (request) => {
     // Card details are collected up front, but nothing is charged until the free month ends.
     payment_method_collection: 'always',
     allow_promotion_codes: true,
+    ...checkoutTaxOptions(),
     success_url: `${site}/?checkout=success`,
     cancel_url: `${site}/?checkout=cancelled`,
   });

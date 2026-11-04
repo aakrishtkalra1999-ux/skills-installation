@@ -1,6 +1,6 @@
 import type Stripe from 'stripe';
 import { describe, expect, it } from 'vitest';
-import { subscriptionColumns } from './_lib';
+import { checkoutTaxOptions, isMissingResource, subscriptionColumns } from './_lib';
 
 describe('Stripe webhook', () => {
   it('maps a Stripe subscription to our subscriptions row', () => {
@@ -21,5 +21,25 @@ describe('Stripe webhook', () => {
       current_period_end: new Date(1_800_000_000_000).toISOString(),
       had_trial: true,
     });
+  });
+});
+
+describe('Stripe Tax', () => {
+  it('leaves Checkout unchanged until automatic tax is switched on', () => {
+    expect(checkoutTaxOptions(false)).toEqual({});
+  });
+  it('turns on automatic tax and saves the address the family enters', () => {
+    expect(checkoutTaxOptions(true)).toEqual({
+      automatic_tax: { enabled: true },
+      customer_update: { address: 'auto', name: 'auto' },
+    });
+  });
+});
+
+describe('Stripe errors', () => {
+  it('recognises a customer that no longer exists', () => {
+    expect(isMissingResource({ code: 'resource_missing' })).toBe(true);
+    expect(isMissingResource(new Error('network'))).toBe(false);
+    expect(isMissingResource(null)).toBe(false);
   });
 });
