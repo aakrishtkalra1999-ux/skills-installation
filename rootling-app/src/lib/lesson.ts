@@ -1,5 +1,6 @@
 import { EN_DISTRACTORS } from '../data/courses';
 import type { Course, Lesson, Line, Sentence, Word } from '../data/types';
+import { lineClip, sayId, sentenceId, type Clip } from './clips';
 import { personaliseLine, READING_AGE } from './personalise';
 
 export type Exercise =
@@ -8,8 +9,8 @@ export type Exercise =
   | { type: 'listen'; word: Word; options: Word[] }
   | { type: 'pick-word'; word: Word; options: Word[] }
   | { type: 'match'; pairs: Word[] }
-  | { type: 'say'; scene: string; line: Line; milestone?: 'hello' | 'sentence' }
-  | { type: 'build'; sentence: Sentence; bank: string[] };
+  | { type: 'say'; scene: string; line: Line; clip: Clip; milestone?: 'hello' | 'sentence' }
+  | { type: 'build'; sentence: Sentence; bank: string[]; clip: Clip };
 
 export type Random = () => number;
 
@@ -70,19 +71,23 @@ export function buildLesson(course: Course, lesson: Lesson, opts: BuildOptions):
     });
   if (words.length >= 3) steps.push({ type: 'match', pairs: words.slice(0, 4) });
   if (reader) {
-    for (const sentence of lesson.sentences ?? []) {
+    (lesson.sentences ?? []).forEach((sentence, n) => {
       const extras = shuffle(EN_DISTRACTORS.filter((t) => !sentence.en.includes(t)), rand).slice(0, 2);
-      steps.push({ type: 'build', sentence, bank: shuffle([...sentence.en, ...extras], rand) });
-    }
+      const native = sentence.native.join(' ');
+      const clip = lineClip(course, sentenceId(lesson.id, n + 1), { native, roman: sentence.roman, en: '' }, opts.elder, native);
+      steps.push({ type: 'build', sentence, bank: shuffle([...sentence.en, ...extras], rand), clip });
+    });
   }
-  for (const say of lesson.say ?? []) {
+  (lesson.say ?? []).forEach((say, n) => {
+    const line = personaliseLine(say.line, opts.childName, opts.elder);
     steps.push({
       type: 'say',
       scene: say.scene.replaceAll('{name}', opts.childName).replaceAll('{gp}', opts.elder.roman),
-      line: personaliseLine(say.line, opts.childName, opts.elder),
+      line,
+      clip: lineClip(course, sayId(lesson.id, n + 1), say.line, opts.elder, line.native),
       milestone: say.milestone,
     });
-  }
+  });
   return steps;
 }
 

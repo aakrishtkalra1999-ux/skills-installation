@@ -3,7 +3,8 @@ import type { Course, Lesson, Word } from '../data/types';
 import { buildLesson, isBuildCorrect, shuffle, type Exercise } from '../lib/lesson';
 import { elderFor } from '../lib/personalise';
 import type { LessonResult } from '../lib/progress';
-import { canListenToChild, canSpeak, listenOnce, speak } from '../lib/speech';
+import { wordClip, type Clip } from '../lib/clips';
+import { canListenToChild, canPlay, listenOnce, play } from '../lib/speech';
 import { Rooty } from './Rooty';
 
 interface Props {
@@ -26,7 +27,12 @@ const CHEERS = ['Yay!', 'Super!', 'Well done!', 'Brilliant!', 'You got it!'];
 export function LessonPlayer({ course, lesson, childName, age, elderId, showRoman, onFinish, onQuit }: Props) {
   const elder = elderFor(course, elderId);
   const steps = useMemo(
-    () => buildLesson(course, lesson, { age, childName, elder, canListen: canSpeak(course.ttsLang) }),
+    () => buildLesson(course, lesson, {
+        age,
+        childName,
+        elder,
+        canListen: lesson.words.every((id) => canPlay(wordClip(course, course.words.find((w) => w.id === id)!))),
+      }),
     [course, lesson, age, childName, elder],
   );
   const [i, setI] = useState(0);
@@ -70,7 +76,7 @@ export function LessonPlayer({ course, lesson, childName, age, elderId, showRoma
           <Pick ex={ex} course={course} showRoman={showRoman} onSolved={solve} />
         )}
         {ex.type === 'match' && <Match pairs={ex.pairs} course={course} onSolved={solve} />}
-        {ex.type === 'build' && <Build ex={ex} course={course} showRoman={showRoman} onSolved={solve} />}
+        {ex.type === 'build' && <Build ex={ex} showRoman={showRoman} onSolved={solve} />}
         {ex.type === 'say' && (
           <Say
             ex={ex}
@@ -94,17 +100,17 @@ export function LessonPlayer({ course, lesson, childName, age, elderId, showRoma
   );
 }
 
-function SpeakButton({ text, lang, big, label = 'Play sound' }: { text: string; lang: string; big?: boolean; label?: string }) {
-  if (!canSpeak(lang)) return null;
+function SpeakButton({ clip, big, label = 'Play sound' }: { clip: Clip; big?: boolean; label?: string }) {
+  if (!canPlay(clip)) return null;
   return (
-    <button className={`speak ${big ? 'big' : ''}`} onClick={() => speak(text, lang)} aria-label={label}>
+    <button className={`speak ${big ? 'big' : ''}`} onClick={() => play(clip)} aria-label={label}>
       🔊
     </button>
   );
 }
 
 function Intro({ word, course, showRoman }: { word: Word; course: Course; showRoman: boolean }) {
-  useEffect(() => speak(word.native, course.ttsLang), [word, course.ttsLang]);
+  useEffect(() => play(wordClip(course, word)), [word, course]);
   return (
     <>
       <h1 className="prompt-title">New word!</h1>
@@ -115,7 +121,7 @@ function Intro({ word, course, showRoman }: { word: Word; course: Course; showRo
         <span className="native">{word.native}</span>
         {showRoman && <span className="roman">{word.roman}</span>}
         <span className="meaning">{word.en}</span>
-        <SpeakButton text={word.native} lang={course.ttsLang} big />
+        <SpeakButton clip={wordClip(course, word)} big />
       </div>
     </>
   );
@@ -137,12 +143,12 @@ function Pick({
   const { word } = ex;
 
   useEffect(() => {
-    if (ex.type !== 'pick-word') speak(word.native, course.ttsLang);
-  }, [ex.type, word, course.ttsLang]);
+    if (ex.type !== 'pick-word') play(wordClip(course, word));
+  }, [ex.type, word, course]);
 
   function choose(opt: Word) {
     if (right) return;
-    speak(opt.native, course.ttsLang);
+    play(wordClip(course, opt));
     if (opt.id === word.id) {
       setRight(true);
       onSolved();
@@ -159,14 +165,14 @@ function Pick({
       <h1 className="prompt-title">{title}</h1>
       {ex.type === 'pick-picture' && (
         <div className="prompt-card">
-          <SpeakButton text={word.native} lang={course.ttsLang} />
+          <SpeakButton clip={wordClip(course, word)} />
           <span className="native">{word.native}</span>
           {showRoman && <span className="roman">{word.roman}</span>}
         </div>
       )}
       {ex.type === 'listen' && (
         <div className="prompt-card">
-          <SpeakButton text={word.native} lang={course.ttsLang} big />
+          <SpeakButton clip={wordClip(course, word)} big />
         </div>
       )}
       {ex.type === 'pick-word' && (
@@ -219,7 +225,7 @@ function Match({ pairs, course, onSolved }: { pairs: Word[]; course: Course; onS
 
   function tap(side: 'l' | 'r', w: Word) {
     if (matched.has(w.id)) return;
-    if (side === 'l') speak(w.native, course.ttsLang);
+    if (side === 'l') play(wordClip(course, w));
     if (!picked || picked.side === side) {
       setPicked({ side, id: w.id });
       return;
@@ -268,12 +274,10 @@ function Match({ pairs, course, onSolved }: { pairs: Word[]; course: Course; onS
 
 function Build({
   ex,
-  course,
   showRoman,
   onSolved,
 }: {
   ex: Extract<Exercise, { type: 'build' }>;
-  course: Course;
   showRoman: boolean;
   onSolved: () => void;
 }) {
@@ -281,7 +285,7 @@ function Build({
   const [state, setState] = useState<'building' | 'right' | 'wrong'>('building');
   const prompt = ex.sentence.native.join(' ');
 
-  useEffect(() => speak(prompt, course.ttsLang), [prompt, course.ttsLang]);
+  useEffect(() => play(ex.clip), [ex.clip]);
 
   function update(next: number[]) {
     setUsed(next);
@@ -299,7 +303,7 @@ function Build({
       <div className="sentence-prompt">
         <Rooty size={56} leaves={3} />
         <div className="bubble">
-          <SpeakButton text={prompt} lang={course.ttsLang} />
+          <SpeakButton clip={ex.clip} />
           <span className="native-sm">{prompt}</span>
           {showRoman && <small className="roman">{ex.sentence.roman}</small>}
         </div>
@@ -347,7 +351,7 @@ function Say({
   const [state, setState] = useState<'ready' | 'listening' | 'heard' | 'retry'>('ready');
   const mic = canListenToChild();
 
-  useEffect(() => speak(ex.line.native, course.ttsLang), [ex.line.native, course.ttsLang]);
+  useEffect(() => play(ex.clip), [ex.clip]);
 
   async function listen() {
     setState('listening');
@@ -377,7 +381,7 @@ function Say({
           <p>{ex.scene}</p>
         </div>
         <div className="say-line">
-          <SpeakButton text={ex.line.native} lang={course.ttsLang} label="Hear it first" />
+          <SpeakButton clip={ex.clip} label="Hear it first" />
           <span className="native">{ex.line.native}</span>
           {showRoman && <span className="roman">{ex.line.roman}</span>}
           <span className="meaning">{ex.line.en}</span>

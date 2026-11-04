@@ -2,7 +2,8 @@ import { useRef, useState } from 'react';
 import type { Course, Story } from '../data/types';
 import { elderFor, fillText, personaliseLine } from '../lib/personalise';
 import type { Progress } from '../lib/progress';
-import { canSpeak, speak } from '../lib/speech';
+import { lineClip, storyPageId } from '../lib/clips';
+import { canPlay, play } from '../lib/speech';
 import { Rooty } from './Rooty';
 
 export function StoryList({ course, progress, onOpen }: { course: Course; progress: Progress; onOpen: (s: Story) => void }) {
@@ -45,6 +46,7 @@ export function StoryReader({
   const elder = elderFor(course, progress.elderByCourse[course.code]);
   const p = story.pages[page];
   const line = personaliseLine(p.line, name, elder);
+  const clip = lineClip(course, storyPageId(story.id, page + 1), p.line, elder, line.native);
   const last = page === story.pages.length - 1;
 
   return (
@@ -66,8 +68,8 @@ export function StoryReader({
         <span className="native">{line.native}</span>
         {progress.showRoman && <span className="roman">{line.roman}</span>}
         <span className="meaning">{line.en}</span>
-        {canSpeak(course.ttsLang) && (
-          <button className="speak big" onClick={() => speak(line.native, course.ttsLang)} aria-label="Read it to me">
+        {canPlay(clip) && (
+          <button className="speak big" onClick={() => play(clip)} aria-label="Read it to me">
             🔊
           </button>
         )}

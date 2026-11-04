@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useMemo, useState, type ReactNode } from 'react';
 import { COURSES, getCourse } from '../data/courses';
 import { elderFor } from '../lib/personalise';
 import { currentStreak, dayKey, MILESTONES, type Progress } from '../lib/progress';
@@ -42,9 +42,13 @@ interface DashboardProps {
   onSwitchCourse: (code: string) => void;
   onSetElder: (courseCode: string, elderId: string) => void;
   onReset: () => void;
+  /** Where the child's data is deleted from: just this device, or the family's account. */
+  resetScope: 'device' | 'account';
+  /** Family, plan and account sections, shown below this child's settings. */
+  extra?: ReactNode;
 }
 
-export function ParentDashboard({ progress, onToggleRoman, onSwitchCourse, onSetElder, onReset }: DashboardProps) {
+export function ParentDashboard({ progress, onToggleRoman, onSwitchCourse, onSetElder, onReset, resetScope, extra }: DashboardProps) {
   const course = getCourse(progress.courseCode!);
   const child = progress.child!;
   const elder = elderFor(course, progress.elderByCourse[course.code]);
@@ -158,7 +162,7 @@ export function ParentDashboard({ progress, onToggleRoman, onSwitchCourse, onSet
         {confirmReset ? (
           <div className="row">
             <button className="btn danger" onClick={onReset}>
-              Delete all progress
+              Yes, delete {child.name}
             </button>
             <button className="btn ghost" onClick={() => setConfirmReset(false)}>
               Cancel
@@ -166,10 +170,11 @@ export function ParentDashboard({ progress, onToggleRoman, onSwitchCourse, onSet
           </div>
         ) : (
           <button className="btn ghost" onClick={() => setConfirmReset(true)}>
-            Delete {child.name}’s data from this device
+            {resetScope === 'device' ? `Delete ${child.name}’s data from this device` : `Remove ${child.name} and all their progress`}
           </button>
         )}
       </section>
+      {extra}
     </div>
   );
 }

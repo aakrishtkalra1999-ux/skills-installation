@@ -3,7 +3,7 @@ import type { Topic } from '../data/types';
 import type { ChildProfile } from './personalise';
 
 export interface Progress {
-  /** A parent agreed before any child details were entered. Everything stays on this device. */
+  /** A parent agreed before any child details were entered. */
   consent: boolean;
   courseCode: string | null;
   child: ChildProfile | null;
@@ -141,31 +141,24 @@ export function setFavourites(p: Progress, favourites: Topic[]): Progress {
   return p.child ? { ...p, child: { ...p.child, favourites } } : p;
 }
 
-const STORAGE_KEY = 'rootling-progress-v1';
+/** Before families and accounts, the app kept a single child's progress under this key. */
+const LEGACY_KEY = 'rootling-progress-v1';
 
-export function loadProgress(): Progress {
+export function loadLegacyProgress(): Progress | null {
   try {
-    const raw = localStorage.getItem(STORAGE_KEY);
-    if (!raw) return initialProgress;
+    const raw = localStorage.getItem(LEGACY_KEY);
+    if (!raw) return null;
     const saved = { ...initialProgress, ...JSON.parse(raw) } as Progress;
     if (saved.courseCode && !COURSES.some((c) => c.code === saved.courseCode)) saved.courseCode = null;
     return saved;
   } catch {
-    return initialProgress;
+    return null;
   }
 }
 
-export function saveProgress(p: Progress): void {
+export function clearLegacyProgress(): void {
   try {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(p));
-  } catch {
-    // Storage can be unavailable (private mode); progress then lasts for this visit only.
-  }
-}
-
-export function clearProgress(): void {
-  try {
-    localStorage.removeItem(STORAGE_KEY);
+    localStorage.removeItem(LEGACY_KEY);
   } catch {
     // Nothing stored.
   }

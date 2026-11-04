@@ -426,7 +426,152 @@ const malayalam: Course = {
   ],
 };
 
-export const COURSES: Course[] = [tamil, punjabi, gujarati, malayalam];
+const telugu: Course = {
+  code: 'te',
+  name: 'Telugu',
+  nativeName: 'తెలుగు',
+  ttsLang: 'te-IN',
+  status: 'preview',
+  words: [
+    { id: 'namaskaram', native: 'నమస్కారం', roman: 'namaskaaram', en: 'hello', emoji: '🙏' },
+    { id: 'dhanyavaadaalu', native: 'ధన్యవాదాలు', roman: 'dhanyavaadaalu', en: 'thank you', emoji: '💐' },
+    { id: 'avunu', native: 'అవును', roman: 'avunu', en: 'yes', emoji: '👍' },
+    { id: 'kaadu', native: 'కాదు', roman: 'kaadu', en: 'no', emoji: '🙅' },
+    { id: 'amma', native: 'అమ్మ', roman: 'amma', en: 'mum', emoji: '👩' },
+    { id: 'naanna', native: 'నాన్న', roman: 'naanna', en: 'dad', emoji: '👨' },
+    { id: 'ammamma', native: 'అమ్మమ్మ', roman: 'Ammamma', en: "grandma (mum's mum)", emoji: '👵', elder: true },
+    { id: 'naanamma', native: 'నానమ్మ', roman: 'Naanamma', en: "grandma (dad's mum)", emoji: '🧓', elder: true },
+    { id: 'thaatha', native: 'తాతయ్య', roman: 'Thaathayya', en: 'grandpa', emoji: '👴', elder: true },
+    { id: 'neellu', native: 'నీళ్ళు', roman: 'neellu', en: 'water', emoji: '💧' },
+    { id: 'paalu', native: 'పాలు', roman: 'paalu', en: 'milk', emoji: '🥛' },
+    { id: 'dosa', native: 'దోసె', roman: 'dose', en: 'dosa', emoji: '🫓' },
+    { id: 'aratipandu', native: 'అరటిపండు', roman: 'aratipandu', en: 'banana', emoji: '🍌' },
+    { id: 'pilli', native: 'పిల్లి', roman: 'pilli', en: 'cat', emoji: '🐱' },
+    { id: 'kukka', native: 'కుక్క', roman: 'kukka', en: 'dog', emoji: '🐶' },
+    { id: 'enugu', native: 'ఏనుగు', roman: 'enugu', en: 'elephant', emoji: '🐘' },
+    { id: 'aavu', native: 'ఆవు', roman: 'aavu', en: 'cow', emoji: '🐄' },
+    { id: 'chepa', native: 'చేప', roman: 'chepa', en: 'fish', emoji: '🐟' },
+    { id: 'pakshi', native: 'పక్షి', roman: 'pakshi', en: 'bird', emoji: '🐦' },
+    { id: 'erupu', native: 'ఎరుపు', roman: 'erupu', en: 'red', emoji: '🔴' },
+    { id: 'neelam', native: 'నీలం', roman: 'neelam', en: 'blue', emoji: '🔵' },
+    { id: 'aakupachcha', native: 'ఆకుపచ్చ', roman: 'aakupachcha', en: 'green', emoji: '🟢' },
+    { id: 'pasupu', native: 'పసుపు', roman: 'pasupu', en: 'yellow', emoji: '🟡' },
+    { id: 'okati', native: 'ఒకటి', roman: 'okati', en: 'one', emoji: '1️⃣' },
+    { id: 'rendu', native: 'రెండు', roman: 'rendu', en: 'two', emoji: '2️⃣' },
+    { id: 'moodu', native: 'మూడు', roman: 'moodu', en: 'three', emoji: '3️⃣' },
+    { id: 'naalugu', native: 'నాలుగు', roman: 'naalugu', en: 'four', emoji: '4️⃣' },
+    { id: 'aidu', native: 'ఐదు', roman: 'aidu', en: 'five', emoji: '5️⃣' },
+  ],
+  units: [
+    {
+      id: 'te-u1',
+      title: 'Hello, family!',
+      description: 'Say hello on the next video call home',
+      topic: 'family',
+      lessons: [
+        {
+          id: 'te-u1-l1',
+          title: 'Hello',
+          words: ['namaskaram', 'dhanyavaadaalu', 'avunu', 'kaadu'],
+          say: [
+            {
+              milestone: 'hello',
+              scene: '{name}, {gp} is on a video call! Can you say hello?',
+              line: { native: 'నమస్కారం, {gp}!', roman: 'Namaskaaram, {gp}!', en: 'Hello, {gp}!' },
+            },
+          ],
+        },
+        {
+          id: 'te-u1-l2',
+          title: 'My family',
+          words: ['amma', 'naanna', 'ammamma', 'thaatha'],
+          say: [
+            {
+              scene: '{gp} sent you a sweet. Say thank you!',
+              line: { native: 'ధన్యవాదాలు, {gp}!', roman: 'Dhanyavaadaalu, {gp}!', en: 'Thank you, {gp}!' },
+            },
+          ],
+          sentences: [{ native: ['నమస్కారం', 'అమ్మ'], roman: 'namaskaaram amma', en: ['hello', 'mum'] }],
+        },
+        {
+          id: 'te-u1-l3',
+          title: 'How are you?',
+          words: ['namaskaram', 'naanamma', 'thaatha', 'dhanyavaadaalu'],
+          say: [
+            {
+              milestone: 'sentence',
+              scene: '{gp} asks “baagunnaavaa?” (are you well?). Tell {gp} you are well!',
+              line: { native: 'నేను బాగున్నాను', roman: 'Nenu baagunnaanu', en: 'I am well' },
+            },
+          ],
+          sentences: [{ native: ['నేను', 'బాగున్నాను'], roman: 'nenu baagunnaanu', en: ['I', 'am', 'well'] }],
+        },
+      ],
+    },
+    {
+      id: 'te-u2',
+      title: 'Breakfast time',
+      description: 'Dosa, milk and more',
+      topic: 'food',
+      lessons: [
+        {
+          id: 'te-u2-l1',
+          title: 'Breakfast',
+          words: ['neellu', 'paalu', 'dosa', 'aratipandu'],
+          say: [
+            {
+              milestone: 'sentence',
+              scene: 'Yum, dosa for breakfast! Tell everyone you like it.',
+              line: { native: 'నాకు దోసె ఇష్టం', roman: 'Naaku dose ishtam', en: 'I like dosa' },
+            },
+          ],
+          sentences: [{ native: ['నాకు', 'పాలు', 'ఇష్టం'], roman: 'naaku paalu ishtam', en: ['I', 'like', 'milk'] }],
+        },
+      ],
+    },
+    {
+      id: 'te-u3',
+      title: 'Animal friends',
+      description: 'From cats to elephants',
+      topic: 'animals',
+      lessons: [
+        { id: 'te-u3-l1', title: 'Pets', words: ['pilli', 'kukka', 'chepa', 'pakshi'] },
+        { id: 'te-u3-l2', title: 'Big animals', words: ['enugu', 'aavu', 'kukka', 'pilli'] },
+      ],
+    },
+    {
+      id: 'te-u4',
+      title: 'Colours',
+      description: 'Paint the world',
+      topic: 'colours',
+      lessons: [{ id: 'te-u4-l1', title: 'Colours', words: ['erupu', 'neelam', 'aakupachcha', 'pasupu'] }],
+    },
+    {
+      id: 'te-u5',
+      title: 'Count with me',
+      description: 'Numbers one to five',
+      topic: 'numbers',
+      lessons: [{ id: 'te-u5-l1', title: '1 to 5', words: ['okati', 'rendu', 'moodu', 'naalugu', 'aidu'] }],
+    },
+  ],
+  stories: [
+    {
+      id: 'te-s1',
+      title: "{gp}'s dosa",
+      cover: '🫓',
+      pages: [
+        { speaker: 'child', emoji: '👋', line: { native: 'నమస్కారం, {gp}!', roman: 'Namaskaaram, {gp}!', en: 'Hello, {gp}!' } },
+        { speaker: 'gp', emoji: '🤗', line: { native: 'బాగున్నావా, {name}?', roman: 'Baagunnaavaa, {name}?', en: 'Are you well, {name}?' } },
+        { speaker: 'child', emoji: '😊', line: { native: 'బాగున్నాను!', roman: 'Baagunnaanu!', en: 'I am well!' } },
+        { speaker: 'gp', emoji: '🫓', line: { native: 'దోసె కావాలా?', roman: 'Dose kaavaalaa?', en: 'Would you like dosa?' } },
+        { speaker: 'child', emoji: '😋', line: { native: 'అవును! ధన్యవాదాలు, {gp}!', roman: 'Avunu! Dhanyavaadaalu, {gp}!', en: 'Yes! Thank you, {gp}!' } },
+        { speaker: 'child', emoji: '💛', line: { native: 'నాకు దోసె ఇష్టం!', roman: 'Naaku dose ishtam!', en: 'I like dosa!' } },
+      ],
+    },
+  ],
+};
+
+export const COURSES: Course[] = [tamil, telugu, punjabi, gujarati, malayalam];
 
 export function getCourse(code: string): Course {
   const course = COURSES.find((c) => c.code === code);

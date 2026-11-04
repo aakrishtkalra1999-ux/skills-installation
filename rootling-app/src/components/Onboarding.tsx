@@ -19,9 +19,17 @@ export interface OnboardingResult {
   elderId: string;
 }
 
+interface Props {
+  onDone: (r: OnboardingResult) => void;
+  /** Without accounts, the parent agrees here. With accounts, they agreed when setting up the account, so this starts at the language. */
+  withConsent?: boolean;
+  onCancel?: () => void;
+}
+
 /** Parent-led setup, in the order the landing page promises: consent, language, the child, their family. */
-export function Onboarding({ onDone }: { onDone: (r: OnboardingResult) => void }) {
-  const [step, setStep] = useState(0);
+export function Onboarding({ onDone, withConsent = true, onCancel }: Props) {
+  const first = withConsent ? 0 : 1;
+  const [step, setStep] = useState(first);
   const [consent, setConsent] = useState(false);
   const [courseCode, setCourseCode] = useState('ta');
   const [name, setName] = useState('');
@@ -35,7 +43,7 @@ export function Onboarding({ onDone }: { onDone: (r: OnboardingResult) => void }
 
   const bubble = [
     'Hi! I’m Rooty. I help children learn their family’s language. A grown-up should set me up.',
-    'Which language does your family speak?',
+    withConsent ? 'Which language does your family speak?' : 'Let’s add a child! Which language does your family speak?',
     'Tell me about your child.',
     `What does ${childName || 'your child'} love?`,
     `Who does ${childName || 'your child'} want to talk to?`,
@@ -49,18 +57,7 @@ export function Onboarding({ onDone }: { onDone: (r: OnboardingResult) => void }
       </div>
 
       {step === 0 && (
-        <div className="card consent">
-          <h2>For parents</h2>
-          <ul>
-            <li>Rootling asks for your child’s first name, age and interests to personalise lessons.</li>
-            <li>Everything stays on this device. No ads, and we never sell data.</li>
-            <li>The microphone is only used when your child taps “Say it”, and is never recorded.</li>
-          </ul>
-          <label className="check">
-            <input type="checkbox" checked={consent} onChange={(e) => setConsent(e.target.checked)} />
-            I’m the parent or guardian and I agree.
-          </label>
-        </div>
+        <ConsentCard consent={consent} onChange={setConsent} onDevice />
       )}
 
       {step === 1 && (
@@ -138,8 +135,8 @@ export function Onboarding({ onDone }: { onDone: (r: OnboardingResult) => void }
       )}
 
       <footer className="footer">
-        {step > 0 && (
-          <button className="btn ghost" onClick={() => setStep(step - 1)}>
+        {(step > first || onCancel) && (
+          <button className="btn ghost" onClick={() => (step > first ? setStep(step - 1) : onCancel?.())}>
             Back
           </button>
         )}
@@ -161,6 +158,31 @@ export function Onboarding({ onDone }: { onDone: (r: OnboardingResult) => void }
           </button>
         )}
       </footer>
+    </div>
+  );
+}
+
+/** What a parent agrees to before any child details are entered. */
+export function ConsentCard({ consent, onChange, onDevice }: { consent: boolean; onChange: (v: boolean) => void; onDevice: boolean }) {
+  return (
+    <div className="card consent">
+      <h2>For parents</h2>
+      <ul>
+        <li>Rootling asks for your child’s first name, age and interests to personalise lessons. Nothing else: no surnames, photos, birthdays or locations.</li>
+        <li>
+          {onDevice
+            ? 'Everything stays on this device.'
+            : 'It is saved to your parent account so lessons carry on across your phones and tablets. You can export or delete it any time.'}{' '}
+          No ads, and we never sell data.
+        </li>
+        <li>The microphone is only used when your child taps “Say it”, and is never recorded.</li>
+      </ul>
+      <label className="check">
+        <input type="checkbox" checked={consent} onChange={(e) => onChange(e.target.checked)} />
+        <span>
+          I’m the parent or legal guardian, and I agree to the <a href="/privacy">privacy policy</a>.
+        </span>
+      </label>
     </div>
   );
 }

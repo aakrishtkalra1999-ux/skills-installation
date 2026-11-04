@@ -1,4 +1,38 @@
-/** Audio through the browser: text-to-speech for every word, and speech recognition for "say it" moments. */
+/**
+ * Audio: native-speaker recordings where they exist, the device's text-to-speech
+ * otherwise, and speech recognition for "say it" moments.
+ */
+import manifest from '../data/audio-manifest.json';
+import type { Clip } from './clips';
+
+const recorded = new Set<string>(manifest.files);
+let current: HTMLAudioElement | null = null;
+
+export function hasRecording(clip: Clip): boolean {
+  return clip.id !== null && recorded.has(`${clip.course}/${clip.id}`);
+}
+
+/** Whether a speaker button for this clip would make a sound on this device. */
+export function canPlay(clip: Clip): boolean {
+  return hasRecording(clip) || canSpeak(clip.lang);
+}
+
+/** Plays the recording, falling back to the device voice if there is none or it fails to load. */
+export function play(clip: Clip): void {
+  current?.pause();
+  current = null;
+  if (!hasRecording(clip)) {
+    speak(clip.text, clip.lang);
+    return;
+  }
+  if (typeof speechSynthesis !== 'undefined') speechSynthesis.cancel();
+  const audio = new Audio(`/audio/${clip.course}/${clip.id}.mp3`);
+  current = audio;
+  audio.play().catch(() => {
+    // Autoplay can be blocked before the first tap; a missing file also lands here.
+    if (current === audio) speak(clip.text, clip.lang);
+  });
+}
 
 function voiceFor(lang: string): SpeechSynthesisVoice | undefined {
   if (typeof speechSynthesis === 'undefined') return undefined;

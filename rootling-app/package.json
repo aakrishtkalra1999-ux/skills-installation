@@ -4,21 +4,40 @@
   "version": "0.1.0",
   "type": "module",
   "scripts": {
+    "predev": "node scripts/audio-manifest.mjs",
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "prebuild": "node scripts/audio-manifest.mjs",
+    "build": "tsc -b && tsc -p tsconfig.api.json && vite build",
     "preview": "vite preview",
-    "test": "vitest run"
+    "pretest": "node scripts/audio-manifest.mjs",
+    "test": "vitest run",
+    "typecheck": "tsc -b && tsc -p tsconfig.api.json",
+    "content:export": "tsx scripts/export-review.ts"
   },
   "dependencies": {
+    "@fontsource/dm-sans": "5.3.0",
+    "@fontsource/fraunces": "5.3.0",
+    "@fontsource/noto-sans-gujarati": "5.3.0",
+    "@fontsource/noto-sans-gurmukhi": "5.3.0",
+    "@fontsource/noto-sans-malayalam": "5.3.0",
+    "@fontsource/noto-sans-tamil": "5.3.0",
+    "@fontsource/noto-sans-telugu": "5.3.0",
+    "@supabase/supabase-js": "2.118.0",
     "react": "19.3.1",
-    "react-dom": "19.3.1"
+    "react-dom": "19.3.1",
+    "stripe": "23.0.0"
   },
   "devDependencies": {
+    "@types/node": "22.19.1",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
     "@vitejs/plugin-react": "6.2.1",
+    "tsx": "4.23.15",
     "typescript": "5.9.3",
     "vite": "8.3.5",
     "vitest": "5.1.0"
+  },
+  "engines": {
+    "node": ">=20"
   }
 }
