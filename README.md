@@ -11,4 +11,4 @@ My Claude Code setup. Start a Claude Code cloud session on this repo and everyth
 
 New case folders are created in this repo's root. Commit and push them so they are kept.
 
-`boli-app/` is a language-learning app for Indian languages. See its README.
+`rootling-app/` is Rootling, a language app teaching Indian regional languages to children of families abroad. See its README.

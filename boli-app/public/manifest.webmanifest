@@ -1,9 +1,0 @@
-{
-  "name": "Boli — learn Indian languages",
-  "short_name": "Boli",
-  "start_url": "/",
-  "display": "standalone",
-  "background_color": "#fffaf2",
-  "theme_color": "#2a3a8c",
-  "icons": [{ "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml" }]
-}

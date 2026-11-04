@@ -1,0 +1,9 @@
+{
+  "name": "Rootling: little roots, big words",
+  "short_name": "Rootling",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fbf6ec",
+  "theme_color": "#3f7a45",
+  "icons": [{ "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml" }]
+}
