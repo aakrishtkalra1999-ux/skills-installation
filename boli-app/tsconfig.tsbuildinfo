@@ -1,0 +1,1 @@
+{"root":["./src/App.tsx","./src/main.tsx","./src/components/Home.tsx","./src/components/LessonPlayer.tsx","./src/components/Mascot.tsx","./src/components/Onboarding.tsx","./src/data/courses.ts","./src/data/types.ts","./src/lib/lesson.ts","./src/lib/logic.test.ts","./src/lib/progress.ts","./src/lib/speech.ts"],"version":"5.9.3"}

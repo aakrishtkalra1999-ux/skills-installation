@@ -1,11 +1,21 @@
 {
   "extraKnownMarketplaces": {
     "superpowers-dev": {
-      "source": { "source": "github", "repo": "obra/superpowers" }
+      "source": {
+        "source": "github",
+        "repo": "obra/superpowers"
+      }
+    },
+    "android-reverse-engineering-skill": {
+      "source": {
+        "source": "github",
+        "repo": "SimoneAvogadro/android-reverse-engineering-skill"
+      }
     }
   },
   "enabledPlugins": {
-    "superpowers@superpowers-dev": true
+    "superpowers@superpowers-dev": true,
+    "android-reverse-engineering@android-reverse-engineering-skill": true
   },
   "hooks": {
     "SessionStart": [
