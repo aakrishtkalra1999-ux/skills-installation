@@ -139,3 +139,8 @@ drop policy if exists "Parents read their subscription" on public.subscriptions;
 create policy "Parents read their subscription" on public.subscriptions
   for select to authenticated using (parent_id = auth.uid());
 -- No insert/update/delete policies: only the server (service role key) writes here.
+
+-- ---------------------------------------------------------------- functions
+-- The trigger functions run with elevated rights, so nobody may call them through the API.
+revoke execute on function public.handle_new_user() from public, anon, authenticated;
+revoke execute on function public.limit_children() from public, anon, authenticated;

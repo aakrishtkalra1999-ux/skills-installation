@@ -58,14 +58,18 @@ function Splash({ text }: { text: string }) {
 /** Holds the family saved on this device for the current parent (or for the device, without accounts). */
 function useFamily(key: string | null) {
   const [store, setStore] = useState<{ key: string | null; family: Family }>(() => ({ key, family: key ? loadFamily(key) : emptyFamily }));
+  // Must stay the same function between renders: the sync effects depend on it, and a new
+  // function every render made them re-run on every render (an endless reload loop once logged in).
+  const setFamily = useCallback(
+    (update: (f: Family) => Family) => setStore((s) => (s.key === key ? { key, family: update(s.family) } : s)),
+    [key],
+  );
   if (store.key !== key) {
     // Switching account: load that parent's saved family straight away, during render, to avoid a flash.
     const next = { key, family: key ? loadFamily(key) : emptyFamily };
     setStore(next);
-    return [next.family, () => {}] as const;
+    return [next.family, setFamily] as const;
   }
-  const setFamily = (update: (f: Family) => Family) =>
-    setStore((s) => (s.key === key ? { key, family: update(s.family) } : s));
   return [store.family, setFamily] as const;
 }
 
