@@ -1,0 +1,39 @@
+# Keeps Rootling's free Supabase project from pausing.
+# Supabase pauses free projects after about a week with no activity. This runs a
+# tiny read against the database every 3 days (and can be run by hand from the
+# Actions tab). The key below is Rootling's publishable key: it is public by
+# design (the website already sends it to every visitor) and Row Level Security
+# means it can read nothing. The waitlist read returns an empty list.
+name: Rootling keep-alive
+
+on:
+  schedule:
+    - cron: '17 11 */3 * *'
+  workflow_dispatch:
+
+permissions: {}
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      SUPABASE_URL: https://fjiahsgkqektwyaynaev.supabase.co
+      SUPABASE_PUBLISHABLE_KEY: sb_publishable_8COrAZIW-89uYw7iXgvcGA_qjYwZ2nH
+      SITE_URL: https://rootling-psi.vercel.app
+    steps:
+      - name: Ping the Supabase database
+        run: |
+          status=$(curl -sS -o /tmp/body -w '%{http_code}' \
+            -H "apikey: $SUPABASE_PUBLISHABLE_KEY" \
+            "$SUPABASE_URL/rest/v1/waitlist?select=id&limit=1")
+          echo "Supabase answered HTTP $status: $(head -c 200 /tmp/body)"
+          if [ "$status" != "200" ]; then
+            echo "::error::Supabase did not answer normally. If the project is paused, restore it at https://supabase.com/dashboard/project/fjiahsgkqektwyaynaev"
+            exit 1
+          fi
+      - name: Check the website is up
+        run: |
+          status=$(curl -sS -o /dev/null -w '%{http_code}' "$SITE_URL/")
+          echo "Website answered HTTP $status"
+          [ "$status" = "200" ] || { echo "::error::The website did not load"; exit 1; }
