@@ -30,7 +30,7 @@ DEADLINE: 15 November 2026, 11:59 pm IST
    → leave blank (not created)
 
 8. Product Hunt launch URL  (optional)
-   → https://www.producthunt.com/posts/rootling...   (after launching with producthunt/PRODUCT_HUNT_LAUNCH.txt)
+   https://www.producthunt.com/products/rootling
 
 9. Shipped.money integrations — tick ONLY what is true:
    [x] I added a GitHub token on Shipped.money          ← only if you pasted the github_pat_ key
