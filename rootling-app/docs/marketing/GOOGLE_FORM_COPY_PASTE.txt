@@ -1,0 +1,60 @@
+AI in Business - II | Final Project & Marketing Submission
+COPY-PASTE ANSWERS  (deadline: 15 November 2026, 11:59 pm IST)
+Copy only the line under each heading.
+==============================================================
+
+
+1. Student email  *required*
+---------------------------------------------
+TYPE YOUR MASTERS' UNION EMAIL HERE
+
+
+2. Project URL  *required*
+---------------------------------------------
+https://www.rootling.space
+
+
+3. Teammate name and student email  (optional)
+---------------------------------------------
+LEAVE BLANK if you worked alone.
+(If you had a teammate, type: Full Name, their.email@mastersunion.org)
+
+
+4. Marketing efforts — Google Doc URL  *required*
+---------------------------------------------
+PASTE YOUR GOOGLE DOC LINK HERE
+(Make it first: upload Rootling_Marketing_Efforts.docx to Google Drive → right-click →
+ Open with → Google Docs → Share → General access → Anyone with the link → Viewer →
+ Copy link. Test it in an incognito window before pasting.)
+
+
+5. LinkedIn brand page URL  (optional)
+---------------------------------------------
+LEAVE BLANK unless you created the LinkedIn page.
+
+
+6. Instagram brand account URL  (optional)
+---------------------------------------------
+https://www.instagram.com/roo.tling/
+
+
+7. YouTube channel URL  (optional)
+---------------------------------------------
+LEAVE BLANK
+
+
+8. Product Hunt launch URL  (optional)
+---------------------------------------------
+https://www.producthunt.com/products/rootling
+
+
+9. Shipped.money integrations — select all that apply
+---------------------------------------------
+[x] I added a GitHub token on Shipped.money        ← tick ONLY if you pasted the github_pat_ key on Shipped
+[ ] I integrated Google Search Console on Shipped.money     ← leave unticked
+[ ] I integrated Clarity on Shipped.money                   ← leave unticked (it is a tracker; Rootling promises no trackers)
+[ ] I integrated Payments on Shipped.money                  ← leave unticked
+[ ] I am not accepting payments / keeping my product free for now   ← leave unticked (Rootling has a paid plan)
+
+
+Then click SUBMIT.
