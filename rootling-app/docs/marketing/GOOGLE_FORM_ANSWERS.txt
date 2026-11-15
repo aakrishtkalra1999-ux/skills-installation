@@ -1,0 +1,42 @@
+AI in Business - II | Final Project & Marketing Submission — answers
+DEADLINE: 15 November 2026, 11:59 pm IST
+=====================================================================
+
+1. Student email  (required)
+   → your Masters' Union student email
+
+2. Project URL  (required)
+   https://www.rootling.space
+
+3. Teammate name and student email  (optional)
+   → leave blank if solo; otherwise: Full Name, name@mastersunion.org (your teammate's real email)
+
+4. Marketing efforts — Google Doc URL  (required, 20% of the grade)
+   a. Open https://drive.google.com → New → File upload → Rootling_Marketing_Efforts.docx
+   b. Right-click the uploaded file → Open with → Google Docs   (this makes a real Google Doc)
+   c. In the Google Doc: fill every [square-bracket] placeholder (your name, email, domain cost,
+      Shipped.money link) and complete Section 3 with your real Instagram / LinkedIn / Product Hunt
+      links and numbers. DELETE any Section 3 row you did not actually do.
+   d. Share → General access → "Anyone with the link" → Viewer → Copy link
+   e. Test the link in an incognito window, then paste it here.
+
+5. LinkedIn brand page URL  (optional)
+   → https://www.linkedin.com/company/<your-page>   (after creating it with linkedin/LINKEDIN.txt)
+
+6. Instagram brand account URL  (optional)
+   → https://www.instagram.com/<your-handle>   (after creating it with instagram/INSTAGRAM_CAPTIONS.txt)
+
+7. YouTube channel URL  (optional)
+   → leave blank (not created)
+
+8. Product Hunt launch URL  (optional)
+   → https://www.producthunt.com/posts/rootling...   (after launching with producthunt/PRODUCT_HUNT_LAUNCH.txt)
+
+9. Shipped.money integrations — tick ONLY what is true:
+   [x] I added a GitHub token on Shipped.money          ← only if you pasted the github_pat_ key
+   [ ] I integrated Google Search Console on Shipped.money   ← only if you did it
+   [ ] I integrated Clarity on Shipped.money                 ← we did NOT: Clarity is a tracker, and
+                                                               Rootling promises no trackers for children
+   [ ] I integrated Payments on Shipped.money                ← only if you connected payments THERE
+   Note: Rootling does take payments (Stripe, test mode) in the app itself, so do NOT tick
+   "I am not accepting payments / keeping my product free for now".

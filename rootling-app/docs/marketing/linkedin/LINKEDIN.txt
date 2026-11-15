@@ -1,0 +1,38 @@
+ROOTLING — LINKEDIN KIT
+=======================
+
+CREATE THE COMPANY PAGE (5 minutes, on a computer)
+1. LinkedIn → "For Business" (top right) → "Create a Company Page" → Company.
+2. Name: Rootling
+3. LinkedIn public URL: linkedin.com/company/rootling-space  (or rootlingapp if taken)
+4. Website: https://www.rootling.space
+5. Industry: E-Learning Providers   ·   Company size: 0–1 employees   ·   Type: Privately held
+6. Logo: li-logo.png   ·   Tagline: Little roots, big words. Kids 3–10 learn their family's Indian language.
+7. Tick the verification box → Create page.
+8. Edit page → Cover image: li-banner.png
+9. About / Overview (paste):
+
+Rootling helps children aged 3–10 in Indian families abroad speak their family's language, so calls with grandparents become real conversations. Personalised 5-minute lessons, bedtime stories and "Tap and say it" moments teach Tamil, Telugu, Punjabi, Gujarati and Malayalam. Accounts belong to parents, there are no ads or trackers, and every word is reviewed by native speakers. Free to start at www.rootling.space.
+
+
+LAUNCH POST (post from the company page AND re-share from your personal profile)
+--------------------------------------------------------------------------------
+🌱 Introducing Rootling: little roots, big words.
+
+Millions of Indian families live abroad. Their children often understand the family language but reply in English, and video calls with grandparents shrink to "hi" and "bye".
+
+Rootling is a web app that helps children aged 3–10 speak Tamil, Telugu, Punjabi, Gujarati or Malayalam:
+→ 5-minute lessons with pictures and sounds (no reading needed for under-6s)
+→ "Tap and say it": every lesson ends with the child saying a real line to their grandparent
+→ Personalised with the child's name and their own word for grandma (Paati, Ammamma, Dadi, Nani…)
+→ A parents area with the words to practise at home
+→ No ads, no trackers, parent-owned accounts
+
+Built as my final project for AI in Business - II at Masters' Union, with React, Supabase, Stripe and Vercel. It's live and free to start:
+👉 https://www.rootling.space
+
+If you're a parent abroad, or know one, I'd love your feedback. Which language should we add next?
+
+#EdTech #Parenting #IndianDiaspora #LanguageLearning #BuildInPublic #MastersUnion
+
+(Attach: ph-gallery-1.png and ph-gallery-2.png, or the instagram/ig-01-launch.png image)

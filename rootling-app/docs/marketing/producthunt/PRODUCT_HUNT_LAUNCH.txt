@@ -1,0 +1,59 @@
+ROOTLING — PRODUCT HUNT LAUNCH KIT
+==================================
+
+HOW TO LAUNCH (about 15 minutes)
+1. Go to https://www.producthunt.com and sign in (use "Sign in with Google" or LinkedIn).
+   New accounts may need to wait before they can post; if Product Hunt says so, schedule the launch for the earliest date offered and submit that scheduled URL.
+2. Click your avatar → "Submit" (or go to https://www.producthunt.com/posts/new).
+3. Paste the link: https://www.rootling.space
+4. Fill in the fields with the text below, upload the images, and choose "Launch now" (or schedule for 12:01 am Pacific time for a full day of votes).
+5. After it's live, copy the launch page URL (https://www.producthunt.com/posts/rootling...) into the Google Form and the marketing doc.
+6. Post the "first comment" below straight away, then share the link on LinkedIn, Instagram stories and WhatsApp.
+
+------------------------------------------------------------
+NAME
+Rootling
+
+TAGLINE (max 60 characters — this is 52)
+Kids abroad learn to talk to grandma in her language
+
+DESCRIPTION (max 260 characters — this is 253)
+Personalised 5-minute lessons, stories and games that help children aged 3–10 speak Tamil, Telugu, Punjabi, Gujarati or Malayalam. Each lesson ends with "Tap and say it": a real line to say to Paati on the next video call. No ads, parent-owned accounts.
+
+TOPICS (pick 3)
+Education · Kids & Parenting · Languages
+(alternatives: Parenting, Edtech, Productivity)
+
+PRICING
+Freemium (free first unit of every language; $19/month Sprout plan with the first month free)
+
+LINKS
+Website: https://www.rootling.space
+Source code (optional, shows it's real): https://github.com/aakrishtkalra1999-ux/skills-installation/tree/main/rootling-app
+
+MEDIA
+Thumbnail (240×240): ph-thumbnail.png
+Gallery (1270×760), in this order:
+  ph-gallery-1.png  — Little roots, big words
+  ph-gallery-2.png  — Tap and say it
+  ph-gallery-3.png  — Personalised
+  ph-gallery-4.png  — For parents
+  ph-gallery-5.png  — Safe by design
+
+MAKER'S FIRST COMMENT (post this as soon as the launch is live)
+------------------------------------------------------------
+Hi Product Hunt! 👋
+
+I built Rootling because so many Indian families abroad have the same story: the kids understand their grandparents perfectly, but they answer in English. Calls home shrink to "hi" and "bye", and most language apps are built for adults, for Hindi or Spanish, and for people who can already read.
+
+Rootling is for children aged 3–10:
+🌱 5-minute lessons with pictures and sounds (no reading needed for under-6s)
+💬 "Tap and say it": every lesson ends with the child saying a real line, like "வணக்கம், பாட்டி!" (Hello, Paati!)
+👵 Personalised with the child's name and their own word for grandma: Paati, Ammamma, Dadi, Nani, Baa…
+📖 Bedtime stories that star the child and their grandparent
+👪 A parents area showing the words to practise at home
+
+Tamil is live with a full course; Telugu, Punjabi, Gujarati and Malayalam are in preview while native speakers review every line. It's free to start, and there are no ads or trackers anywhere children play.
+
+I'd love your feedback, especially from parents: which language should we build next? 🙏
+------------------------------------------------------------
