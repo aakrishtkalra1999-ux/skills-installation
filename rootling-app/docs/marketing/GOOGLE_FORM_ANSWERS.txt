@@ -24,7 +24,7 @@ DEADLINE: 15 November 2026, 11:59 pm IST
    → https://www.linkedin.com/company/<your-page>   (after creating it with linkedin/LINKEDIN.txt)
 
 6. Instagram brand account URL  (optional)
-   → https://www.instagram.com/<your-handle>   (after creating it with instagram/INSTAGRAM_CAPTIONS.txt)
+   https://www.instagram.com/roo.tling/
 
 7. YouTube channel URL  (optional)
    → leave blank (not created)
